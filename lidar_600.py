@@ -61,3 +61,11 @@ sns.heatmap(probs)
 sns.jointplot(data["hour"],data["lidar"],data,kind="kde")
 
 # %%
+p_t= pd.DataFrame(probs.sum(axis=0))
+p_t.plot()
+
+# %%
+p_t.sum()
+
+# %%
+p_z = 
