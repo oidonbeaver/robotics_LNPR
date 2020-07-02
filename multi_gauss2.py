@@ -63,3 +63,40 @@ plt.gca().set_ylabel("y")
 
 
 # %%
+eig_vals, eig_vec = np.linalg.eig(c.cov)
+
+# %%
+plt.contour(x,y,c.pdf(pos))
+v = 2*eig_vals[0]**0.5*eig_vec[:,0]
+plt.quiver(c.mean[0],c.mean[1],v[0],v[1],color="red",angles="xy",scale_units="xy",scale = 1)
+
+v = 2*eig_vals[1]**0.5*eig_vec[:,1]
+plt.quiver(c.mean[0],c.mean[1],v[0],v[1],color = "blue",scale_units = "xy",scale = 1)
+
+
+# %%
+eig_vec[:,0]
+
+# %%
+plt.contour(x, y, c.pdf(pos))     ###draweigen###
+
+v = 2*math.sqrt(eig_vals[0])*eig_vec[:,0]
+plt.quiver(c.mean[0], c.mean[1], v[0], v[1], color="red", angles='xy', scale_units='xy', scale=1)
+
+v = 2*math.sqrt(eig_vals[1])*eig_vec[:,1]
+plt.quiver(c.mean[0], c.mean[1], v[0], v[1], color="blue", angles='xy', scale_units='xy', scale=1)
+
+plt.gca().set_aspect('equal')
+plt.show()
+
+# %%
+V = eig_vec
+L = np.diag(eig_vals)
+invV = np.linalg.inv(V)
+# %%
+V@L@invV
+
+# %%
+c.cov
+
+# %%
