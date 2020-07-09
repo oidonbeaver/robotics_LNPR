@@ -9,6 +9,7 @@ matplotlib.use("nbagg")
 import matplotlib.animation as anm
 # %matplotlib inline
 # %matplotlib nbagg
+# %matplotlib notebook
 %matplotlib qt
 # %%
 class World:
@@ -35,6 +36,8 @@ class World:
         else:
             self.ani = anm.FuncAnimation(fig,self.one_step,fargs=(elems,ax),frames=10,interval=1000,repeat=False)
             plt.show()
+            #one_step関数(メソッド)を複数回呼び出す。
+            # fargsは、one_step()の引数で、iは勝手に増えていく
         
     def one_step(self,i,elems,ax):
             while elems: elems.pop().remove()
