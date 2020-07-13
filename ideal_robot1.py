@@ -70,9 +70,9 @@ class IdealRobot:
         elems += ax.plot([x,xn],[y,yn],color=self.color)
         # ax.plot([x,xn],[y,yn],color = self.color)
         c = patches.Circle(xy=(x,y),radius=self.r,fill=False,color=self.color)
-        elems.append(ax.add_patch(c))
-        self.poses.append(self.pose)
-        elems += ax.plot([e[0] for e in self.poses],[e[1] for e in self.poses], linewidth=0.5, color="black")
+        elems.append(ax.add_patch(c))#axを使う、この時点で描画される
+        self.poses.append(self.pose)#podes なのでappendするのはposeにじゃない
+        elems += ax.plot([e[0] for e in self.poses],[e[1] for e in self.poses], linewidth=0.5, color="black")#軌跡の描画
 
     @classmethod
     def state_transition(cls, nu,omega,time,pose):
