@@ -7,13 +7,14 @@ import numpy as np
 import matplotlib
 matplotlib.use("nbagg")
 import matplotlib.animation as anm
-# %matplotlib notebook
-%matplotlib qt
+%matplotlib notebook
+# %matplotlib qt
 
 # %%
 class World:
-    def __init__(self):
+    def __init__(self,debug=False):
         self.objects =[]
+        self.debug = debug
 
     def append(self,obj):
         self.objects.append(obj)
@@ -26,9 +27,24 @@ class World:
         ax.set_ylim(-5,5)
         ax.set_xlabel("X",fontsize=20)
         ax.set_ylabel("Y",fontsize=20)
-        for obj in self.objects:
-            obj.draw(ax)
-        plt.show()
+
+        elems = []
+        if self.debug:
+            for i in range(1000):
+                self.one_step(i,elems,ax)
+        else:
+            self.ani = anm.FuncAnimation(fig,self.one_step,fargs=(elems,ax),frames=10,interval=1000,repeat=False)
+            plt.show()
+
+        # for obj in self.objects:
+        #     obj.draw(ax)
+        # plt.show()
+    
+    def one_step(self,i,elems,ax):
+        pass
+
+
+        
         
 
 
@@ -43,10 +59,21 @@ class IdealRobot:
         x,y,theta = self.pose
         xn = x + self.r*math.cos(theta)
         yn = y + self.r*math.sin(theta)
+        ax.plot([x,xn],[y,yn],color=self.color)
+        c = patches.Circle(xy=(x,y),radius=self.r,fill=False,color=self.color)
+        ax.add_patch(c)
+
 
 # %%
 
 world = World()
+# world.draw()
+robot1 = IdealRobot(np.array([2,3,math.pi/6]).T)
+robot2 = IdealRobot(np.array([-2,-1,math.pi/5*6]).T,"red")
+world.append(robot1)
+world.append(robot2)
 world.draw()
+# %%
+# %matplotlib inline
 
 # %%
