@@ -8,7 +8,7 @@ import matplotlib
 matplotlib.use("nbagg")
 import matplotlib.animation as anm
 # %matplotlib notebook
-%matplotlib qt
+# %matplotlib qt
 
 # %%
 class World:
@@ -32,12 +32,14 @@ class World:
 
         elems = []
         if self.debug:
-            for i in range(100):
+            for i in range(int(self.time_span/self.time_interval)):
                 self.one_step(i,elems,ax)
                 # print(elems)
             
         else:
-            self.ani = anm.FuncAnimation(fig,self.one_step,fargs=(elems,ax),frames=100,interval=1000,repeat=False)
+            self.ani = anm.FuncAnimation(fig,self.one_step,fargs=(elems,ax),\
+                frames=int(self.time_span/self.time_interval)+1,interval=int(self.time_interval*1000)\
+                    ,repeat=False)
             plt.show()
 
         # for obj in self.objects:
@@ -209,7 +211,8 @@ class IdealCamera:
 # world.draw()
 # %%
 if __name__ == "__main__":
-    world = World(10,0.1,debug=False)
+    # %matplotlib qt
+    world = World(10,0.1,debug=True)
 
     m = Map()
     m.append_landmark(Landmark(2,-2))
@@ -224,21 +227,8 @@ if __name__ == "__main__":
     # robot3 = IdealRobot(np.array([0,0,0]).T,color = "blue")
     world.append(robot1)
     world.append(robot2)
+    world.draw()
 # world.append(robot3)
 #%%
-world.draw()
 
 
-# %%
-
-# world = World(10,0.1)
-
-
-# %%
-cam = IdealCamera(m)
-p = cam.data(robot2.pose)
-
-# %%
-p
-
-# %%
