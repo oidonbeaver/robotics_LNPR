@@ -166,6 +166,7 @@ class IdealCamera:
             and self.direction_range[0] <= polarpos[1] <= self.direction_range[1]
     
     #観測データとデータIDが返り値のメソッド。本来は直接得られるが、シミュレーションなので真値から逆算している
+    #IdealRobot.one_step()で呼び出される
     def data(self,cam_pose):
         observed = []
         for lm in self.map.landmarks:
