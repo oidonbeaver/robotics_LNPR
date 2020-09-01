@@ -1,0 +1,86 @@
+\hypertarget{classnoise__simulation_1_1_robot}{}\doxysection{noise\+\_\+simulation.\+Robot Class Reference}
+\label{classnoise__simulation_1_1_robot}\index{noise\_simulation.Robot@{noise\_simulation.Robot}}
+Inheritance diagram for noise\+\_\+simulation.\+Robot\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classnoise__simulation_1_1_robot}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classnoise__simulation_1_1_robot_a4ab4519e350120be450d23803ce23136}\label{classnoise__simulation_1_1_robot_a4ab4519e350120be450d23803ce23136}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, pose, agent=None, sensor=None, color=\char`\"{}black\char`\"{}, noise\+\_\+per\+\_\+meter=5, noise\+\_\+std=math.\+pi/60, bias\+\_\+rate\+\_\+stds=(0.\+1, 0.\+1), expected\+\_\+stuck\+\_\+time=1e100, expected\+\_\+escape\+\_\+time=1e-\/100, expected\+\_\+kidnap\+\_\+time=1e100, kidnap\+\_\+range\+\_\+x=(-\/5.\+0, 5.\+0), kidnap\+\_\+range\+\_\+y=(-\/5.\+0, 5.\+0))
+\item 
+\mbox{\Hypertarget{classnoise__simulation_1_1_robot_a14b904ad46aeb120b036c194c4cf1956}\label{classnoise__simulation_1_1_robot_a14b904ad46aeb120b036c194c4cf1956}} 
+def {\bfseries noise} (self, pose, nu, omega, time\+\_\+interval)
+\item 
+\mbox{\Hypertarget{classnoise__simulation_1_1_robot_a1a5e22f5b8fe9d2f78d783a758081610}\label{classnoise__simulation_1_1_robot_a1a5e22f5b8fe9d2f78d783a758081610}} 
+def {\bfseries bias} (self, nu, omega)
+\item 
+\mbox{\Hypertarget{classnoise__simulation_1_1_robot_a25add3331ba875b241a6f0ebecdbfa5e}\label{classnoise__simulation_1_1_robot_a25add3331ba875b241a6f0ebecdbfa5e}} 
+def {\bfseries stuck} (self, nu, omega, time\+\_\+interval)
+\item 
+\mbox{\Hypertarget{classnoise__simulation_1_1_robot_a9fc65474637c762bf84b7867a068616c}\label{classnoise__simulation_1_1_robot_a9fc65474637c762bf84b7867a068616c}} 
+def {\bfseries kidnap} (self, pose, time\+\_\+interval)
+\item 
+\mbox{\Hypertarget{classnoise__simulation_1_1_robot_a10a4fdd01019efb76c27e889f090229d}\label{classnoise__simulation_1_1_robot_a10a4fdd01019efb76c27e889f090229d}} 
+def {\bfseries one\+\_\+step} (self, time\+\_\+interval)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classnoise__simulation_1_1_robot_a206dcfa985c478442a520f4d574aad10}\label{classnoise__simulation_1_1_robot_a206dcfa985c478442a520f4d574aad10}} 
+{\bfseries noise\+\_\+pdf}
+\item 
+\mbox{\Hypertarget{classnoise__simulation_1_1_robot_aa298773564a1e6717ff62bc37ccbd4fc}\label{classnoise__simulation_1_1_robot_aa298773564a1e6717ff62bc37ccbd4fc}} 
+{\bfseries distance\+\_\+until\+\_\+noise}
+\item 
+\mbox{\Hypertarget{classnoise__simulation_1_1_robot_af431000b3d1e4b912d8913cb02cdb029}\label{classnoise__simulation_1_1_robot_af431000b3d1e4b912d8913cb02cdb029}} 
+{\bfseries theta\+\_\+noise}
+\item 
+\mbox{\Hypertarget{classnoise__simulation_1_1_robot_adcc03ed0baa9c3f340b0345244417dc4}\label{classnoise__simulation_1_1_robot_adcc03ed0baa9c3f340b0345244417dc4}} 
+{\bfseries bias\+\_\+rate\+\_\+nu}
+\item 
+\mbox{\Hypertarget{classnoise__simulation_1_1_robot_aeddbcfb2dadc7bff37b2606ceb1ddedb}\label{classnoise__simulation_1_1_robot_aeddbcfb2dadc7bff37b2606ceb1ddedb}} 
+{\bfseries bias\+\_\+rate\+\_\+omega}
+\item 
+\mbox{\Hypertarget{classnoise__simulation_1_1_robot_ae1ac9f37389bd355172aa7eb9569e878}\label{classnoise__simulation_1_1_robot_ae1ac9f37389bd355172aa7eb9569e878}} 
+{\bfseries stuck\+\_\+pdf}
+\item 
+\mbox{\Hypertarget{classnoise__simulation_1_1_robot_ad9fd4b336da9b3e51ab3cda5f050d750}\label{classnoise__simulation_1_1_robot_ad9fd4b336da9b3e51ab3cda5f050d750}} 
+{\bfseries escape\+\_\+pdf}
+\item 
+\mbox{\Hypertarget{classnoise__simulation_1_1_robot_ad4ee9e7afe7de32c873756ecea2ca650}\label{classnoise__simulation_1_1_robot_ad4ee9e7afe7de32c873756ecea2ca650}} 
+{\bfseries time\+\_\+until\+\_\+stuck}
+\item 
+\mbox{\Hypertarget{classnoise__simulation_1_1_robot_a1ddf8c1f7464675ec4ef53023b2f319f}\label{classnoise__simulation_1_1_robot_a1ddf8c1f7464675ec4ef53023b2f319f}} 
+{\bfseries time\+\_\+until\+\_\+escape}
+\item 
+\mbox{\Hypertarget{classnoise__simulation_1_1_robot_afaaeec084f87f415a0db2f92cd141b96}\label{classnoise__simulation_1_1_robot_afaaeec084f87f415a0db2f92cd141b96}} 
+{\bfseries is\+\_\+stuck}
+\item 
+\mbox{\Hypertarget{classnoise__simulation_1_1_robot_a76667226cf82f9d25202458b73a6e126}\label{classnoise__simulation_1_1_robot_a76667226cf82f9d25202458b73a6e126}} 
+{\bfseries kidnap\+\_\+pdf}
+\item 
+\mbox{\Hypertarget{classnoise__simulation_1_1_robot_afce14bddc9722896eace855cd29c6a36}\label{classnoise__simulation_1_1_robot_afce14bddc9722896eace855cd29c6a36}} 
+{\bfseries time\+\_\+until\+\_\+kidnap}
+\item 
+\mbox{\Hypertarget{classnoise__simulation_1_1_robot_a366f7d8bf9d246c98faf6f00bb28bb0f}\label{classnoise__simulation_1_1_robot_a366f7d8bf9d246c98faf6f00bb28bb0f}} 
+{\bfseries kidnap\+\_\+dist}
+\item 
+\mbox{\Hypertarget{classnoise__simulation_1_1_robot_a12c340f7ad6d9f846a3d60fd2614f58c}\label{classnoise__simulation_1_1_robot_a12c340f7ad6d9f846a3d60fd2614f58c}} 
+{\bfseries pose}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 18 of file noise\+\_\+simulation.\+py.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+noise\+\_\+simulation.\+py\end{DoxyCompactItemize}

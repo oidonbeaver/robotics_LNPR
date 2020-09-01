@@ -1,0 +1,75 @@
+\hypertarget{classrobot_1_1_camera}{}\doxysection{robot.\+Camera Class Reference}
+\label{classrobot_1_1_camera}\index{robot.Camera@{robot.Camera}}
+Inheritance diagram for robot.\+Camera\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classrobot_1_1_camera}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrobot_1_1_camera_adb978927a1dbf29960c5885486f572e1}\label{classrobot_1_1_camera_adb978927a1dbf29960c5885486f572e1}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, env\+\_\+map, distance\+\_\+range=(0.\+5, 6.\+0), direction\+\_\+range=(-\/math.\+pi/3, math.\+pi/3), distance\+\_\+noise\+\_\+rate=0.\+1, direction\+\_\+noise=math.\+pi/90, distance\+\_\+bias\+\_\+rate\+\_\+stddev=0.\+1, direction\+\_\+bias\+\_\+stddev=math.\+pi/90, phantom\+\_\+prob=0.\+0, phantom\+\_\+range\+\_\+x=(-\/5.\+0, 5.\+0), phantom\+\_\+range\+\_\+y=(-\/0.\+5, 0.\+5), oversight\+\_\+prob=0.\+1, occulusion\+\_\+prob=0.\+0)
+\item 
+\mbox{\Hypertarget{classrobot_1_1_camera_ad4a46313c46926078a3d1fbab9815187}\label{classrobot_1_1_camera_ad4a46313c46926078a3d1fbab9815187}} 
+def {\bfseries noise} (self, relpos)
+\item 
+\mbox{\Hypertarget{classrobot_1_1_camera_a65ea83a747c9b3beab33d752ca753b8a}\label{classrobot_1_1_camera_a65ea83a747c9b3beab33d752ca753b8a}} 
+def {\bfseries bias} (self, relpos)
+\item 
+\mbox{\Hypertarget{classrobot_1_1_camera_a255555df5cff00261e137fd9e974ac8d}\label{classrobot_1_1_camera_a255555df5cff00261e137fd9e974ac8d}} 
+def {\bfseries phantom} (self, cam\+\_\+pose, relpos)
+\item 
+\mbox{\Hypertarget{classrobot_1_1_camera_a8a92366b9a599e013f60fceb6d133891}\label{classrobot_1_1_camera_a8a92366b9a599e013f60fceb6d133891}} 
+def {\bfseries oversight} (self, relpos)
+\item 
+\mbox{\Hypertarget{classrobot_1_1_camera_a56ecededa8b74c7619c449d60ccec163}\label{classrobot_1_1_camera_a56ecededa8b74c7619c449d60ccec163}} 
+def {\bfseries occlusion} (self, relpos)
+\item 
+\mbox{\Hypertarget{classrobot_1_1_camera_a907ff358a155a66ac8537b219f648c5c}\label{classrobot_1_1_camera_a907ff358a155a66ac8537b219f648c5c}} 
+def {\bfseries data} (self, cam\+\_\+pose)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrobot_1_1_camera_adbfaf983dba0fd9a07b10dbd01489edc}\label{classrobot_1_1_camera_adbfaf983dba0fd9a07b10dbd01489edc}} 
+{\bfseries distance\+\_\+noise\+\_\+rate}
+\item 
+\mbox{\Hypertarget{classrobot_1_1_camera_aa08236748c82c9b77c1325596c589396}\label{classrobot_1_1_camera_aa08236748c82c9b77c1325596c589396}} 
+{\bfseries direction\+\_\+noise}
+\item 
+\mbox{\Hypertarget{classrobot_1_1_camera_a7cab090ffb0c23c5f70c98c0baf8d457}\label{classrobot_1_1_camera_a7cab090ffb0c23c5f70c98c0baf8d457}} 
+{\bfseries distance\+\_\+bias\+\_\+rate\+\_\+std}
+\item 
+\mbox{\Hypertarget{classrobot_1_1_camera_ad0e54c3277a546f006466fcd4a3e7cfe}\label{classrobot_1_1_camera_ad0e54c3277a546f006466fcd4a3e7cfe}} 
+{\bfseries direction\+\_\+bias}
+\item 
+\mbox{\Hypertarget{classrobot_1_1_camera_a0c1a172c8f2a453cb31bc09e2ac2cd7d}\label{classrobot_1_1_camera_a0c1a172c8f2a453cb31bc09e2ac2cd7d}} 
+{\bfseries phantom\+\_\+dist}
+\item 
+\mbox{\Hypertarget{classrobot_1_1_camera_a164d814a8a3678626f0fa3b45db26210}\label{classrobot_1_1_camera_a164d814a8a3678626f0fa3b45db26210}} 
+{\bfseries phantom\+\_\+prob}
+\item 
+\mbox{\Hypertarget{classrobot_1_1_camera_ac2a771b6bee3cd8705d427b353e1d329}\label{classrobot_1_1_camera_ac2a771b6bee3cd8705d427b353e1d329}} 
+{\bfseries oversight\+\_\+prob}
+\item 
+\mbox{\Hypertarget{classrobot_1_1_camera_af2ba77cf7b626fbadb012fad857b3073}\label{classrobot_1_1_camera_af2ba77cf7b626fbadb012fad857b3073}} 
+{\bfseries occulusion\+\_\+prob}
+\item 
+\mbox{\Hypertarget{classrobot_1_1_camera_a069ab345af96dbe593a133ee543c689f}\label{classrobot_1_1_camera_a069ab345af96dbe593a133ee543c689f}} 
+{\bfseries lastdata}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 100 of file robot.\+py.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+robot.\+py\end{DoxyCompactItemize}

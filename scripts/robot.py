@@ -5,7 +5,7 @@ import sys
 sys.path.append("../scripts/")
 from ideal_robot import *
 #%%
-%matplotlib qt
+# %matplotlib qt
 #%%
 from scipy.stats import  expon, norm, uniform
 import copy
@@ -104,7 +104,7 @@ class Camera(IdealCamera):
         phantom_prob=0.0,phantom_range_x=(-5.0,5.0),phantom_range_y=(-0.5,0.5),\
         oversight_prob=0.1,occulusion_prob=0.0):
 
-        super().__init__(env_map,distance_range,distance_range)
+        super().__init__(env_map,distance_range,direction_range)
         self.distance_noise_rate = distance_noise_rate
         self.direction_noise = direction_noise
         #バイアスは最初に(オブジェクトを作ったとき)発生する
@@ -155,12 +155,12 @@ class Camera(IdealCamera):
         observed=[]
         for lm in self.map.landmarks:
             z = self.observation_function(cam_pose, lm.pos)
-            z = self.phantom(cam_pose,z)#全く存在しないランドマークが現れるのではなく、実在するランドマークが全然違うところに現れる
-            z = self.occlusion(z)
-            z = self.oversight(z)#見えなくなる z==Noneになる
+            # z = self.phantom(cam_pose,z)#全く存在しないランドマークが現れるのではなく、実在するランドマークが全然違うところに現れる
+            # z = self.occlusion(z)
+            # z = self.oversight(z)#見えなくなる z==Noneになる
             if self.visible(z):
-                z=self.bias(z)
-                z = self.noise(z)
+                # z=self.bias(z)
+                # z = self.noise(z)
                 
                 observed.append((z,lm.id))
         self.lastdata = observed
@@ -177,14 +177,11 @@ if __name__ == "__main__":
     world.append(m)
         
     circling = Agent(0.2,10.0/180*math.pi)
-    r = Robot(np.array([0,0,0]).T, sensor=Camera(env_map=m,phantom_prob=0.5),agent=circling)
+    r = Robot(np.array([0,0,0]).T, sensor=Camera(env_map=m),agent=circling)
     world.append(r)
     world.draw()
 
 # %%
-
-
-
 
 # %%
 
