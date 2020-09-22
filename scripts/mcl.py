@@ -1,90 +1,169 @@
 #%%
-
-
 import sys
-sys.path.append("../scripts/")
+sys.path.append("../scripts")
 from robot import *
 from scipy.stats import multivariate_normal
-#%%
-%matplotlib qt
-# %%
 
+##
+
+#@class EstimationAgent 
+#@brief Mclクラスの推定器,位置を推定して、描画画面に追加する
+#@param self.estimator MCLクラスのオブジェクト
+##
+#%%
 class EstimationAgent(Agent):
-    """
-    @class EstimationAgent
-    @brief 位置を推定するエージェント
-    """
-
+    ##
+    #@brief ロボットに命令する移動速度と回転速度の初期化
+    #@details ロボットに命令する移動速度と回転速度の初期化,親クラスのメソッドを継承
+    ##
     def __init__(self,time_interval,nu,omega,estimator):
-        """
-        #@fn __init__()
-        @brief 説明
-        @param estimator Mclクラスの推定器
-        """
         super().__init__(nu,omega)
-        self.estimator = estimator#Mclクラス
+        self.estimator = estimator
         self.time_interval = time_interval
-        
-    
+        self.prev_nu = 0.0
+        self.prev_omega = 0.0
+
+    ##
+    #@brief Mclの動きを更新する
+    #@details (ロボットの代わりにパーティクルを動かす命令を出すイメージ)
+    #@return 新しい速度、角速度
+    ##
+    def decision(self,observation=None):
+        self.estimator.motion_update(self.prev_nu, self.prev_omega,self.time_interval)#Mclクラスのmotion_updateメソッドを呼び出す,self.u, self.omega更新
+        self.prev_nu, self.prev_omega = self.nu, self.omega#prev_nu,prev_omega更新
+        return self.nu, self.omega
+
+    ##
+    #@brief Mclのdraw()を呼び出して描画とelemsへの追加を行う
+    ##
     def draw(self,ax,elems):
+        # elems.append(ax.text(0,0,"hoge",fontsize=10))
         self.estimator.draw(ax,elems)
-        # elems.append(ax.text(0,0,"hog,fontsize=10e"))
 #%%
+##
+#@class Particle
+#@brief パーティクル
+#@details パーティクル１つ１つを作成
+##
 class Particle:
+    ##
+    #@param init_pose np.array([x,y,θ]).T
+    ##
+    
     def __init__(self,init_pose):
         self.pose = init_pose
-
+    
+    ##
+    #@brief パーティクルの位置の更新
+    #@param noise_rate_pdf nu,omegaに加えるノイズの確率密度関数
+    ##
     def motion_update(self,nu,omega,time,noise_rate_pdf):
-        ns = noise_rate_pdf.rvs()
-        # noised_nu = nu + ns[0]*math.sqrt(abs(nu)/time)+ 
+        ns =noise_rate_pdf.rvs()
+        noised_nu = nu + ns[0]*math.sqrt(abs(nu)/time) + ns[1]*math.sqrt(abs(omega)/time)
+        noised_omega = omega + ns[2]*math.sqrt(abs(nu)/time) + ns[3]*math.sqrt(abs(omega)/time)
+        self.pose = IdealRobot.state_transition(noised_nu,noised_omega,time,self.pose)#パーティクルの新しい姿勢
+
 
 
 #%%
+##
+#@class Mcl
+#@param self.particles num個のパーティクルを作成、更新していく
+#@param self.motion_noise_rate_pdf 2x2の確率密度関数
+##
 class Mcl:
-    def __init__(self,init_pose,num,motion_noise_stds):
+    ##
+    #@brief num個のパーティクルをinit_poseの位置で初期化
+    #@param init_pose np.array([x,y,θ]).T
+    #@param motion_noise_sts 辞書型でnn,no,on,ooのばらつき(標準偏差)を入れる
+    ##
+    def __init__(self,init_pose, num,motion_noise_stds):
+
         self.particles = [Particle(init_pose) for i in range(num)]
-
         v= motion_noise_stds
-        c = np.diag([v["nn"]**2,v["no"]**2,v["on"]**2,v["oo"]**2])
+        c=np.diag([v["nn"]**2,v["no"]**2,v["on"]**2,v["oo"]**2])
         self.motion_noise_rate_pdf = multivariate_normal(cov=c)
-    
+
+    ##
+    #@brief Mclの速度、回転速度にノイズを足して次の時刻のMclの位置を作成
+    #@details particle 1つ１つに対して行う
+    ##
     def motion_update(self,nu,omega,time):
-        print(self.motion_noise_rate_pdf.cov)
-        # for p in self.particles:
-        #     p.motion_update(nu,omega,time,self.motion_noise_rate_pdf)
-    
+        # print(self.motion_noise_rate_pdf.cov)
+        for p in self.particles:
+            p.motion_update(nu,omega,time,self.motion_noise_rate_pdf)
+
+    ##
+    #@brief 画面にテキストを描き、描画のリスト(elems)にオブジェクトを追加する
+    #@param ys particlesのy座標リスト
+    #@param xs particlesのx座標リスト
+    #@param vxs  particlesの向き(ベクトル)x方向のリスト
+    #@param vys particlesの向き(ベクトル)y方向のリスト
+    ## 
     def draw(self,ax,elems):
+
         xs = [p.pose[0] for p in self.particles]#パーティクルのスタート地点 全部同じ座標
+
+
         ys = [p.pose[1] for p in self.particles]
+       
+
         vxs = [math.cos(p.pose[2]) for p in self.particles]
+        
+       
+        
+
         vys = [math.sin(p.pose[2]) for p in self.particles]
-        elems.append(ax.quiver(xs,ys,vxs,vys,color="blue",alpha=0.5))
+        
+       
+        
 
-
+        elems.append(ax.quiver(xs,ys,vxs,vys,color="blue", alpha=0.5))
+#%%
+# %%
+#P116
+%matplotlib qt
+#%%
+def trial(motion_noise_stds):
+    time_interval = 0.1
+    world = World(30,time_interval)
+    initial_pose = np.array([0,0,0]).T
+    estimator = Mcl(initial_pose,10,motion_noise_stds)
+    circling = EstimationAgent(time_interval,0.2,10.0/180*math.pi,estimator)
+    r = Robot(initial_pose,sensor=None,agent=circling,color="red")
+    world.append(r)
+    world.draw()
+#%%
+trial({"nn":0.01,"no":0.02,"on":0.03,"oo":0.04})
 
 
 #%%
-# if __name__ == "main":
-world = World(30,0.1)
-m = Map()
-for ln in [(-4,2),(2,-3),(3,3)]:
-    m.append_landmark(Landmark(*ln))#*はタプルを要素ごとに分ける
-world.append(m)
-# #%%
-# initial_pose = np.array([2,2,math.pi/6]).T
-# estimator = Mcl(initial_pose,100)
-# circling = EstimationAgent(0.2,10.0/180*math.pi,estimator)
-# #%%
-# r = Robot(initial_pose,sensor=Camera(env_map=m),agent=circling)
-# # r = Robot(initial_pose, sensor=Camera(env_map=m,phantom_prob=0.5),agent=circling)
-# world.append(r)
+# def trial(motion_noise_stds):
+
+
 # # %%
-# world.draw()
+# trial({"nn":0.01,"no":0.02,"on":0.03,"oo":0.04})
 # %%
+time_interval = 0.1 ###mcl_confirmation6
+world = World(40, time_interval)
+
+initial_pose = np.array([0, 0, 0]).T
+estimator = Mcl(initial_pose, 100, motion_noise_stds={"nn":0.001, "no":0.001, "on":0.13, "oo":0.001}) #onを0.13に
+a = EstimationAgent(time_interval, 0.1, 0.0, estimator)
+r = Robot(initial_pose, sensor=None, agent=a, color="red" )
+world.append(r)
+
+world.draw()
+#%%
+time_interval = 0.1
+world = World(30,time_interval)
+
 initial_pose = np.array([0,0,0]).T
-estimator = Mcl(initial_pose,100,motion_noise_stds={"nn":0.01, "no":0.02,"on":0.03, "oo":0.04})
-a = EstimationAgent(0.1,0.2,10.0/180*math.pi,estimator)
-estimator.motion_update(0.2,10.0/180*math.pi,0.1)
-# %%
+estimator=Mcl(initial_pose,100,motion_noise_stds={"nn":0.01,"no":0.02,"on":0.03,"oo":0.04})
+circling = EstimationAgent(time_interval,0.2,10.0/180*math.pi,estimator)
+r = Robot(initial_pose,sensor=None,agent=circling,color="red")
+world.append(r)
+world.draw()
 
 # %%
+#p117

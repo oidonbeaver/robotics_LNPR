@@ -3,33 +3,100 @@
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classmcl_1_1_mcl_a60bb12b7fb3329a1d3b56cca0e4ae879}\label{classmcl_1_1_mcl_a60bb12b7fb3329a1d3b56cca0e4ae879}} 
-def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, init\+\_\+pose, num, motion\+\_\+noise\+\_\+stds)
-\item 
-\mbox{\Hypertarget{classmcl_1_1_mcl_a31f9c867397406d57e8b2fc50463c983}\label{classmcl_1_1_mcl_a31f9c867397406d57e8b2fc50463c983}} 
-def {\bfseries motion\+\_\+update} (self, nu, omega, time)
-\item 
-\mbox{\Hypertarget{classmcl_1_1_mcl_af863a8d7091e6ef18fb45dd6a79d5c7e}\label{classmcl_1_1_mcl_af863a8d7091e6ef18fb45dd6a79d5c7e}} 
-def {\bfseries draw} (self, ax, elems)
-\end{DoxyCompactItemize}
+def \mbox{\hyperlink{classmcl_1_1_mcl_a60bb12b7fb3329a1d3b56cca0e4ae879}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, init\+\_\+pose, num, motion\+\_\+noise\+\_\+stds)
+\begin{DoxyCompactList}\small\item\em num個のパーティクルをinit\+\_\+poseの位置で初期化 \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classmcl_1_1_mcl_a31f9c867397406d57e8b2fc50463c983}{motion\+\_\+update}} (self, nu, omega, time)
+\begin{DoxyCompactList}\small\item\em Mclの速度、回転速度にノイズを足して次の時刻の\+Mclの位置を作成 \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classmcl_1_1_mcl_af863a8d7091e6ef18fb45dd6a79d5c7e}{draw}} (self, ax, elems)
+\begin{DoxyCompactList}\small\item\em 画面にテキストを描き、描画のリスト(elems)にオブジェクトを追加する \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classmcl_1_1_mcl_a2656816eff7d523ef7177b6a5307d517}\label{classmcl_1_1_mcl_a2656816eff7d523ef7177b6a5307d517}} 
-{\bfseries particles}
+\mbox{\hyperlink{classmcl_1_1_mcl_a2656816eff7d523ef7177b6a5307d517}{particles}}
 \item 
-\mbox{\Hypertarget{classmcl_1_1_mcl_afb1d16e2eaaa9ad6cfaa195375e09bd2}\label{classmcl_1_1_mcl_afb1d16e2eaaa9ad6cfaa195375e09bd2}} 
-{\bfseries motion\+\_\+noise\+\_\+rate\+\_\+pdf}
+\mbox{\hyperlink{classmcl_1_1_mcl_afb1d16e2eaaa9ad6cfaa195375e09bd2}{motion\+\_\+noise\+\_\+rate\+\_\+pdf}}
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 
+\begin{DoxyParams}{Parameters}
+{\em self.\+particles} & num個のパーティクルを作成、更新していく \\
+\hline
+{\em self.\+motion\+\_\+noise\+\_\+rate\+\_\+pdf} & 2x2の確率密度関数 \\
+\hline
+\end{DoxyParams}
 
-Definition at line 38 of file mcl.\+py.
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmcl_1_1_mcl_a60bb12b7fb3329a1d3b56cca0e4ae879}\label{classmcl_1_1_mcl_a60bb12b7fb3329a1d3b56cca0e4ae879}} 
+\index{mcl.Mcl@{mcl.Mcl}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!mcl.Mcl@{mcl.Mcl}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def mcl.\+Mcl.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{init\+\_\+pose,  }\item[{}]{num,  }\item[{}]{motion\+\_\+noise\+\_\+stds }\end{DoxyParamCaption})}
+
+
+
+num個のパーティクルをinit\+\_\+poseの位置で初期化 
+
+
+\begin{DoxyParams}{Parameters}
+{\em motion\+\_\+noise\+\_\+sts} & 辞書型でnn,no,on,ooのばらつき(標準偏差)を入れる \\
+\hline
+{\em init\+\_\+pose} & np.\+array(\mbox{[}x,y,θ\mbox{]}).T \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmcl_1_1_mcl_af863a8d7091e6ef18fb45dd6a79d5c7e}\label{classmcl_1_1_mcl_af863a8d7091e6ef18fb45dd6a79d5c7e}} 
+\index{mcl.Mcl@{mcl.Mcl}!draw@{draw}}
+\index{draw@{draw}!mcl.Mcl@{mcl.Mcl}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily def mcl.\+Mcl.\+draw (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{ax,  }\item[{}]{elems }\end{DoxyParamCaption})}
+
+
+
+画面にテキストを描き、描画のリスト(elems)にオブジェクトを追加する 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ys} & particlesのy座標リスト \\
+\hline
+{\em xs} & particlesのx座標リスト \\
+\hline
+{\em vxs} & particlesの向き(ベクトル)x方向のリスト \\
+\hline
+{\em vys} & particlesの向き(ベクトル)y方向のリスト \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmcl_1_1_mcl_a31f9c867397406d57e8b2fc50463c983}\label{classmcl_1_1_mcl_a31f9c867397406d57e8b2fc50463c983}} 
+\index{mcl.Mcl@{mcl.Mcl}!motion\_update@{motion\_update}}
+\index{motion\_update@{motion\_update}!mcl.Mcl@{mcl.Mcl}}
+\doxysubsubsection{\texorpdfstring{motion\_update()}{motion\_update()}}
+{\footnotesize\ttfamily def mcl.\+Mcl.\+motion\+\_\+update (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{nu,  }\item[{}]{omega,  }\item[{}]{time }\end{DoxyParamCaption})}
+
+
+
+Mclの速度、回転速度にノイズを足して次の時刻の\+Mclの位置を作成 
+
+particle1つ１つに対して 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmcl_1_1_mcl_afb1d16e2eaaa9ad6cfaa195375e09bd2}\label{classmcl_1_1_mcl_afb1d16e2eaaa9ad6cfaa195375e09bd2}} 
+\index{mcl.Mcl@{mcl.Mcl}!motion\_noise\_rate\_pdf@{motion\_noise\_rate\_pdf}}
+\index{motion\_noise\_rate\_pdf@{motion\_noise\_rate\_pdf}!mcl.Mcl@{mcl.Mcl}}
+\doxysubsubsection{\texorpdfstring{motion\_noise\_rate\_pdf}{motion\_noise\_rate\_pdf}}
+{\footnotesize\ttfamily mcl.\+Mcl.\+motion\+\_\+noise\+\_\+rate\+\_\+pdf}
+
+\mbox{\Hypertarget{classmcl_1_1_mcl_a2656816eff7d523ef7177b6a5307d517}\label{classmcl_1_1_mcl_a2656816eff7d523ef7177b6a5307d517}} 
+\index{mcl.Mcl@{mcl.Mcl}!particles@{particles}}
+\index{particles@{particles}!mcl.Mcl@{mcl.Mcl}}
+\doxysubsubsection{\texorpdfstring{particles}{particles}}
+{\footnotesize\ttfamily mcl.\+Mcl.\+particles}
 
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-mcl.\+py\end{DoxyCompactItemize}
+\mbox{\hyperlink{mcl_8py}{mcl.\+py}}\end{DoxyCompactItemize}

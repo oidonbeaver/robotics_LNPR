@@ -61,7 +61,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>robot</b></li><li class="navelem"><a class="el" href="classrobot_1_1_robot.html">Robot</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacerobot.html">robot</a></li><li class="navelem"><a class="el" href="classrobot_1_1_robot.html">Robot</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -85,104 +85,549 @@ Inheritance diagram for robot.Robot:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2bf0dd2cecb96d71171c80c31cad3d0c"><td class="memItemLeft" align="right" valign="top"><a id="a2bf0dd2cecb96d71171c80c31cad3d0c"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>__init__</b> (self, pose, agent=None, sensor=None, color=&quot;black&quot;, noise_per_meter=5, noise_std=math.pi/60, bias_rate_stds=(0.1, 0.1), expected_stuck_time=1e100, expected_escape_time=1e-100, expected_kidnap_time=1e100, kidnap_range_x=(-5.0, 5.0), kidnap_range_y=(-5.0, 5.0))</td></tr>
+<tr class="memitem:a2bf0dd2cecb96d71171c80c31cad3d0c"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1_robot.html#a2bf0dd2cecb96d71171c80c31cad3d0c">__init__</a> (self, <a class="el" href="classrobot_1_1_robot.html#a6574eb8b0b7be4a8123288dec077fe33">pose</a>, <a class="el" href="classideal__robot_1_1_ideal_robot.html#a350361a33097b5b84f335eaf4dab432a">agent</a>=None, <a class="el" href="classideal__robot_1_1_ideal_robot.html#aa4a923c0ec519b3655b08e86c38502f2">sensor</a>=None, <a class="el" href="classideal__robot_1_1_ideal_robot.html#a2fb67a0e8767cdb8eed11fa3cbe71022">color</a>=&quot;black&quot;, noise_per_meter=5, noise_std=math.pi/60, bias_rate_stds=(0.1, 0.1), expected_stuck_time=1e100, expected_escape_time=1e-100, expected_kidnap_time=1e100, kidnap_range_x=(-5.0, 5.0), kidnap_range_y=(-5.0, 5.0))</td></tr>
 <tr class="separator:a2bf0dd2cecb96d71171c80c31cad3d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2478fed58b27b2640e26f74944ec7121"><td class="memItemLeft" align="right" valign="top"><a id="a2478fed58b27b2640e26f74944ec7121"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>noise</b> (self, pose, nu, omega, time_interval)</td></tr>
+<tr class="memitem:a2478fed58b27b2640e26f74944ec7121"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1_robot.html#a2478fed58b27b2640e26f74944ec7121">noise</a> (self, <a class="el" href="classrobot_1_1_robot.html#a6574eb8b0b7be4a8123288dec077fe33">pose</a>, nu, omega, time_interval)</td></tr>
 <tr class="separator:a2478fed58b27b2640e26f74944ec7121"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee5e5b162a4079fdbeb51cdc7edb921f"><td class="memItemLeft" align="right" valign="top"><a id="aee5e5b162a4079fdbeb51cdc7edb921f"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>bias</b> (self, nu, omega)</td></tr>
+<tr class="memitem:aee5e5b162a4079fdbeb51cdc7edb921f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1_robot.html#aee5e5b162a4079fdbeb51cdc7edb921f">bias</a> (self, nu, omega)</td></tr>
 <tr class="separator:aee5e5b162a4079fdbeb51cdc7edb921f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07cc10238a0801b06205746a0afef718"><td class="memItemLeft" align="right" valign="top"><a id="a07cc10238a0801b06205746a0afef718"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>stuck</b> (self, nu, omega, time_interval)</td></tr>
+<tr class="memitem:a07cc10238a0801b06205746a0afef718"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1_robot.html#a07cc10238a0801b06205746a0afef718">stuck</a> (self, nu, omega, time_interval)</td></tr>
 <tr class="separator:a07cc10238a0801b06205746a0afef718"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3c761635d5dc3d5c802f5d5ec2619ea"><td class="memItemLeft" align="right" valign="top"><a id="ab3c761635d5dc3d5c802f5d5ec2619ea"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>kidnap</b> (self, pose, time_interval)</td></tr>
+<tr class="memitem:ab3c761635d5dc3d5c802f5d5ec2619ea"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1_robot.html#ab3c761635d5dc3d5c802f5d5ec2619ea">kidnap</a> (self, <a class="el" href="classrobot_1_1_robot.html#a6574eb8b0b7be4a8123288dec077fe33">pose</a>, time_interval)</td></tr>
 <tr class="separator:ab3c761635d5dc3d5c802f5d5ec2619ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91942853e714b1812fa4278b380ee261"><td class="memItemLeft" align="right" valign="top"><a id="a91942853e714b1812fa4278b380ee261"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>one_step</b> (self, time_interval)</td></tr>
+<tr class="memitem:a91942853e714b1812fa4278b380ee261"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1_robot.html#a91942853e714b1812fa4278b380ee261">one_step</a> (self, time_interval)</td></tr>
 <tr class="separator:a91942853e714b1812fa4278b380ee261"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classideal__robot_1_1_ideal_robot"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classideal__robot_1_1_ideal_robot')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classideal__robot_1_1_ideal_robot.html">ideal_robot.IdealRobot</a></td></tr>
-<tr class="memitem:a3818789588a0fbf71021cbd5bdf68e0a inherit pub_methods_classideal__robot_1_1_ideal_robot"><td class="memItemLeft" align="right" valign="top"><a id="a3818789588a0fbf71021cbd5bdf68e0a"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>__init__</b> (self, pose, agent=None, sensor=None, color=&quot;black&quot;)</td></tr>
+<tr class="memitem:a3818789588a0fbf71021cbd5bdf68e0a inherit pub_methods_classideal__robot_1_1_ideal_robot"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classideal__robot_1_1_ideal_robot.html#a3818789588a0fbf71021cbd5bdf68e0a">__init__</a> (self, <a class="el" href="classideal__robot_1_1_ideal_robot.html#a8ad9ba042d053f645384fc7d1df96e1e">pose</a>, <a class="el" href="classideal__robot_1_1_ideal_robot.html#a350361a33097b5b84f335eaf4dab432a">agent</a>=None, <a class="el" href="classideal__robot_1_1_ideal_robot.html#aa4a923c0ec519b3655b08e86c38502f2">sensor</a>=None, <a class="el" href="classideal__robot_1_1_ideal_robot.html#a2fb67a0e8767cdb8eed11fa3cbe71022">color</a>=&quot;black&quot;)</td></tr>
 <tr class="separator:a3818789588a0fbf71021cbd5bdf68e0a inherit pub_methods_classideal__robot_1_1_ideal_robot"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0783dfb0a48caf4cbca2eed8465f88b inherit pub_methods_classideal__robot_1_1_ideal_robot"><td class="memItemLeft" align="right" valign="top"><a id="af0783dfb0a48caf4cbca2eed8465f88b"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>draw</b> (self, ax, elems)</td></tr>
+<tr class="memitem:af0783dfb0a48caf4cbca2eed8465f88b inherit pub_methods_classideal__robot_1_1_ideal_robot"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classideal__robot_1_1_ideal_robot.html#af0783dfb0a48caf4cbca2eed8465f88b">draw</a> (self, ax, elems)</td></tr>
 <tr class="separator:af0783dfb0a48caf4cbca2eed8465f88b inherit pub_methods_classideal__robot_1_1_ideal_robot"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affe3944e3cdcca041588e893ec8958ef inherit pub_methods_classideal__robot_1_1_ideal_robot"><td class="memItemLeft" align="right" valign="top"><a id="affe3944e3cdcca041588e893ec8958ef"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>state_transition</b> (cls, nu, omega, time, pose)</td></tr>
+<tr class="memitem:affe3944e3cdcca041588e893ec8958ef inherit pub_methods_classideal__robot_1_1_ideal_robot"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classideal__robot_1_1_ideal_robot.html#affe3944e3cdcca041588e893ec8958ef">state_transition</a> (cls, nu, omega, time, <a class="el" href="classideal__robot_1_1_ideal_robot.html#a8ad9ba042d053f645384fc7d1df96e1e">pose</a>)</td></tr>
 <tr class="separator:affe3944e3cdcca041588e893ec8958ef inherit pub_methods_classideal__robot_1_1_ideal_robot"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aea1dfea625e2d33b03e7f6fc7d73c3c4"><td class="memItemLeft" align="right" valign="top"><a id="aea1dfea625e2d33b03e7f6fc7d73c3c4"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>noise_pdf</b></td></tr>
+<tr class="memitem:aea1dfea625e2d33b03e7f6fc7d73c3c4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1_robot.html#aea1dfea625e2d33b03e7f6fc7d73c3c4">noise_pdf</a></td></tr>
 <tr class="separator:aea1dfea625e2d33b03e7f6fc7d73c3c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a733a5b4e4229f3a54617cb7a20b71df1"><td class="memItemLeft" align="right" valign="top"><a id="a733a5b4e4229f3a54617cb7a20b71df1"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>distance_until_noise</b></td></tr>
+<tr class="memitem:a733a5b4e4229f3a54617cb7a20b71df1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1_robot.html#a733a5b4e4229f3a54617cb7a20b71df1">distance_until_noise</a></td></tr>
 <tr class="separator:a733a5b4e4229f3a54617cb7a20b71df1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a918391119a8e2342ebd81acbd85f7e70"><td class="memItemLeft" align="right" valign="top"><a id="a918391119a8e2342ebd81acbd85f7e70"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>theta_noise</b></td></tr>
+<tr class="memitem:a918391119a8e2342ebd81acbd85f7e70"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1_robot.html#a918391119a8e2342ebd81acbd85f7e70">theta_noise</a></td></tr>
 <tr class="separator:a918391119a8e2342ebd81acbd85f7e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cc2c1874d56d2a662aa8095b5e5cd12"><td class="memItemLeft" align="right" valign="top"><a id="a6cc2c1874d56d2a662aa8095b5e5cd12"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>bias_rate_nu</b></td></tr>
+<tr class="memitem:a6cc2c1874d56d2a662aa8095b5e5cd12"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1_robot.html#a6cc2c1874d56d2a662aa8095b5e5cd12">bias_rate_nu</a></td></tr>
 <tr class="separator:a6cc2c1874d56d2a662aa8095b5e5cd12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8c489f59336f670348457b8d5937586"><td class="memItemLeft" align="right" valign="top"><a id="ac8c489f59336f670348457b8d5937586"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>bias_rate_omega</b></td></tr>
+<tr class="memitem:ac8c489f59336f670348457b8d5937586"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1_robot.html#ac8c489f59336f670348457b8d5937586">bias_rate_omega</a></td></tr>
 <tr class="separator:ac8c489f59336f670348457b8d5937586"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7ee9d549624d759b3654dc16dd185ff"><td class="memItemLeft" align="right" valign="top"><a id="ae7ee9d549624d759b3654dc16dd185ff"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>stuck_pdf</b></td></tr>
+<tr class="memitem:ae7ee9d549624d759b3654dc16dd185ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1_robot.html#ae7ee9d549624d759b3654dc16dd185ff">stuck_pdf</a></td></tr>
 <tr class="separator:ae7ee9d549624d759b3654dc16dd185ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6f9ae5c6f41a70a1b20ad5cf79cfe93"><td class="memItemLeft" align="right" valign="top"><a id="af6f9ae5c6f41a70a1b20ad5cf79cfe93"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>escape_pdf</b></td></tr>
+<tr class="memitem:af6f9ae5c6f41a70a1b20ad5cf79cfe93"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1_robot.html#af6f9ae5c6f41a70a1b20ad5cf79cfe93">escape_pdf</a></td></tr>
 <tr class="separator:af6f9ae5c6f41a70a1b20ad5cf79cfe93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd554f99eae90c9aa3afec4f399e8c14"><td class="memItemLeft" align="right" valign="top"><a id="acd554f99eae90c9aa3afec4f399e8c14"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>time_until_stuck</b></td></tr>
+<tr class="memitem:acd554f99eae90c9aa3afec4f399e8c14"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1_robot.html#acd554f99eae90c9aa3afec4f399e8c14">time_until_stuck</a></td></tr>
 <tr class="separator:acd554f99eae90c9aa3afec4f399e8c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf037478fe1ee4140e5b6fa7c2ccc9dc"><td class="memItemLeft" align="right" valign="top"><a id="acf037478fe1ee4140e5b6fa7c2ccc9dc"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>time_until_escape</b></td></tr>
+<tr class="memitem:acf037478fe1ee4140e5b6fa7c2ccc9dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1_robot.html#acf037478fe1ee4140e5b6fa7c2ccc9dc">time_until_escape</a></td></tr>
 <tr class="separator:acf037478fe1ee4140e5b6fa7c2ccc9dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c7f5bdbe797a421ba51eb0dc63ad456"><td class="memItemLeft" align="right" valign="top"><a id="a4c7f5bdbe797a421ba51eb0dc63ad456"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>is_stuck</b></td></tr>
+<tr class="memitem:a4c7f5bdbe797a421ba51eb0dc63ad456"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1_robot.html#a4c7f5bdbe797a421ba51eb0dc63ad456">is_stuck</a></td></tr>
 <tr class="separator:a4c7f5bdbe797a421ba51eb0dc63ad456"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf167b6d227bac8386ff7b24e12d98f8"><td class="memItemLeft" align="right" valign="top"><a id="abf167b6d227bac8386ff7b24e12d98f8"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>kidnap_pdf</b></td></tr>
+<tr class="memitem:abf167b6d227bac8386ff7b24e12d98f8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1_robot.html#abf167b6d227bac8386ff7b24e12d98f8">kidnap_pdf</a></td></tr>
 <tr class="separator:abf167b6d227bac8386ff7b24e12d98f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bfdc9f72b4b0e2418d5f19f35a3c968"><td class="memItemLeft" align="right" valign="top"><a id="a8bfdc9f72b4b0e2418d5f19f35a3c968"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>time_until_kidnap</b></td></tr>
+<tr class="memitem:a8bfdc9f72b4b0e2418d5f19f35a3c968"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1_robot.html#a8bfdc9f72b4b0e2418d5f19f35a3c968">time_until_kidnap</a></td></tr>
 <tr class="separator:a8bfdc9f72b4b0e2418d5f19f35a3c968"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a785232c9eb561f9ed0f48a2f3c02bc89"><td class="memItemLeft" align="right" valign="top"><a id="a785232c9eb561f9ed0f48a2f3c02bc89"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>kidnap_dist</b></td></tr>
+<tr class="memitem:a785232c9eb561f9ed0f48a2f3c02bc89"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1_robot.html#a785232c9eb561f9ed0f48a2f3c02bc89">kidnap_dist</a></td></tr>
 <tr class="separator:a785232c9eb561f9ed0f48a2f3c02bc89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6574eb8b0b7be4a8123288dec077fe33"><td class="memItemLeft" align="right" valign="top"><a id="a6574eb8b0b7be4a8123288dec077fe33"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>pose</b></td></tr>
+<tr class="memitem:a6574eb8b0b7be4a8123288dec077fe33"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1_robot.html#a6574eb8b0b7be4a8123288dec077fe33">pose</a></td></tr>
 <tr class="separator:a6574eb8b0b7be4a8123288dec077fe33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classideal__robot_1_1_ideal_robot"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classideal__robot_1_1_ideal_robot')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classideal__robot_1_1_ideal_robot.html">ideal_robot.IdealRobot</a></td></tr>
-<tr class="memitem:a8ad9ba042d053f645384fc7d1df96e1e inherit pub_attribs_classideal__robot_1_1_ideal_robot"><td class="memItemLeft" align="right" valign="top"><a id="a8ad9ba042d053f645384fc7d1df96e1e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>pose</b></td></tr>
+<tr class="memitem:a8ad9ba042d053f645384fc7d1df96e1e inherit pub_attribs_classideal__robot_1_1_ideal_robot"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classideal__robot_1_1_ideal_robot.html#a8ad9ba042d053f645384fc7d1df96e1e">pose</a></td></tr>
 <tr class="separator:a8ad9ba042d053f645384fc7d1df96e1e inherit pub_attribs_classideal__robot_1_1_ideal_robot"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51165a467e8e2b3ae9fe7b99daa82215 inherit pub_attribs_classideal__robot_1_1_ideal_robot"><td class="memItemLeft" align="right" valign="top"><a id="a51165a467e8e2b3ae9fe7b99daa82215"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>r</b></td></tr>
+<tr class="memitem:a51165a467e8e2b3ae9fe7b99daa82215 inherit pub_attribs_classideal__robot_1_1_ideal_robot"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classideal__robot_1_1_ideal_robot.html#a51165a467e8e2b3ae9fe7b99daa82215">r</a></td></tr>
 <tr class="separator:a51165a467e8e2b3ae9fe7b99daa82215 inherit pub_attribs_classideal__robot_1_1_ideal_robot"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fb67a0e8767cdb8eed11fa3cbe71022 inherit pub_attribs_classideal__robot_1_1_ideal_robot"><td class="memItemLeft" align="right" valign="top"><a id="a2fb67a0e8767cdb8eed11fa3cbe71022"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>color</b></td></tr>
+<tr class="memitem:a2fb67a0e8767cdb8eed11fa3cbe71022 inherit pub_attribs_classideal__robot_1_1_ideal_robot"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classideal__robot_1_1_ideal_robot.html#a2fb67a0e8767cdb8eed11fa3cbe71022">color</a></td></tr>
 <tr class="separator:a2fb67a0e8767cdb8eed11fa3cbe71022 inherit pub_attribs_classideal__robot_1_1_ideal_robot"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a350361a33097b5b84f335eaf4dab432a inherit pub_attribs_classideal__robot_1_1_ideal_robot"><td class="memItemLeft" align="right" valign="top"><a id="a350361a33097b5b84f335eaf4dab432a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>agent</b></td></tr>
+<tr class="memitem:a350361a33097b5b84f335eaf4dab432a inherit pub_attribs_classideal__robot_1_1_ideal_robot"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classideal__robot_1_1_ideal_robot.html#a350361a33097b5b84f335eaf4dab432a">agent</a></td></tr>
 <tr class="separator:a350361a33097b5b84f335eaf4dab432a inherit pub_attribs_classideal__robot_1_1_ideal_robot"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc890ffa8c95a3cb402f473801cfbf03 inherit pub_attribs_classideal__robot_1_1_ideal_robot"><td class="memItemLeft" align="right" valign="top"><a id="afc890ffa8c95a3cb402f473801cfbf03"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>poses</b></td></tr>
+<tr class="memitem:afc890ffa8c95a3cb402f473801cfbf03 inherit pub_attribs_classideal__robot_1_1_ideal_robot"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classideal__robot_1_1_ideal_robot.html#afc890ffa8c95a3cb402f473801cfbf03">poses</a></td></tr>
 <tr class="separator:afc890ffa8c95a3cb402f473801cfbf03 inherit pub_attribs_classideal__robot_1_1_ideal_robot"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4a923c0ec519b3655b08e86c38502f2 inherit pub_attribs_classideal__robot_1_1_ideal_robot"><td class="memItemLeft" align="right" valign="top"><a id="aa4a923c0ec519b3655b08e86c38502f2"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>sensor</b></td></tr>
+<tr class="memitem:aa4a923c0ec519b3655b08e86c38502f2 inherit pub_attribs_classideal__robot_1_1_ideal_robot"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classideal__robot_1_1_ideal_robot.html#aa4a923c0ec519b3655b08e86c38502f2">sensor</a></td></tr>
 <tr class="separator:aa4a923c0ec519b3655b08e86c38502f2 inherit pub_attribs_classideal__robot_1_1_ideal_robot"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="robot_8py_source.html#l00018">18</a> of file <a class="el" href="robot_8py_source.html">robot.py</a>.</p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="robot_8py_source.html">robot.py</a></li>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a2bf0dd2cecb96d71171c80c31cad3d0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bf0dd2cecb96d71171c80c31cad3d0c">&#9670;&nbsp;</a></span>__init__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def robot.Robot.__init__ </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>pose</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>agent</em> = <code>None</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>sensor</em> = <code>None</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>color</em> = <code>&quot;black&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>noise_per_meter</em> = <code>5</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>noise_std</em> = <code>math.pi/60</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>bias_rate_stds</em> = <code>(0.1,0.1)</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>expected_stuck_time</em> = <code>1e100</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>expected_escape_time</em> = <code>1e-100</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>expected_kidnap_time</em> = <code>1e100</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>kidnap_range_x</em> = <code>(-5.0,5.0)</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>kidnap_range_y</em> = <code>(-5.0,5.0)</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aee5e5b162a4079fdbeb51cdc7edb921f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee5e5b162a4079fdbeb51cdc7edb921f">&#9670;&nbsp;</a></span>bias()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def robot.Robot.bias </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>nu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>omega</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab3c761635d5dc3d5c802f5d5ec2619ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3c761635d5dc3d5c802f5d5ec2619ea">&#9670;&nbsp;</a></span>kidnap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def robot.Robot.kidnap </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>pose</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>time_interval</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2478fed58b27b2640e26f74944ec7121"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2478fed58b27b2640e26f74944ec7121">&#9670;&nbsp;</a></span>noise()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def robot.Robot.noise </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>pose</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>nu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>omega</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>time_interval</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a91942853e714b1812fa4278b380ee261"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91942853e714b1812fa4278b380ee261">&#9670;&nbsp;</a></span>one_step()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def robot.Robot.one_step </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>time_interval</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classideal__robot_1_1_ideal_robot.html#ad997ed0777ca894f97e4801d34fe5d73">ideal_robot.IdealRobot</a>.</p>
+
+</div>
+</div>
+<a id="a07cc10238a0801b06205746a0afef718"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07cc10238a0801b06205746a0afef718">&#9670;&nbsp;</a></span>stuck()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def robot.Robot.stuck </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>nu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>omega</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>time_interval</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a6cc2c1874d56d2a662aa8095b5e5cd12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cc2c1874d56d2a662aa8095b5e5cd12">&#9670;&nbsp;</a></span>bias_rate_nu</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">robot.Robot.bias_rate_nu</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac8c489f59336f670348457b8d5937586"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8c489f59336f670348457b8d5937586">&#9670;&nbsp;</a></span>bias_rate_omega</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">robot.Robot.bias_rate_omega</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a733a5b4e4229f3a54617cb7a20b71df1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a733a5b4e4229f3a54617cb7a20b71df1">&#9670;&nbsp;</a></span>distance_until_noise</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">robot.Robot.distance_until_noise</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af6f9ae5c6f41a70a1b20ad5cf79cfe93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6f9ae5c6f41a70a1b20ad5cf79cfe93">&#9670;&nbsp;</a></span>escape_pdf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">robot.Robot.escape_pdf</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4c7f5bdbe797a421ba51eb0dc63ad456"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c7f5bdbe797a421ba51eb0dc63ad456">&#9670;&nbsp;</a></span>is_stuck</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">robot.Robot.is_stuck</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a785232c9eb561f9ed0f48a2f3c02bc89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a785232c9eb561f9ed0f48a2f3c02bc89">&#9670;&nbsp;</a></span>kidnap_dist</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">robot.Robot.kidnap_dist</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abf167b6d227bac8386ff7b24e12d98f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf167b6d227bac8386ff7b24e12d98f8">&#9670;&nbsp;</a></span>kidnap_pdf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">robot.Robot.kidnap_pdf</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aea1dfea625e2d33b03e7f6fc7d73c3c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea1dfea625e2d33b03e7f6fc7d73c3c4">&#9670;&nbsp;</a></span>noise_pdf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">robot.Robot.noise_pdf</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6574eb8b0b7be4a8123288dec077fe33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6574eb8b0b7be4a8123288dec077fe33">&#9670;&nbsp;</a></span>pose</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">robot.Robot.pose</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae7ee9d549624d759b3654dc16dd185ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7ee9d549624d759b3654dc16dd185ff">&#9670;&nbsp;</a></span>stuck_pdf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">robot.Robot.stuck_pdf</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a918391119a8e2342ebd81acbd85f7e70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a918391119a8e2342ebd81acbd85f7e70">&#9670;&nbsp;</a></span>theta_noise</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">robot.Robot.theta_noise</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acf037478fe1ee4140e5b6fa7c2ccc9dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf037478fe1ee4140e5b6fa7c2ccc9dc">&#9670;&nbsp;</a></span>time_until_escape</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">robot.Robot.time_until_escape</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8bfdc9f72b4b0e2418d5f19f35a3c968"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bfdc9f72b4b0e2418d5f19f35a3c968">&#9670;&nbsp;</a></span>time_until_kidnap</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">robot.Robot.time_until_kidnap</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acd554f99eae90c9aa3afec4f399e8c14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd554f99eae90c9aa3afec4f399e8c14">&#9670;&nbsp;</a></span>time_until_stuck</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">robot.Robot.time_until_stuck</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="robot_8py.html">robot.py</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

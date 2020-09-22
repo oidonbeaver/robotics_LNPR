@@ -9,78 +9,184 @@ Inheritance diagram for robot.\+Robot\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classrobot_1_1_robot_a2bf0dd2cecb96d71171c80c31cad3d0c}\label{classrobot_1_1_robot_a2bf0dd2cecb96d71171c80c31cad3d0c}} 
-def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, pose, agent=None, sensor=None, color=\char`\"{}black\char`\"{}, noise\+\_\+per\+\_\+meter=5, noise\+\_\+std=math.\+pi/60, bias\+\_\+rate\+\_\+stds=(0.\+1, 0.\+1), expected\+\_\+stuck\+\_\+time=1e100, expected\+\_\+escape\+\_\+time=1e-\/100, expected\+\_\+kidnap\+\_\+time=1e100, kidnap\+\_\+range\+\_\+x=(-\/5.\+0, 5.\+0), kidnap\+\_\+range\+\_\+y=(-\/5.\+0, 5.\+0))
+def \mbox{\hyperlink{classrobot_1_1_robot_a2bf0dd2cecb96d71171c80c31cad3d0c}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classrobot_1_1_robot_a6574eb8b0b7be4a8123288dec077fe33}{pose}}, \mbox{\hyperlink{classideal__robot_1_1_ideal_robot_a350361a33097b5b84f335eaf4dab432a}{agent}}=None, \mbox{\hyperlink{classideal__robot_1_1_ideal_robot_aa4a923c0ec519b3655b08e86c38502f2}{sensor}}=None, \mbox{\hyperlink{classideal__robot_1_1_ideal_robot_a2fb67a0e8767cdb8eed11fa3cbe71022}{color}}=\char`\"{}black\char`\"{}, noise\+\_\+per\+\_\+meter=5, noise\+\_\+std=math.\+pi/60, bias\+\_\+rate\+\_\+stds=(0.\+1, 0.\+1), expected\+\_\+stuck\+\_\+time=1e100, expected\+\_\+escape\+\_\+time=1e-\/100, expected\+\_\+kidnap\+\_\+time=1e100, kidnap\+\_\+range\+\_\+x=(-\/5.\+0, 5.\+0), kidnap\+\_\+range\+\_\+y=(-\/5.\+0, 5.\+0))
 \item 
-\mbox{\Hypertarget{classrobot_1_1_robot_a2478fed58b27b2640e26f74944ec7121}\label{classrobot_1_1_robot_a2478fed58b27b2640e26f74944ec7121}} 
-def {\bfseries noise} (self, pose, nu, omega, time\+\_\+interval)
+def \mbox{\hyperlink{classrobot_1_1_robot_a2478fed58b27b2640e26f74944ec7121}{noise}} (self, \mbox{\hyperlink{classrobot_1_1_robot_a6574eb8b0b7be4a8123288dec077fe33}{pose}}, nu, omega, time\+\_\+interval)
 \item 
-\mbox{\Hypertarget{classrobot_1_1_robot_aee5e5b162a4079fdbeb51cdc7edb921f}\label{classrobot_1_1_robot_aee5e5b162a4079fdbeb51cdc7edb921f}} 
-def {\bfseries bias} (self, nu, omega)
+def \mbox{\hyperlink{classrobot_1_1_robot_aee5e5b162a4079fdbeb51cdc7edb921f}{bias}} (self, nu, omega)
 \item 
-\mbox{\Hypertarget{classrobot_1_1_robot_a07cc10238a0801b06205746a0afef718}\label{classrobot_1_1_robot_a07cc10238a0801b06205746a0afef718}} 
-def {\bfseries stuck} (self, nu, omega, time\+\_\+interval)
+def \mbox{\hyperlink{classrobot_1_1_robot_a07cc10238a0801b06205746a0afef718}{stuck}} (self, nu, omega, time\+\_\+interval)
 \item 
-\mbox{\Hypertarget{classrobot_1_1_robot_ab3c761635d5dc3d5c802f5d5ec2619ea}\label{classrobot_1_1_robot_ab3c761635d5dc3d5c802f5d5ec2619ea}} 
-def {\bfseries kidnap} (self, pose, time\+\_\+interval)
+def \mbox{\hyperlink{classrobot_1_1_robot_ab3c761635d5dc3d5c802f5d5ec2619ea}{kidnap}} (self, \mbox{\hyperlink{classrobot_1_1_robot_a6574eb8b0b7be4a8123288dec077fe33}{pose}}, time\+\_\+interval)
 \item 
-\mbox{\Hypertarget{classrobot_1_1_robot_a91942853e714b1812fa4278b380ee261}\label{classrobot_1_1_robot_a91942853e714b1812fa4278b380ee261}} 
-def {\bfseries one\+\_\+step} (self, time\+\_\+interval)
+def \mbox{\hyperlink{classrobot_1_1_robot_a91942853e714b1812fa4278b380ee261}{one\+\_\+step}} (self, time\+\_\+interval)
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classrobot_1_1_robot_aea1dfea625e2d33b03e7f6fc7d73c3c4}\label{classrobot_1_1_robot_aea1dfea625e2d33b03e7f6fc7d73c3c4}} 
-{\bfseries noise\+\_\+pdf}
+\mbox{\hyperlink{classrobot_1_1_robot_aea1dfea625e2d33b03e7f6fc7d73c3c4}{noise\+\_\+pdf}}
 \item 
-\mbox{\Hypertarget{classrobot_1_1_robot_a733a5b4e4229f3a54617cb7a20b71df1}\label{classrobot_1_1_robot_a733a5b4e4229f3a54617cb7a20b71df1}} 
-{\bfseries distance\+\_\+until\+\_\+noise}
+\mbox{\hyperlink{classrobot_1_1_robot_a733a5b4e4229f3a54617cb7a20b71df1}{distance\+\_\+until\+\_\+noise}}
 \item 
-\mbox{\Hypertarget{classrobot_1_1_robot_a918391119a8e2342ebd81acbd85f7e70}\label{classrobot_1_1_robot_a918391119a8e2342ebd81acbd85f7e70}} 
-{\bfseries theta\+\_\+noise}
+\mbox{\hyperlink{classrobot_1_1_robot_a918391119a8e2342ebd81acbd85f7e70}{theta\+\_\+noise}}
 \item 
-\mbox{\Hypertarget{classrobot_1_1_robot_a6cc2c1874d56d2a662aa8095b5e5cd12}\label{classrobot_1_1_robot_a6cc2c1874d56d2a662aa8095b5e5cd12}} 
-{\bfseries bias\+\_\+rate\+\_\+nu}
+\mbox{\hyperlink{classrobot_1_1_robot_a6cc2c1874d56d2a662aa8095b5e5cd12}{bias\+\_\+rate\+\_\+nu}}
 \item 
-\mbox{\Hypertarget{classrobot_1_1_robot_ac8c489f59336f670348457b8d5937586}\label{classrobot_1_1_robot_ac8c489f59336f670348457b8d5937586}} 
-{\bfseries bias\+\_\+rate\+\_\+omega}
+\mbox{\hyperlink{classrobot_1_1_robot_ac8c489f59336f670348457b8d5937586}{bias\+\_\+rate\+\_\+omega}}
 \item 
-\mbox{\Hypertarget{classrobot_1_1_robot_ae7ee9d549624d759b3654dc16dd185ff}\label{classrobot_1_1_robot_ae7ee9d549624d759b3654dc16dd185ff}} 
-{\bfseries stuck\+\_\+pdf}
+\mbox{\hyperlink{classrobot_1_1_robot_ae7ee9d549624d759b3654dc16dd185ff}{stuck\+\_\+pdf}}
 \item 
-\mbox{\Hypertarget{classrobot_1_1_robot_af6f9ae5c6f41a70a1b20ad5cf79cfe93}\label{classrobot_1_1_robot_af6f9ae5c6f41a70a1b20ad5cf79cfe93}} 
-{\bfseries escape\+\_\+pdf}
+\mbox{\hyperlink{classrobot_1_1_robot_af6f9ae5c6f41a70a1b20ad5cf79cfe93}{escape\+\_\+pdf}}
 \item 
-\mbox{\Hypertarget{classrobot_1_1_robot_acd554f99eae90c9aa3afec4f399e8c14}\label{classrobot_1_1_robot_acd554f99eae90c9aa3afec4f399e8c14}} 
-{\bfseries time\+\_\+until\+\_\+stuck}
+\mbox{\hyperlink{classrobot_1_1_robot_acd554f99eae90c9aa3afec4f399e8c14}{time\+\_\+until\+\_\+stuck}}
 \item 
-\mbox{\Hypertarget{classrobot_1_1_robot_acf037478fe1ee4140e5b6fa7c2ccc9dc}\label{classrobot_1_1_robot_acf037478fe1ee4140e5b6fa7c2ccc9dc}} 
-{\bfseries time\+\_\+until\+\_\+escape}
+\mbox{\hyperlink{classrobot_1_1_robot_acf037478fe1ee4140e5b6fa7c2ccc9dc}{time\+\_\+until\+\_\+escape}}
 \item 
-\mbox{\Hypertarget{classrobot_1_1_robot_a4c7f5bdbe797a421ba51eb0dc63ad456}\label{classrobot_1_1_robot_a4c7f5bdbe797a421ba51eb0dc63ad456}} 
-{\bfseries is\+\_\+stuck}
+\mbox{\hyperlink{classrobot_1_1_robot_a4c7f5bdbe797a421ba51eb0dc63ad456}{is\+\_\+stuck}}
 \item 
-\mbox{\Hypertarget{classrobot_1_1_robot_abf167b6d227bac8386ff7b24e12d98f8}\label{classrobot_1_1_robot_abf167b6d227bac8386ff7b24e12d98f8}} 
-{\bfseries kidnap\+\_\+pdf}
+\mbox{\hyperlink{classrobot_1_1_robot_abf167b6d227bac8386ff7b24e12d98f8}{kidnap\+\_\+pdf}}
 \item 
-\mbox{\Hypertarget{classrobot_1_1_robot_a8bfdc9f72b4b0e2418d5f19f35a3c968}\label{classrobot_1_1_robot_a8bfdc9f72b4b0e2418d5f19f35a3c968}} 
-{\bfseries time\+\_\+until\+\_\+kidnap}
+\mbox{\hyperlink{classrobot_1_1_robot_a8bfdc9f72b4b0e2418d5f19f35a3c968}{time\+\_\+until\+\_\+kidnap}}
 \item 
-\mbox{\Hypertarget{classrobot_1_1_robot_a785232c9eb561f9ed0f48a2f3c02bc89}\label{classrobot_1_1_robot_a785232c9eb561f9ed0f48a2f3c02bc89}} 
-{\bfseries kidnap\+\_\+dist}
+\mbox{\hyperlink{classrobot_1_1_robot_a785232c9eb561f9ed0f48a2f3c02bc89}{kidnap\+\_\+dist}}
 \item 
-\mbox{\Hypertarget{classrobot_1_1_robot_a6574eb8b0b7be4a8123288dec077fe33}\label{classrobot_1_1_robot_a6574eb8b0b7be4a8123288dec077fe33}} 
-{\bfseries pose}
+\mbox{\hyperlink{classrobot_1_1_robot_a6574eb8b0b7be4a8123288dec077fe33}{pose}}
 \end{DoxyCompactItemize}
 
 
-\doxysubsection{Detailed Description}
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrobot_1_1_robot_a2bf0dd2cecb96d71171c80c31cad3d0c}\label{classrobot_1_1_robot_a2bf0dd2cecb96d71171c80c31cad3d0c}} 
+\index{robot.Robot@{robot.Robot}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!robot.Robot@{robot.Robot}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def robot.\+Robot.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{pose,  }\item[{}]{agent = {\ttfamily None},  }\item[{}]{sensor = {\ttfamily None},  }\item[{}]{color = {\ttfamily \char`\"{}black\char`\"{}},  }\item[{}]{noise\+\_\+per\+\_\+meter = {\ttfamily 5},  }\item[{}]{noise\+\_\+std = {\ttfamily math.pi/60},  }\item[{}]{bias\+\_\+rate\+\_\+stds = {\ttfamily (0.1,0.1)},  }\item[{}]{expected\+\_\+stuck\+\_\+time = {\ttfamily 1e100},  }\item[{}]{expected\+\_\+escape\+\_\+time = {\ttfamily 1e-\/100},  }\item[{}]{expected\+\_\+kidnap\+\_\+time = {\ttfamily 1e100},  }\item[{}]{kidnap\+\_\+range\+\_\+x = {\ttfamily (-\/5.0,5.0)},  }\item[{}]{kidnap\+\_\+range\+\_\+y = {\ttfamily (-\/5.0,5.0)} }\end{DoxyParamCaption})}
 
 
-Definition at line 18 of file robot.\+py.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrobot_1_1_robot_aee5e5b162a4079fdbeb51cdc7edb921f}\label{classrobot_1_1_robot_aee5e5b162a4079fdbeb51cdc7edb921f}} 
+\index{robot.Robot@{robot.Robot}!bias@{bias}}
+\index{bias@{bias}!robot.Robot@{robot.Robot}}
+\doxysubsubsection{\texorpdfstring{bias()}{bias()}}
+{\footnotesize\ttfamily def robot.\+Robot.\+bias (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{nu,  }\item[{}]{omega }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrobot_1_1_robot_ab3c761635d5dc3d5c802f5d5ec2619ea}\label{classrobot_1_1_robot_ab3c761635d5dc3d5c802f5d5ec2619ea}} 
+\index{robot.Robot@{robot.Robot}!kidnap@{kidnap}}
+\index{kidnap@{kidnap}!robot.Robot@{robot.Robot}}
+\doxysubsubsection{\texorpdfstring{kidnap()}{kidnap()}}
+{\footnotesize\ttfamily def robot.\+Robot.\+kidnap (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{pose,  }\item[{}]{time\+\_\+interval }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrobot_1_1_robot_a2478fed58b27b2640e26f74944ec7121}\label{classrobot_1_1_robot_a2478fed58b27b2640e26f74944ec7121}} 
+\index{robot.Robot@{robot.Robot}!noise@{noise}}
+\index{noise@{noise}!robot.Robot@{robot.Robot}}
+\doxysubsubsection{\texorpdfstring{noise()}{noise()}}
+{\footnotesize\ttfamily def robot.\+Robot.\+noise (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{pose,  }\item[{}]{nu,  }\item[{}]{omega,  }\item[{}]{time\+\_\+interval }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrobot_1_1_robot_a91942853e714b1812fa4278b380ee261}\label{classrobot_1_1_robot_a91942853e714b1812fa4278b380ee261}} 
+\index{robot.Robot@{robot.Robot}!one\_step@{one\_step}}
+\index{one\_step@{one\_step}!robot.Robot@{robot.Robot}}
+\doxysubsubsection{\texorpdfstring{one\_step()}{one\_step()}}
+{\footnotesize\ttfamily def robot.\+Robot.\+one\+\_\+step (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{time\+\_\+interval }\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classideal__robot_1_1_ideal_robot_ad997ed0777ca894f97e4801d34fe5d73}{ideal\+\_\+robot.\+Ideal\+Robot}}.
+
+\mbox{\Hypertarget{classrobot_1_1_robot_a07cc10238a0801b06205746a0afef718}\label{classrobot_1_1_robot_a07cc10238a0801b06205746a0afef718}} 
+\index{robot.Robot@{robot.Robot}!stuck@{stuck}}
+\index{stuck@{stuck}!robot.Robot@{robot.Robot}}
+\doxysubsubsection{\texorpdfstring{stuck()}{stuck()}}
+{\footnotesize\ttfamily def robot.\+Robot.\+stuck (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{nu,  }\item[{}]{omega,  }\item[{}]{time\+\_\+interval }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classrobot_1_1_robot_a6cc2c1874d56d2a662aa8095b5e5cd12}\label{classrobot_1_1_robot_a6cc2c1874d56d2a662aa8095b5e5cd12}} 
+\index{robot.Robot@{robot.Robot}!bias\_rate\_nu@{bias\_rate\_nu}}
+\index{bias\_rate\_nu@{bias\_rate\_nu}!robot.Robot@{robot.Robot}}
+\doxysubsubsection{\texorpdfstring{bias\_rate\_nu}{bias\_rate\_nu}}
+{\footnotesize\ttfamily robot.\+Robot.\+bias\+\_\+rate\+\_\+nu}
+
+\mbox{\Hypertarget{classrobot_1_1_robot_ac8c489f59336f670348457b8d5937586}\label{classrobot_1_1_robot_ac8c489f59336f670348457b8d5937586}} 
+\index{robot.Robot@{robot.Robot}!bias\_rate\_omega@{bias\_rate\_omega}}
+\index{bias\_rate\_omega@{bias\_rate\_omega}!robot.Robot@{robot.Robot}}
+\doxysubsubsection{\texorpdfstring{bias\_rate\_omega}{bias\_rate\_omega}}
+{\footnotesize\ttfamily robot.\+Robot.\+bias\+\_\+rate\+\_\+omega}
+
+\mbox{\Hypertarget{classrobot_1_1_robot_a733a5b4e4229f3a54617cb7a20b71df1}\label{classrobot_1_1_robot_a733a5b4e4229f3a54617cb7a20b71df1}} 
+\index{robot.Robot@{robot.Robot}!distance\_until\_noise@{distance\_until\_noise}}
+\index{distance\_until\_noise@{distance\_until\_noise}!robot.Robot@{robot.Robot}}
+\doxysubsubsection{\texorpdfstring{distance\_until\_noise}{distance\_until\_noise}}
+{\footnotesize\ttfamily robot.\+Robot.\+distance\+\_\+until\+\_\+noise}
+
+\mbox{\Hypertarget{classrobot_1_1_robot_af6f9ae5c6f41a70a1b20ad5cf79cfe93}\label{classrobot_1_1_robot_af6f9ae5c6f41a70a1b20ad5cf79cfe93}} 
+\index{robot.Robot@{robot.Robot}!escape\_pdf@{escape\_pdf}}
+\index{escape\_pdf@{escape\_pdf}!robot.Robot@{robot.Robot}}
+\doxysubsubsection{\texorpdfstring{escape\_pdf}{escape\_pdf}}
+{\footnotesize\ttfamily robot.\+Robot.\+escape\+\_\+pdf}
+
+\mbox{\Hypertarget{classrobot_1_1_robot_a4c7f5bdbe797a421ba51eb0dc63ad456}\label{classrobot_1_1_robot_a4c7f5bdbe797a421ba51eb0dc63ad456}} 
+\index{robot.Robot@{robot.Robot}!is\_stuck@{is\_stuck}}
+\index{is\_stuck@{is\_stuck}!robot.Robot@{robot.Robot}}
+\doxysubsubsection{\texorpdfstring{is\_stuck}{is\_stuck}}
+{\footnotesize\ttfamily robot.\+Robot.\+is\+\_\+stuck}
+
+\mbox{\Hypertarget{classrobot_1_1_robot_a785232c9eb561f9ed0f48a2f3c02bc89}\label{classrobot_1_1_robot_a785232c9eb561f9ed0f48a2f3c02bc89}} 
+\index{robot.Robot@{robot.Robot}!kidnap\_dist@{kidnap\_dist}}
+\index{kidnap\_dist@{kidnap\_dist}!robot.Robot@{robot.Robot}}
+\doxysubsubsection{\texorpdfstring{kidnap\_dist}{kidnap\_dist}}
+{\footnotesize\ttfamily robot.\+Robot.\+kidnap\+\_\+dist}
+
+\mbox{\Hypertarget{classrobot_1_1_robot_abf167b6d227bac8386ff7b24e12d98f8}\label{classrobot_1_1_robot_abf167b6d227bac8386ff7b24e12d98f8}} 
+\index{robot.Robot@{robot.Robot}!kidnap\_pdf@{kidnap\_pdf}}
+\index{kidnap\_pdf@{kidnap\_pdf}!robot.Robot@{robot.Robot}}
+\doxysubsubsection{\texorpdfstring{kidnap\_pdf}{kidnap\_pdf}}
+{\footnotesize\ttfamily robot.\+Robot.\+kidnap\+\_\+pdf}
+
+\mbox{\Hypertarget{classrobot_1_1_robot_aea1dfea625e2d33b03e7f6fc7d73c3c4}\label{classrobot_1_1_robot_aea1dfea625e2d33b03e7f6fc7d73c3c4}} 
+\index{robot.Robot@{robot.Robot}!noise\_pdf@{noise\_pdf}}
+\index{noise\_pdf@{noise\_pdf}!robot.Robot@{robot.Robot}}
+\doxysubsubsection{\texorpdfstring{noise\_pdf}{noise\_pdf}}
+{\footnotesize\ttfamily robot.\+Robot.\+noise\+\_\+pdf}
+
+\mbox{\Hypertarget{classrobot_1_1_robot_a6574eb8b0b7be4a8123288dec077fe33}\label{classrobot_1_1_robot_a6574eb8b0b7be4a8123288dec077fe33}} 
+\index{robot.Robot@{robot.Robot}!pose@{pose}}
+\index{pose@{pose}!robot.Robot@{robot.Robot}}
+\doxysubsubsection{\texorpdfstring{pose}{pose}}
+{\footnotesize\ttfamily robot.\+Robot.\+pose}
+
+\mbox{\Hypertarget{classrobot_1_1_robot_ae7ee9d549624d759b3654dc16dd185ff}\label{classrobot_1_1_robot_ae7ee9d549624d759b3654dc16dd185ff}} 
+\index{robot.Robot@{robot.Robot}!stuck\_pdf@{stuck\_pdf}}
+\index{stuck\_pdf@{stuck\_pdf}!robot.Robot@{robot.Robot}}
+\doxysubsubsection{\texorpdfstring{stuck\_pdf}{stuck\_pdf}}
+{\footnotesize\ttfamily robot.\+Robot.\+stuck\+\_\+pdf}
+
+\mbox{\Hypertarget{classrobot_1_1_robot_a918391119a8e2342ebd81acbd85f7e70}\label{classrobot_1_1_robot_a918391119a8e2342ebd81acbd85f7e70}} 
+\index{robot.Robot@{robot.Robot}!theta\_noise@{theta\_noise}}
+\index{theta\_noise@{theta\_noise}!robot.Robot@{robot.Robot}}
+\doxysubsubsection{\texorpdfstring{theta\_noise}{theta\_noise}}
+{\footnotesize\ttfamily robot.\+Robot.\+theta\+\_\+noise}
+
+\mbox{\Hypertarget{classrobot_1_1_robot_acf037478fe1ee4140e5b6fa7c2ccc9dc}\label{classrobot_1_1_robot_acf037478fe1ee4140e5b6fa7c2ccc9dc}} 
+\index{robot.Robot@{robot.Robot}!time\_until\_escape@{time\_until\_escape}}
+\index{time\_until\_escape@{time\_until\_escape}!robot.Robot@{robot.Robot}}
+\doxysubsubsection{\texorpdfstring{time\_until\_escape}{time\_until\_escape}}
+{\footnotesize\ttfamily robot.\+Robot.\+time\+\_\+until\+\_\+escape}
+
+\mbox{\Hypertarget{classrobot_1_1_robot_a8bfdc9f72b4b0e2418d5f19f35a3c968}\label{classrobot_1_1_robot_a8bfdc9f72b4b0e2418d5f19f35a3c968}} 
+\index{robot.Robot@{robot.Robot}!time\_until\_kidnap@{time\_until\_kidnap}}
+\index{time\_until\_kidnap@{time\_until\_kidnap}!robot.Robot@{robot.Robot}}
+\doxysubsubsection{\texorpdfstring{time\_until\_kidnap}{time\_until\_kidnap}}
+{\footnotesize\ttfamily robot.\+Robot.\+time\+\_\+until\+\_\+kidnap}
+
+\mbox{\Hypertarget{classrobot_1_1_robot_acd554f99eae90c9aa3afec4f399e8c14}\label{classrobot_1_1_robot_acd554f99eae90c9aa3afec4f399e8c14}} 
+\index{robot.Robot@{robot.Robot}!time\_until\_stuck@{time\_until\_stuck}}
+\index{time\_until\_stuck@{time\_until\_stuck}!robot.Robot@{robot.Robot}}
+\doxysubsubsection{\texorpdfstring{time\_until\_stuck}{time\_until\_stuck}}
+{\footnotesize\ttfamily robot.\+Robot.\+time\+\_\+until\+\_\+stuck}
 
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-robot.\+py\end{DoxyCompactItemize}
+\mbox{\hyperlink{robot_8py}{robot.\+py}}\end{DoxyCompactItemize}

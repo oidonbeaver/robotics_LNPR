@@ -1,0 +1,33 @@
+\hypertarget{mcl_8py}{}\doxysection{mcl.\+py File Reference}
+\label{mcl_8py}\index{mcl.py@{mcl.py}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classmcl_1_1_estimation_agent}{mcl.\+Estimation\+Agent}}
+\begin{DoxyCompactList}\small\item\em \%\% \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classmcl_1_1_particle}{mcl.\+Particle}}
+\begin{DoxyCompactList}\small\item\em パーティクル \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classmcl_1_1_mcl}{mcl.\+Mcl}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacemcl}{mcl}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacemcl_a19706f2777f9c9381e21cde5b5dbf0c9}{mcl.\+world}} = World(30,0.\+1)
+\item 
+\mbox{\hyperlink{namespacemcl_a2f60e1dce8f3ce05d1d43acf686dbea7}{mcl.\+m}} = Map()
+\item 
+\mbox{\hyperlink{namespacemcl_a1fa56ef59dbd07afa749d4507878ee13}{mcl.\+initial\+\_\+pose}} = np.\+array(\mbox{[}0,0,0\mbox{]}).T
+\item 
+\mbox{\hyperlink{namespacemcl_ad7bba3778e57ccb8db6142b75aec63e6}{mcl.\+estimator}} = Mcl(initial\+\_\+pose,100,motion\+\_\+noise\+\_\+stds=\{\char`\"{}nn\char`\"{}\+:0.\+01,\char`\"{}no\char`\"{}\+:0.\+02,\char`\"{}on\char`\"{}\+:0.\+03,\char`\"{}oo\char`\"{}\+:0.\+04\})
+\item 
+\mbox{\hyperlink{namespacemcl_a51fb69dae701d0362348374b28d48245}{mcl.\+a}} = Estimation\+Agent(0.\+1,0.\+2,10.\+0/180$\ast$math.\+pi,estimator)
+\item 
+\mbox{\hyperlink{namespacemcl_a0c20f82b09a2d146fcc1eed124a89d8c}{mcl.\+circling}} = Estimation\+Agent(0.\+1,0.\+2,10.\+0/180$\ast$math.\+pi,estimator)
+\item 
+\mbox{\hyperlink{namespacemcl_ab9b359b480fa8859213b3ac635de7fd6}{mcl.\+r}} = Robot(initial\+\_\+pose,sensor=Camera(m),agent=circling)
+\end{DoxyCompactItemize}

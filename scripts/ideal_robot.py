@@ -72,11 +72,18 @@ class World:
 
 #%%
 class IdealRobot:
+    ##
+    #@param pose np.array([x,y,θ]).T
+    #@param agent  クラスAgent
+        
+    ##
     def __init__(self,pose,agent=None,sensor=None,color="black"):
         self.pose = pose
+        
         self.r = 0.2
         self.color= color
         self.agent = agent
+       
         self.poses = [pose]
         self.sensor = sensor
     
@@ -98,7 +105,12 @@ class IdealRobot:
         # elems = elems + ax.plot([e[0] for e in self.poses],[e[1] for e in self.poses], linewidth=0.5,color="black")
         # print(len(elems))
         # print(id(elems))
-    
+    ##
+    #@brief 状態変化
+    #@details 速度、角速度、時間、現在姿勢を入力し、変化後の姿勢を返す
+    #@returns 変化後の姿勢(x,y,θ)
+
+    ##
     @classmethod
     def state_transition(cls, nu,omega, time, pose):
         t0 = pose[2]
@@ -121,12 +133,23 @@ class IdealRobot:
 
 
 # %%
+
 class Agent:
+    ##
+    #@brief  ロボットに命令する移動速度と回転速度の初期化
+    #@param nu 速度
+    #@param omega 回転角
+    ##
     def __init__(self,nu,omega):
+        
         self.nu = nu
         self.omega = omega
     
+    ##
+    #@brief 最初に決めた速度と回転速度のままロボットを動かす命令を出す
+    ##
     def decision(self,observation=None):
+        
         return self.nu, self.omega
 #%%
 class Landmark:
@@ -152,9 +175,13 @@ class Map:
 
 #%%
 class IdealCamera:
+    ##
+    #@paeam map Mapクラス
+    ##
     def __init__(self,env_map,distance_range=(0.5,6.0),direction_range=(-math.pi/3,math.pi/3)):
     # def __init__(self,env_map,distance_range=(0.5,100.0),direction_range=(-math.pi,math.pi)):
         self.map = env_map
+        
         self.lastdata = []
         self.distance_range = distance_range
         self.direction_range = direction_range
@@ -164,9 +191,9 @@ class IdealCamera:
             return False
         return self.distance_range[0] <= polarpos[0] <= self.distance_range[1] \
             and self.direction_range[0] <= polarpos[1] <= self.direction_range[1]
-    
-    #観測データとデータIDが返り値のメソッド。本来は直接得られるが、シミュレーションなので真値から逆算している
-    #IdealRobot.one_step()で呼び出される
+    ##
+    #@details 観測データとデータIDが返り値のメソッド。本来は直接得られるが、シミュレーションなので真値から逆算している。IdealRobot.one_step()で呼び出される
+    ##
     def data(self,cam_pose):
         observed = []
         for lm in self.map.landmarks:
