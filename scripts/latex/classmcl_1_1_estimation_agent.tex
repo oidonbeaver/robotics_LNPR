@@ -2,7 +2,7 @@
 \label{classmcl_1_1_estimation_agent}\index{mcl.EstimationAgent@{mcl.EstimationAgent}}
 
 
-\%\%  
+Mclクラスの推定器,位置を推定して、描画画面に追加する  
 
 
 Inheritance diagram for mcl.\+Estimation\+Agent\+:\begin{figure}[H]
@@ -15,7 +15,9 @@ Inheritance diagram for mcl.\+Estimation\+Agent\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 def \mbox{\hyperlink{classmcl_1_1_estimation_agent_a41a4f83a058a1f99b43a5ac25a6a4fb3}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classmcl_1_1_estimation_agent_a0cb75356b01b6e3a12837ef2e264584b}{time\+\_\+interval}}, \mbox{\hyperlink{classideal__robot_1_1_agent_a112a00d4161c98928025c50f23c399a3}{nu}}, \mbox{\hyperlink{classideal__robot_1_1_agent_acafe315042ad6954e166a5b9ba15f509}{omega}}, \mbox{\hyperlink{classmcl_1_1_estimation_agent_aaac90e52ae1e02ed61959734bffa285a}{estimator}})
-\item 
+\begin{DoxyCompactList}\small\item\em ロボットに命令する移動速度と回転速度の初期化 \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classmcl_1_1_estimation_agent_a8a2eae2363ac1169f65862839925dc2d}{decision}} (self, observation=None)
+\begin{DoxyCompactList}\small\item\em Mclの動きを更新する \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmcl_1_1_estimation_agent_a55c9fe8bd321ce264927a33d9e415ed6}{draw}} (self, ax, elems)
 \begin{DoxyCompactList}\small\item\em Mclのdraw()を呼び出して描画とelemsへの追加を行う \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
@@ -24,11 +26,26 @@ def \mbox{\hyperlink{classmcl_1_1_estimation_agent_a55c9fe8bd321ce264927a33d9e41
 \mbox{\hyperlink{classmcl_1_1_estimation_agent_aaac90e52ae1e02ed61959734bffa285a}{estimator}}
 \item 
 \mbox{\hyperlink{classmcl_1_1_estimation_agent_a0cb75356b01b6e3a12837ef2e264584b}{time\+\_\+interval}}
+\item 
+\mbox{\hyperlink{classmcl_1_1_estimation_agent_a76c46a55f04a1af9b44ee8a1820bc10a}{prev\+\_\+nu}}
+\item 
+\mbox{\hyperlink{classmcl_1_1_estimation_agent_af3b1a3e0c89b7fd0e2fbe7ea59421001}{prev\+\_\+omega}}
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-\%\% 
+Mclクラスの推定器,位置を推定して、描画画面に追加する 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self.\+estimator} & M\+C\+Lクラスのオブジェクト \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 13 of file mcl.\+py.
+
+
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classmcl_1_1_estimation_agent_a41a4f83a058a1f99b43a5ac25a6a4fb3}\label{classmcl_1_1_estimation_agent_a41a4f83a058a1f99b43a5ac25a6a4fb3}} 
@@ -39,7 +56,36 @@ def \mbox{\hyperlink{classmcl_1_1_estimation_agent_a55c9fe8bd321ce264927a33d9e41
 
 
 
+ロボットに命令する移動速度と回転速度の初期化 
+
+ロボットに命令する移動速度と回転速度の初期化,親クラスのメソッドを継承 
+
+Definition at line 18 of file mcl.\+py.
+
+
+
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmcl_1_1_estimation_agent_a8a2eae2363ac1169f65862839925dc2d}\label{classmcl_1_1_estimation_agent_a8a2eae2363ac1169f65862839925dc2d}} 
+\index{mcl.EstimationAgent@{mcl.EstimationAgent}!decision@{decision}}
+\index{decision@{decision}!mcl.EstimationAgent@{mcl.EstimationAgent}}
+\doxysubsubsection{\texorpdfstring{decision()}{decision()}}
+{\footnotesize\ttfamily def mcl.\+Estimation\+Agent.\+decision (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{observation = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Mclの動きを更新する 
+
+(ロボットの代わりにパーティクルを動かす命令を出すイメージ) \begin{DoxyReturn}{Returns}
+新しい速度、角速度 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classideal__robot_1_1_agent_a8b363a66a3911abf6d31c214cc97c1c1}{ideal\+\_\+robot.\+Agent}}.
+
+
+
+Definition at line 30 of file mcl.\+py.
+
 \mbox{\Hypertarget{classmcl_1_1_estimation_agent_a55c9fe8bd321ce264927a33d9e415ed6}\label{classmcl_1_1_estimation_agent_a55c9fe8bd321ce264927a33d9e415ed6}} 
 \index{mcl.EstimationAgent@{mcl.EstimationAgent}!draw@{draw}}
 \index{draw@{draw}!mcl.EstimationAgent@{mcl.EstimationAgent}}
@@ -52,6 +98,10 @@ Mclのdraw()を呼び出して描画とelemsへの追加を行う
 
 
 
+Definition at line 39 of file mcl.\+py.
+
+
+
 \doxysubsection{Member Data Documentation}
 \mbox{\Hypertarget{classmcl_1_1_estimation_agent_aaac90e52ae1e02ed61959734bffa285a}\label{classmcl_1_1_estimation_agent_aaac90e52ae1e02ed61959734bffa285a}} 
 \index{mcl.EstimationAgent@{mcl.EstimationAgent}!estimator@{estimator}}
@@ -59,11 +109,39 @@ Mclのdraw()を呼び出して描画とelemsへの追加を行う
 \doxysubsubsection{\texorpdfstring{estimator}{estimator}}
 {\footnotesize\ttfamily mcl.\+Estimation\+Agent.\+estimator}
 
+
+
+Definition at line 20 of file mcl.\+py.
+
+\mbox{\Hypertarget{classmcl_1_1_estimation_agent_a76c46a55f04a1af9b44ee8a1820bc10a}\label{classmcl_1_1_estimation_agent_a76c46a55f04a1af9b44ee8a1820bc10a}} 
+\index{mcl.EstimationAgent@{mcl.EstimationAgent}!prev\_nu@{prev\_nu}}
+\index{prev\_nu@{prev\_nu}!mcl.EstimationAgent@{mcl.EstimationAgent}}
+\doxysubsubsection{\texorpdfstring{prev\_nu}{prev\_nu}}
+{\footnotesize\ttfamily mcl.\+Estimation\+Agent.\+prev\+\_\+nu}
+
+
+
+Definition at line 22 of file mcl.\+py.
+
+\mbox{\Hypertarget{classmcl_1_1_estimation_agent_af3b1a3e0c89b7fd0e2fbe7ea59421001}\label{classmcl_1_1_estimation_agent_af3b1a3e0c89b7fd0e2fbe7ea59421001}} 
+\index{mcl.EstimationAgent@{mcl.EstimationAgent}!prev\_omega@{prev\_omega}}
+\index{prev\_omega@{prev\_omega}!mcl.EstimationAgent@{mcl.EstimationAgent}}
+\doxysubsubsection{\texorpdfstring{prev\_omega}{prev\_omega}}
+{\footnotesize\ttfamily mcl.\+Estimation\+Agent.\+prev\+\_\+omega}
+
+
+
+Definition at line 23 of file mcl.\+py.
+
 \mbox{\Hypertarget{classmcl_1_1_estimation_agent_a0cb75356b01b6e3a12837ef2e264584b}\label{classmcl_1_1_estimation_agent_a0cb75356b01b6e3a12837ef2e264584b}} 
 \index{mcl.EstimationAgent@{mcl.EstimationAgent}!time\_interval@{time\_interval}}
 \index{time\_interval@{time\_interval}!mcl.EstimationAgent@{mcl.EstimationAgent}}
 \doxysubsubsection{\texorpdfstring{time\_interval}{time\_interval}}
 {\footnotesize\ttfamily mcl.\+Estimation\+Agent.\+time\+\_\+interval}
+
+
+
+Definition at line 21 of file mcl.\+py.
 
 
 

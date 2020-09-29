@@ -76,9 +76,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a60bb12b7fb3329a1d3b56cca0e4ae879"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmcl_1_1_mcl.html#a60bb12b7fb3329a1d3b56cca0e4ae879">__init__</a> (self, init_pose, num, motion_noise_stds)</td></tr>
-<tr class="memdesc:a60bb12b7fb3329a1d3b56cca0e4ae879"><td class="mdescLeft">&#160;</td><td class="mdescRight">num個のパーティクルをinit_poseの位置で初期化  <a href="classmcl_1_1_mcl.html#a60bb12b7fb3329a1d3b56cca0e4ae879">More...</a><br /></td></tr>
-<tr class="separator:a60bb12b7fb3329a1d3b56cca0e4ae879"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12145e0d80cc3139a04090241c7a587b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmcl_1_1_mcl.html#a12145e0d80cc3139a04090241c7a587b">__init__</a> (self, init_pose, num, motion_noise_stds={&quot;nn&quot;:0.19,&quot;no&quot;:0.001,&quot;on&quot;:0.13,&quot;oo&quot;:0.2 })</td></tr>
+<tr class="memdesc:a12145e0d80cc3139a04090241c7a587b"><td class="mdescLeft">&#160;</td><td class="mdescRight">num個のパーティクルをinit_poseの位置で初期化  <a href="classmcl_1_1_mcl.html#a12145e0d80cc3139a04090241c7a587b">More...</a><br /></td></tr>
+<tr class="separator:a12145e0d80cc3139a04090241c7a587b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31f9c867397406d57e8b2fc50463c983"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmcl_1_1_mcl.html#a31f9c867397406d57e8b2fc50463c983">motion_update</a> (self, nu, omega, time)</td></tr>
 <tr class="memdesc:a31f9c867397406d57e8b2fc50463c983"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mclの速度、回転速度にノイズを足して次の時刻のMclの位置を作成  <a href="classmcl_1_1_mcl.html#a31f9c867397406d57e8b2fc50463c983">More...</a><br /></td></tr>
 <tr class="separator:a31f9c867397406d57e8b2fc50463c983"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -101,9 +101,11 @@ Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="mcl_8py_source.html#l00074">74</a> of file <a class="el" href="mcl_8py_source.html">mcl.py</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a60bb12b7fb3329a1d3b56cca0e4ae879"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60bb12b7fb3329a1d3b56cca0e4ae879">&#9670;&nbsp;</a></span>__init__()</h2>
+<a id="a12145e0d80cc3139a04090241c7a587b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12145e0d80cc3139a04090241c7a587b">&#9670;&nbsp;</a></span>__init__()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -130,7 +132,8 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>motion_noise_stds</em>&#160;</td>
+          <td class="paramname"><em>motion_noise_stds</em> = <code>{&quot;nn&quot;:0.19,&quot;no&quot;:0.001,&quot;on&quot;:0.13,&quot;oo&quot;:0.2
+&#160;&#160;&#160;&#160;}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -143,11 +146,13 @@ Public Attributes</h2></td></tr>
 <p>num個のパーティクルをinit_poseの位置で初期化 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">motion_noise_sts</td><td>辞書型でnn,no,on,ooのばらつき(標準偏差)を入れる </td></tr>
     <tr><td class="paramname">init_pose</td><td>np.array([x,y,θ]).T </td></tr>
+    <tr><td class="paramname">motion_noise_sts</td><td>辞書型でnn,no,on,ooのばらつき(標準偏差)を入れる </td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="mcl_8py_source.html#l00080">80</a> of file <a class="el" href="mcl_8py_source.html">mcl.py</a>.</p>
 
 </div>
 </div>
@@ -195,6 +200,8 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="mcl_8py_source.html#l00104">104</a> of file <a class="el" href="mcl_8py_source.html">mcl.py</a>.</p>
+
 </div>
 </div>
 <a id="a31f9c867397406d57e8b2fc50463c983"></a>
@@ -236,7 +243,9 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Mclの速度、回転速度にノイズを足して次の時刻のMclの位置を作成 </p>
-<p>particle1つ１つに対して </p>
+<p>particle 1つ１つに対して行う </p>
+
+<p class="definition">Definition at line <a class="el" href="mcl_8py_source.html#l00092">92</a> of file <a class="el" href="mcl_8py_source.html">mcl.py</a>.</p>
 
 </div>
 </div>
@@ -253,6 +262,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="mcl_8py_source.html#l00085">85</a> of file <a class="el" href="mcl_8py_source.html">mcl.py</a>.</p>
+
 </div>
 </div>
 <a id="a2656816eff7d523ef7177b6a5307d517"></a>
@@ -267,10 +278,12 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="mcl_8py_source.html#l00082">82</a> of file <a class="el" href="mcl_8py_source.html">mcl.py</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="mcl_8py.html">mcl.py</a></li>
+<li><a class="el" href="mcl_8py_source.html">mcl.py</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

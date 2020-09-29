@@ -4,7 +4,7 @@
 \begin{DoxyCompactItemize}
 \item 
 class \mbox{\hyperlink{classmcl_1_1_estimation_agent}{Estimation\+Agent}}
-\begin{DoxyCompactList}\small\item\em \%\% \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Mclクラスの推定器,位置を推定して、描画画面に追加する \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classmcl_1_1_mcl}{Mcl}}
 \item 
 class \mbox{\hyperlink{classmcl_1_1_particle}{Particle}}
@@ -12,19 +12,21 @@ class \mbox{\hyperlink{classmcl_1_1_particle}{Particle}}
 \doxysubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{namespacemcl_a19706f2777f9c9381e21cde5b5dbf0c9}{world}} = \mbox{\hyperlink{classideal__robot_1_1_world}{World}}(30,0.\+1)
+float \mbox{\hyperlink{namespacemcl_ae60da0ab338b0429b95fdff2b2c8168a}{time\+\_\+interval}} = 0.\+1
+\item 
+\mbox{\hyperlink{namespacemcl_a19706f2777f9c9381e21cde5b5dbf0c9}{world}} = \mbox{\hyperlink{classideal__robot_1_1_world}{World}}(30, \mbox{\hyperlink{namespacemcl_ae60da0ab338b0429b95fdff2b2c8168a}{time\+\_\+interval}}, debug=False)
 \item 
 \mbox{\hyperlink{namespacemcl_a2f60e1dce8f3ce05d1d43acf686dbea7}{m}} = \mbox{\hyperlink{classideal__robot_1_1_map}{Map}}()
+\begin{DoxyCompactList}\small\item\em 地図を生成して3つランドマークを追加 \#\#\# \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacemcl_a1fa56ef59dbd07afa749d4507878ee13}{initial\+\_\+pose}} = np.\+array(\mbox{[}0, 0, 0\mbox{]}).T
+\begin{DoxyCompactList}\small\item\em ロボットを作る \#\#\# \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacemcl_ad7bba3778e57ccb8db6142b75aec63e6}{estimator}} = \mbox{\hyperlink{classmcl_1_1_mcl}{Mcl}}(\mbox{\hyperlink{namespacemcl_a1fa56ef59dbd07afa749d4507878ee13}{initial\+\_\+pose}}, 100)
 \item 
-\mbox{\hyperlink{namespacemcl_a1fa56ef59dbd07afa749d4507878ee13}{initial\+\_\+pose}} = np.\+array(\mbox{[}0,0,0\mbox{]}).T
+\mbox{\hyperlink{namespacemcl_a51fb69dae701d0362348374b28d48245}{a}} = \mbox{\hyperlink{classmcl_1_1_estimation_agent}{Estimation\+Agent}}(\mbox{\hyperlink{namespacemcl_ae60da0ab338b0429b95fdff2b2c8168a}{time\+\_\+interval}}, 0.\+2, 10.\+0/180$\ast$math.\+pi, \mbox{\hyperlink{namespacemcl_ad7bba3778e57ccb8db6142b75aec63e6}{estimator}})
 \item 
-\mbox{\hyperlink{namespacemcl_ad7bba3778e57ccb8db6142b75aec63e6}{estimator}} = \mbox{\hyperlink{classmcl_1_1_mcl}{Mcl}}(\mbox{\hyperlink{namespacemcl_a1fa56ef59dbd07afa749d4507878ee13}{initial\+\_\+pose}},100,motion\+\_\+noise\+\_\+stds=\{\char`\"{}nn\char`\"{}\+:0.\+01,\char`\"{}no\char`\"{}\+:0.\+02,\char`\"{}on\char`\"{}\+:0.\+03,\char`\"{}oo\char`\"{}\+:0.\+04\})
+\mbox{\hyperlink{namespacemcl_ab9b359b480fa8859213b3ac635de7fd6}{r}} = \mbox{\hyperlink{classrobot_1_1_robot}{Robot}}(\mbox{\hyperlink{namespacemcl_a1fa56ef59dbd07afa749d4507878ee13}{initial\+\_\+pose}}, sensor=\mbox{\hyperlink{classrobot_1_1_camera}{Camera}}(\mbox{\hyperlink{namespacemcl_a2f60e1dce8f3ce05d1d43acf686dbea7}{m}}), agent=\mbox{\hyperlink{namespacemcl_a51fb69dae701d0362348374b28d48245}{a}}, color=\char`\"{}red\char`\"{})
 \item 
-\mbox{\hyperlink{namespacemcl_a51fb69dae701d0362348374b28d48245}{a}} = \mbox{\hyperlink{classmcl_1_1_estimation_agent}{Estimation\+Agent}}(0.\+1,0.\+2,10.\+0/180$\ast$math.\+pi,\mbox{\hyperlink{namespacemcl_ad7bba3778e57ccb8db6142b75aec63e6}{estimator}})
-\item 
-\mbox{\hyperlink{namespacemcl_a0c20f82b09a2d146fcc1eed124a89d8c}{circling}} = \mbox{\hyperlink{classmcl_1_1_estimation_agent}{Estimation\+Agent}}(0.\+1,0.\+2,10.\+0/180$\ast$math.\+pi,\mbox{\hyperlink{namespacemcl_ad7bba3778e57ccb8db6142b75aec63e6}{estimator}})
-\item 
-\mbox{\hyperlink{namespacemcl_ab9b359b480fa8859213b3ac635de7fd6}{r}} = \mbox{\hyperlink{classrobot_1_1_robot}{Robot}}(\mbox{\hyperlink{namespacemcl_a1fa56ef59dbd07afa749d4507878ee13}{initial\+\_\+pose}},sensor=\mbox{\hyperlink{classrobot_1_1_camera}{Camera}}(\mbox{\hyperlink{namespacemcl_a2f60e1dce8f3ce05d1d43acf686dbea7}{m}}),agent=\mbox{\hyperlink{namespacemcl_a0c20f82b09a2d146fcc1eed124a89d8c}{circling}})
+\mbox{\hyperlink{namespacemcl_a0c20f82b09a2d146fcc1eed124a89d8c}{circling}} = \mbox{\hyperlink{classmcl_1_1_estimation_agent}{Estimation\+Agent}}(\mbox{\hyperlink{namespacemcl_ae60da0ab338b0429b95fdff2b2c8168a}{time\+\_\+interval}},0.\+2,10.\+0/180$\ast$math.\+pi,\mbox{\hyperlink{namespacemcl_ad7bba3778e57ccb8db6142b75aec63e6}{estimator}})
 \end{DoxyCompactItemize}
 
 
@@ -33,25 +35,45 @@ class \mbox{\hyperlink{classmcl_1_1_particle}{Particle}}
 \index{mcl@{mcl}!a@{a}}
 \index{a@{a}!mcl@{mcl}}
 \doxysubsubsection{\texorpdfstring{a}{a}}
-{\footnotesize\ttfamily mcl.\+a = \mbox{\hyperlink{classmcl_1_1_estimation_agent}{Estimation\+Agent}}(0.\+1,0.\+2,10.\+0/180$\ast$math.\+pi,\mbox{\hyperlink{namespacemcl_ad7bba3778e57ccb8db6142b75aec63e6}{estimator}})}
+{\footnotesize\ttfamily mcl.\+a = \mbox{\hyperlink{classmcl_1_1_estimation_agent}{Estimation\+Agent}}(\mbox{\hyperlink{namespacemcl_ae60da0ab338b0429b95fdff2b2c8168a}{time\+\_\+interval}}, 0.\+2, 10.\+0/180$\ast$math.\+pi, \mbox{\hyperlink{namespacemcl_ad7bba3778e57ccb8db6142b75aec63e6}{estimator}})}
+
+
+
+Definition at line 125 of file mcl.\+py.
 
 \mbox{\Hypertarget{namespacemcl_a0c20f82b09a2d146fcc1eed124a89d8c}\label{namespacemcl_a0c20f82b09a2d146fcc1eed124a89d8c}} 
 \index{mcl@{mcl}!circling@{circling}}
 \index{circling@{circling}!mcl@{mcl}}
 \doxysubsubsection{\texorpdfstring{circling}{circling}}
-{\footnotesize\ttfamily mcl.\+circling = \mbox{\hyperlink{classmcl_1_1_estimation_agent}{Estimation\+Agent}}(0.\+1,0.\+2,10.\+0/180$\ast$math.\+pi,\mbox{\hyperlink{namespacemcl_ad7bba3778e57ccb8db6142b75aec63e6}{estimator}})}
+{\footnotesize\ttfamily mcl.\+circling = \mbox{\hyperlink{classmcl_1_1_estimation_agent}{Estimation\+Agent}}(\mbox{\hyperlink{namespacemcl_ae60da0ab338b0429b95fdff2b2c8168a}{time\+\_\+interval}},0.\+2,10.\+0/180$\ast$math.\+pi,\mbox{\hyperlink{namespacemcl_ad7bba3778e57ccb8db6142b75aec63e6}{estimator}})}
+
+
+
+Definition at line 145 of file mcl.\+py.
 
 \mbox{\Hypertarget{namespacemcl_ad7bba3778e57ccb8db6142b75aec63e6}\label{namespacemcl_ad7bba3778e57ccb8db6142b75aec63e6}} 
 \index{mcl@{mcl}!estimator@{estimator}}
 \index{estimator@{estimator}!mcl@{mcl}}
 \doxysubsubsection{\texorpdfstring{estimator}{estimator}}
-{\footnotesize\ttfamily mcl.\+estimator = \mbox{\hyperlink{classmcl_1_1_mcl}{Mcl}}(\mbox{\hyperlink{namespacemcl_a1fa56ef59dbd07afa749d4507878ee13}{initial\+\_\+pose}},100,motion\+\_\+noise\+\_\+stds=\{\char`\"{}nn\char`\"{}\+:0.\+01,\char`\"{}no\char`\"{}\+:0.\+02,\char`\"{}on\char`\"{}\+:0.\+03,\char`\"{}oo\char`\"{}\+:0.\+04\})}
+{\footnotesize\ttfamily mcl.\+estimator = \mbox{\hyperlink{classmcl_1_1_mcl}{Mcl}}(\mbox{\hyperlink{namespacemcl_a1fa56ef59dbd07afa749d4507878ee13}{initial\+\_\+pose}}, 100)}
+
+
+
+Definition at line 124 of file mcl.\+py.
 
 \mbox{\Hypertarget{namespacemcl_a1fa56ef59dbd07afa749d4507878ee13}\label{namespacemcl_a1fa56ef59dbd07afa749d4507878ee13}} 
 \index{mcl@{mcl}!initial\_pose@{initial\_pose}}
 \index{initial\_pose@{initial\_pose}!mcl@{mcl}}
 \doxysubsubsection{\texorpdfstring{initial\_pose}{initial\_pose}}
-{\footnotesize\ttfamily mcl.\+initial\+\_\+pose = np.\+array(\mbox{[}0,0,0\mbox{]}).T}
+{\footnotesize\ttfamily mcl.\+initial\+\_\+pose = np.\+array(\mbox{[}0, 0, 0\mbox{]}).T}
+
+
+
+ロボットを作る \#\#\# 
+
+
+
+Definition at line 123 of file mcl.\+py.
 
 \mbox{\Hypertarget{namespacemcl_a2f60e1dce8f3ce05d1d43acf686dbea7}\label{namespacemcl_a2f60e1dce8f3ce05d1d43acf686dbea7}} 
 \index{mcl@{mcl}!m@{m}}
@@ -59,15 +81,41 @@ class \mbox{\hyperlink{classmcl_1_1_particle}{Particle}}
 \doxysubsubsection{\texorpdfstring{m}{m}}
 {\footnotesize\ttfamily mcl.\+m = \mbox{\hyperlink{classideal__robot_1_1_map}{Map}}()}
 
+
+
+地図を生成して3つランドマークを追加 \#\#\# 
+
+
+
+Definition at line 118 of file mcl.\+py.
+
 \mbox{\Hypertarget{namespacemcl_ab9b359b480fa8859213b3ac635de7fd6}\label{namespacemcl_ab9b359b480fa8859213b3ac635de7fd6}} 
 \index{mcl@{mcl}!r@{r}}
 \index{r@{r}!mcl@{mcl}}
 \doxysubsubsection{\texorpdfstring{r}{r}}
-{\footnotesize\ttfamily mcl.\+r = \mbox{\hyperlink{classrobot_1_1_robot}{Robot}}(\mbox{\hyperlink{namespacemcl_a1fa56ef59dbd07afa749d4507878ee13}{initial\+\_\+pose}},sensor=\mbox{\hyperlink{classrobot_1_1_camera}{Camera}}(\mbox{\hyperlink{namespacemcl_a2f60e1dce8f3ce05d1d43acf686dbea7}{m}}),agent=\mbox{\hyperlink{namespacemcl_a0c20f82b09a2d146fcc1eed124a89d8c}{circling}})}
+{\footnotesize\ttfamily mcl.\+r = \mbox{\hyperlink{classrobot_1_1_robot}{Robot}}(\mbox{\hyperlink{namespacemcl_a1fa56ef59dbd07afa749d4507878ee13}{initial\+\_\+pose}}, sensor=\mbox{\hyperlink{classrobot_1_1_camera}{Camera}}(\mbox{\hyperlink{namespacemcl_a2f60e1dce8f3ce05d1d43acf686dbea7}{m}}), agent=\mbox{\hyperlink{namespacemcl_a51fb69dae701d0362348374b28d48245}{a}}, color=\char`\"{}red\char`\"{})}
+
+
+
+Definition at line 126 of file mcl.\+py.
+
+\mbox{\Hypertarget{namespacemcl_ae60da0ab338b0429b95fdff2b2c8168a}\label{namespacemcl_ae60da0ab338b0429b95fdff2b2c8168a}} 
+\index{mcl@{mcl}!time\_interval@{time\_interval}}
+\index{time\_interval@{time\_interval}!mcl@{mcl}}
+\doxysubsubsection{\texorpdfstring{time\_interval}{time\_interval}}
+{\footnotesize\ttfamily float mcl.\+time\+\_\+interval = 0.\+1}
+
+
+
+Definition at line 114 of file mcl.\+py.
 
 \mbox{\Hypertarget{namespacemcl_a19706f2777f9c9381e21cde5b5dbf0c9}\label{namespacemcl_a19706f2777f9c9381e21cde5b5dbf0c9}} 
 \index{mcl@{mcl}!world@{world}}
 \index{world@{world}!mcl@{mcl}}
 \doxysubsubsection{\texorpdfstring{world}{world}}
-{\footnotesize\ttfamily mcl.\+world = \mbox{\hyperlink{classideal__robot_1_1_world}{World}}(30,0.\+1)}
+{\footnotesize\ttfamily mcl.\+world = \mbox{\hyperlink{classideal__robot_1_1_world}{World}}(30, \mbox{\hyperlink{namespacemcl_ae60da0ab338b0429b95fdff2b2c8168a}{time\+\_\+interval}}, debug=False)}
+
+
+
+Definition at line 115 of file mcl.\+py.
 

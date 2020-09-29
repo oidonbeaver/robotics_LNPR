@@ -61,10 +61,135 @@ $(function() {
 
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">mcl___ Namespace Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmcl_______1_1_estimation_agent.html">EstimationAgent</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmcl_______1_1_mcl.html">Mcl</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmcl_______1_1_particle.html">Particle</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a09f94130ab8802affe48202f5fff2efb"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemcl______.html#a09f94130ab8802affe48202f5fff2efb">time_interval</a> = 0.1</td></tr>
+<tr class="separator:a09f94130ab8802affe48202f5fff2efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1d2dabef0af12aaf7e8b0f53d8842f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemcl______.html#ad1d2dabef0af12aaf7e8b0f53d8842f9">world</a> = <a class="el" href="classideal__robot_1_1_world.html">World</a>(40, <a class="el" href="namespacemcl______.html#a09f94130ab8802affe48202f5fff2efb">time_interval</a>)</td></tr>
+<tr class="separator:ad1d2dabef0af12aaf7e8b0f53d8842f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4a3b0ba257ffb10fd5963fb3f121e73"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemcl______.html#ac4a3b0ba257ffb10fd5963fb3f121e73">initial_pose</a> = np.array([0, 0, 0]).T</td></tr>
+<tr class="separator:ac4a3b0ba257ffb10fd5963fb3f121e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e27256fffc851e986b399611ab0a02f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemcl______.html#a0e27256fffc851e986b399611ab0a02f">estimator</a> = <a class="el" href="classmcl_______1_1_mcl.html">Mcl</a>(<a class="el" href="namespacemcl______.html#ac4a3b0ba257ffb10fd5963fb3f121e73">initial_pose</a>, 100, motion_noise_stds={&quot;nn&quot;:0.001, &quot;no&quot;:0.001, &quot;on&quot;:0.13, &quot;oo&quot;:0.001})</td></tr>
+<tr class="separator:a0e27256fffc851e986b399611ab0a02f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56c908249c1fa249c31b599ae15f8430"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemcl______.html#a56c908249c1fa249c31b599ae15f8430">a</a> = <a class="el" href="classmcl_______1_1_estimation_agent.html">EstimationAgent</a>(<a class="el" href="namespacemcl______.html#a09f94130ab8802affe48202f5fff2efb">time_interval</a>, 0.1, 10/180*math.pi, <a class="el" href="namespacemcl______.html#a0e27256fffc851e986b399611ab0a02f">estimator</a>)</td></tr>
+<tr class="separator:a56c908249c1fa249c31b599ae15f8430"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c726414aec42714705bb2ed050195e9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemcl______.html#a5c726414aec42714705bb2ed050195e9">r</a> = <a class="el" href="classrobot_1_1_robot.html">Robot</a>(<a class="el" href="namespacemcl______.html#ac4a3b0ba257ffb10fd5963fb3f121e73">initial_pose</a>, sensor=None, agent=<a class="el" href="namespacemcl______.html#a56c908249c1fa249c31b599ae15f8430">a</a>, color=&quot;red&quot; )</td></tr>
+<tr class="separator:a5c726414aec42714705bb2ed050195e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a56c908249c1fa249c31b599ae15f8430"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56c908249c1fa249c31b599ae15f8430">&#9670;&nbsp;</a></span>a</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mcl___.a = <a class="el" href="classmcl_______1_1_estimation_agent.html">EstimationAgent</a>(<a class="el" href="namespacemcl______.html#a09f94130ab8802affe48202f5fff2efb">time_interval</a>, 0.1, 10/180*math.pi, <a class="el" href="namespacemcl______.html#a0e27256fffc851e986b399611ab0a02f">estimator</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mcl_______8py_source.html#l00157">157</a> of file <a class="el" href="mcl_______8py_source.html">mcl___.py</a>.</p>
+
+</div>
+</div>
+<a id="a0e27256fffc851e986b399611ab0a02f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e27256fffc851e986b399611ab0a02f">&#9670;&nbsp;</a></span>estimator</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mcl___.estimator = <a class="el" href="classmcl_______1_1_mcl.html">Mcl</a>(<a class="el" href="namespacemcl______.html#ac4a3b0ba257ffb10fd5963fb3f121e73">initial_pose</a>, 100, motion_noise_stds={&quot;nn&quot;:0.001, &quot;no&quot;:0.001, &quot;on&quot;:0.13, &quot;oo&quot;:0.001})</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mcl_______8py_source.html#l00156">156</a> of file <a class="el" href="mcl_______8py_source.html">mcl___.py</a>.</p>
+
+</div>
+</div>
+<a id="ac4a3b0ba257ffb10fd5963fb3f121e73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4a3b0ba257ffb10fd5963fb3f121e73">&#9670;&nbsp;</a></span>initial_pose</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mcl___.initial_pose = np.array([0, 0, 0]).T</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mcl_______8py_source.html#l00155">155</a> of file <a class="el" href="mcl_______8py_source.html">mcl___.py</a>.</p>
+
+</div>
+</div>
+<a id="a5c726414aec42714705bb2ed050195e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c726414aec42714705bb2ed050195e9">&#9670;&nbsp;</a></span>r</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mcl___.r = <a class="el" href="classrobot_1_1_robot.html">Robot</a>(<a class="el" href="namespacemcl______.html#ac4a3b0ba257ffb10fd5963fb3f121e73">initial_pose</a>, sensor=None, agent=<a class="el" href="namespacemcl______.html#a56c908249c1fa249c31b599ae15f8430">a</a>, color=&quot;red&quot; )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mcl_______8py_source.html#l00158">158</a> of file <a class="el" href="mcl_______8py_source.html">mcl___.py</a>.</p>
+
+</div>
+</div>
+<a id="a09f94130ab8802affe48202f5fff2efb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09f94130ab8802affe48202f5fff2efb">&#9670;&nbsp;</a></span>time_interval</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float mcl___.time_interval = 0.1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mcl_______8py_source.html#l00152">152</a> of file <a class="el" href="mcl_______8py_source.html">mcl___.py</a>.</p>
+
+</div>
+</div>
+<a id="ad1d2dabef0af12aaf7e8b0f53d8842f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1d2dabef0af12aaf7e8b0f53d8842f9">&#9670;&nbsp;</a></span>world</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mcl___.world = <a class="el" href="classideal__robot_1_1_world.html">World</a>(40, <a class="el" href="namespacemcl______.html#a09f94130ab8802affe48202f5fff2efb">time_interval</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mcl_______8py_source.html#l00153">153</a> of file <a class="el" href="mcl_______8py_source.html">mcl___.py</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

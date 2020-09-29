@@ -74,7 +74,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>%%  
+<p>Mclクラスの推定器,位置を推定して、描画画面に追加する  
  <a href="classmcl_1_1_estimation_agent.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for mcl.EstimationAgent:</div>
@@ -89,7 +89,11 @@ Inheritance diagram for mcl.EstimationAgent:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a41a4f83a058a1f99b43a5ac25a6a4fb3"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmcl_1_1_estimation_agent.html#a41a4f83a058a1f99b43a5ac25a6a4fb3">__init__</a> (self, <a class="el" href="classmcl_1_1_estimation_agent.html#a0cb75356b01b6e3a12837ef2e264584b">time_interval</a>, <a class="el" href="classideal__robot_1_1_agent.html#a112a00d4161c98928025c50f23c399a3">nu</a>, <a class="el" href="classideal__robot_1_1_agent.html#acafe315042ad6954e166a5b9ba15f509">omega</a>, <a class="el" href="classmcl_1_1_estimation_agent.html#aaac90e52ae1e02ed61959734bffa285a">estimator</a>)</td></tr>
+<tr class="memdesc:a41a4f83a058a1f99b43a5ac25a6a4fb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">ロボットに命令する移動速度と回転速度の初期化  <a href="classmcl_1_1_estimation_agent.html#a41a4f83a058a1f99b43a5ac25a6a4fb3">More...</a><br /></td></tr>
 <tr class="separator:a41a4f83a058a1f99b43a5ac25a6a4fb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a2eae2363ac1169f65862839925dc2d"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmcl_1_1_estimation_agent.html#a8a2eae2363ac1169f65862839925dc2d">decision</a> (self, observation=None)</td></tr>
+<tr class="memdesc:a8a2eae2363ac1169f65862839925dc2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mclの動きを更新する  <a href="classmcl_1_1_estimation_agent.html#a8a2eae2363ac1169f65862839925dc2d">More...</a><br /></td></tr>
+<tr class="separator:a8a2eae2363ac1169f65862839925dc2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55c9fe8bd321ce264927a33d9e415ed6"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmcl_1_1_estimation_agent.html#a55c9fe8bd321ce264927a33d9e415ed6">draw</a> (self, ax, elems)</td></tr>
 <tr class="memdesc:a55c9fe8bd321ce264927a33d9e415ed6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mclのdraw()を呼び出して描画とelemsへの追加を行う  <a href="classmcl_1_1_estimation_agent.html#a55c9fe8bd321ce264927a33d9e415ed6">More...</a><br /></td></tr>
 <tr class="separator:a55c9fe8bd321ce264927a33d9e415ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -97,9 +101,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab7d66052a13d1cdddee96a74003523c0 inherit pub_methods_classideal__robot_1_1_agent"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classideal__robot_1_1_agent.html#ab7d66052a13d1cdddee96a74003523c0">__init__</a> (self, <a class="el" href="classideal__robot_1_1_agent.html#a112a00d4161c98928025c50f23c399a3">nu</a>, <a class="el" href="classideal__robot_1_1_agent.html#acafe315042ad6954e166a5b9ba15f509">omega</a>)</td></tr>
 <tr class="memdesc:ab7d66052a13d1cdddee96a74003523c0 inherit pub_methods_classideal__robot_1_1_agent"><td class="mdescLeft">&#160;</td><td class="mdescRight">ロボットに命令する移動速度と回転速度の初期化  <a href="classideal__robot_1_1_agent.html#ab7d66052a13d1cdddee96a74003523c0">More...</a><br /></td></tr>
 <tr class="separator:ab7d66052a13d1cdddee96a74003523c0 inherit pub_methods_classideal__robot_1_1_agent"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b363a66a3911abf6d31c214cc97c1c1 inherit pub_methods_classideal__robot_1_1_agent"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classideal__robot_1_1_agent.html#a8b363a66a3911abf6d31c214cc97c1c1">decision</a> (self, observation=None)</td></tr>
-<tr class="memdesc:a8b363a66a3911abf6d31c214cc97c1c1 inherit pub_methods_classideal__robot_1_1_agent"><td class="mdescLeft">&#160;</td><td class="mdescRight">最初に決めた速度と回転速度のままロボットを動かす命令を出す  <a href="classideal__robot_1_1_agent.html#a8b363a66a3911abf6d31c214cc97c1c1">More...</a><br /></td></tr>
-<tr class="separator:a8b363a66a3911abf6d31c214cc97c1c1 inherit pub_methods_classideal__robot_1_1_agent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -107,6 +108,10 @@ Public Attributes</h2></td></tr>
 <tr class="separator:aaac90e52ae1e02ed61959734bffa285a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cb75356b01b6e3a12837ef2e264584b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmcl_1_1_estimation_agent.html#a0cb75356b01b6e3a12837ef2e264584b">time_interval</a></td></tr>
 <tr class="separator:a0cb75356b01b6e3a12837ef2e264584b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76c46a55f04a1af9b44ee8a1820bc10a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmcl_1_1_estimation_agent.html#a76c46a55f04a1af9b44ee8a1820bc10a">prev_nu</a></td></tr>
+<tr class="separator:a76c46a55f04a1af9b44ee8a1820bc10a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3b1a3e0c89b7fd0e2fbe7ea59421001"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmcl_1_1_estimation_agent.html#af3b1a3e0c89b7fd0e2fbe7ea59421001">prev_omega</a></td></tr>
+<tr class="separator:af3b1a3e0c89b7fd0e2fbe7ea59421001"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classideal__robot_1_1_agent"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classideal__robot_1_1_agent')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classideal__robot_1_1_agent.html">ideal_robot.Agent</a></td></tr>
 <tr class="memitem:a112a00d4161c98928025c50f23c399a3 inherit pub_attribs_classideal__robot_1_1_agent"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classideal__robot_1_1_agent.html#a112a00d4161c98928025c50f23c399a3">nu</a></td></tr>
 <tr class="separator:a112a00d4161c98928025c50f23c399a3 inherit pub_attribs_classideal__robot_1_1_agent"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -114,7 +119,15 @@ Public Attributes</h2></td></tr>
 <tr class="separator:acafe315042ad6954e166a5b9ba15f509 inherit pub_attribs_classideal__robot_1_1_agent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>%% </p>
+<div class="textblock"><p>Mclクラスの推定器,位置を推定して、描画画面に追加する </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">self.estimator</td><td>MCLクラスのオブジェクト </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="mcl_8py_source.html#l00013">13</a> of file <a class="el" href="mcl_8py_source.html">mcl.py</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a41a4f83a058a1f99b43a5ac25a6a4fb3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a41a4f83a058a1f99b43a5ac25a6a4fb3">&#9670;&nbsp;</a></span>__init__()</h2>
@@ -160,9 +173,49 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>ロボットに命令する移動速度と回転速度の初期化 </p>
+<p>ロボットに命令する移動速度と回転速度の初期化,親クラスのメソッドを継承 </p>
+
+<p class="definition">Definition at line <a class="el" href="mcl_8py_source.html#l00018">18</a> of file <a class="el" href="mcl_8py_source.html">mcl.py</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a8a2eae2363ac1169f65862839925dc2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a2eae2363ac1169f65862839925dc2d">&#9670;&nbsp;</a></span>decision()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def mcl.EstimationAgent.decision </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>observation</em> = <code>None</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mclの動きを更新する </p>
+<p>(ロボットの代わりにパーティクルを動かす命令を出すイメージ) </p><dl class="section return"><dt>Returns</dt><dd>新しい速度、角速度 </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classideal__robot_1_1_agent.html#a8b363a66a3911abf6d31c214cc97c1c1">ideal_robot.Agent</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="mcl_8py_source.html#l00030">30</a> of file <a class="el" href="mcl_8py_source.html">mcl.py</a>.</p>
+
+</div>
+</div>
 <a id="a55c9fe8bd321ce264927a33d9e415ed6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a55c9fe8bd321ce264927a33d9e415ed6">&#9670;&nbsp;</a></span>draw()</h2>
 
@@ -197,6 +250,8 @@ Public Attributes</h2></td></tr>
 
 <p>Mclのdraw()を呼び出して描画とelemsへの追加を行う </p>
 
+<p class="definition">Definition at line <a class="el" href="mcl_8py_source.html#l00039">39</a> of file <a class="el" href="mcl_8py_source.html">mcl.py</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -212,6 +267,40 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="mcl_8py_source.html#l00020">20</a> of file <a class="el" href="mcl_8py_source.html">mcl.py</a>.</p>
+
+</div>
+</div>
+<a id="a76c46a55f04a1af9b44ee8a1820bc10a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76c46a55f04a1af9b44ee8a1820bc10a">&#9670;&nbsp;</a></span>prev_nu</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mcl.EstimationAgent.prev_nu</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mcl_8py_source.html#l00022">22</a> of file <a class="el" href="mcl_8py_source.html">mcl.py</a>.</p>
+
+</div>
+</div>
+<a id="af3b1a3e0c89b7fd0e2fbe7ea59421001"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3b1a3e0c89b7fd0e2fbe7ea59421001">&#9670;&nbsp;</a></span>prev_omega</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mcl.EstimationAgent.prev_omega</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mcl_8py_source.html#l00023">23</a> of file <a class="el" href="mcl_8py_source.html">mcl.py</a>.</p>
+
 </div>
 </div>
 <a id="a0cb75356b01b6e3a12837ef2e264584b"></a>
@@ -226,10 +315,12 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="mcl_8py_source.html#l00021">21</a> of file <a class="el" href="mcl_8py_source.html">mcl.py</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="mcl_8py.html">mcl.py</a></li>
+<li><a class="el" href="mcl_8py_source.html">mcl.py</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

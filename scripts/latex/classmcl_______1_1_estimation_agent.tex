@@ -1,0 +1,127 @@
+\hypertarget{classmcl_______1_1_estimation_agent}{}\doxysection{mcl\+\_\+\+\_\+\+\_\+.\+Estimation\+Agent Class Reference}
+\label{classmcl_______1_1_estimation_agent}\index{mcl\_\_\_.EstimationAgent@{mcl\_\_\_.EstimationAgent}}
+Inheritance diagram for mcl\+\_\+\+\_\+\+\_\+.\+Estimation\+Agent\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmcl_______1_1_estimation_agent}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classmcl_______1_1_estimation_agent_af5a6f1fa8ec97763f277bb542d4ea35b}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classmcl_______1_1_estimation_agent_a085cfd1d64a0ab5017a92e132253ed40}{time\+\_\+interval}}, \mbox{\hyperlink{classideal__robot_1_1_agent_a112a00d4161c98928025c50f23c399a3}{nu}}, \mbox{\hyperlink{classideal__robot_1_1_agent_acafe315042ad6954e166a5b9ba15f509}{omega}}, \mbox{\hyperlink{classmcl_______1_1_estimation_agent_a60c88c00e26c550784c98c80f7f1a4c0}{estimator}})
+\item 
+def \mbox{\hyperlink{classmcl_______1_1_estimation_agent_a681a9da9b06d008b94685afcc6081c64}{decision}} (self, observation=None)
+\begin{DoxyCompactList}\small\item\em 最初に決めた速度と回転速度のままロボットを動かす命令を出す \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classmcl_______1_1_estimation_agent_a80a623f001803bda66ee39baaf374f92}{draw}} (self, ax, elems)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmcl_______1_1_estimation_agent_a60c88c00e26c550784c98c80f7f1a4c0}{estimator}}
+\item 
+\mbox{\hyperlink{classmcl_______1_1_estimation_agent_a085cfd1d64a0ab5017a92e132253ed40}{time\+\_\+interval}}
+\item 
+\mbox{\hyperlink{classmcl_______1_1_estimation_agent_a8dd5e60023b2ecf3a47d1b5d14b55458}{prev\+\_\+nu}}
+\item 
+\mbox{\hyperlink{classmcl_______1_1_estimation_agent_a4ba785e0ea17532593d2bc2fae13feb6}{prev\+\_\+omega}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 134 of file mcl\+\_\+\+\_\+\+\_\+.\+py.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmcl_______1_1_estimation_agent_af5a6f1fa8ec97763f277bb542d4ea35b}\label{classmcl_______1_1_estimation_agent_af5a6f1fa8ec97763f277bb542d4ea35b}} 
+\index{mcl\_\_\_.EstimationAgent@{mcl\_\_\_.EstimationAgent}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!mcl\_\_\_.EstimationAgent@{mcl\_\_\_.EstimationAgent}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def mcl\+\_\+\+\_\+\+\_\+.\+Estimation\+Agent.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{time\+\_\+interval,  }\item[{}]{nu,  }\item[{}]{omega,  }\item[{}]{estimator }\end{DoxyParamCaption})}
+
+
+
+Definition at line 135 of file mcl\+\_\+\+\_\+\+\_\+.\+py.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmcl_______1_1_estimation_agent_a681a9da9b06d008b94685afcc6081c64}\label{classmcl_______1_1_estimation_agent_a681a9da9b06d008b94685afcc6081c64}} 
+\index{mcl\_\_\_.EstimationAgent@{mcl\_\_\_.EstimationAgent}!decision@{decision}}
+\index{decision@{decision}!mcl\_\_\_.EstimationAgent@{mcl\_\_\_.EstimationAgent}}
+\doxysubsubsection{\texorpdfstring{decision()}{decision()}}
+{\footnotesize\ttfamily def mcl\+\_\+\+\_\+\+\_\+.\+Estimation\+Agent.\+decision (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{observation = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+最初に決めた速度と回転速度のままロボットを動かす命令を出す 
+
+
+
+Reimplemented from \mbox{\hyperlink{classideal__robot_1_1_agent_a8b363a66a3911abf6d31c214cc97c1c1}{ideal\+\_\+robot.\+Agent}}.
+
+
+
+Definition at line 143 of file mcl\+\_\+\+\_\+\+\_\+.\+py.
+
+\mbox{\Hypertarget{classmcl_______1_1_estimation_agent_a80a623f001803bda66ee39baaf374f92}\label{classmcl_______1_1_estimation_agent_a80a623f001803bda66ee39baaf374f92}} 
+\index{mcl\_\_\_.EstimationAgent@{mcl\_\_\_.EstimationAgent}!draw@{draw}}
+\index{draw@{draw}!mcl\_\_\_.EstimationAgent@{mcl\_\_\_.EstimationAgent}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily def mcl\+\_\+\+\_\+\+\_\+.\+Estimation\+Agent.\+draw (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{ax,  }\item[{}]{elems }\end{DoxyParamCaption})}
+
+
+
+Definition at line 148 of file mcl\+\_\+\+\_\+\+\_\+.\+py.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmcl_______1_1_estimation_agent_a60c88c00e26c550784c98c80f7f1a4c0}\label{classmcl_______1_1_estimation_agent_a60c88c00e26c550784c98c80f7f1a4c0}} 
+\index{mcl\_\_\_.EstimationAgent@{mcl\_\_\_.EstimationAgent}!estimator@{estimator}}
+\index{estimator@{estimator}!mcl\_\_\_.EstimationAgent@{mcl\_\_\_.EstimationAgent}}
+\doxysubsubsection{\texorpdfstring{estimator}{estimator}}
+{\footnotesize\ttfamily mcl\+\_\+\+\_\+\+\_\+.\+Estimation\+Agent.\+estimator}
+
+
+
+Definition at line 137 of file mcl\+\_\+\+\_\+\+\_\+.\+py.
+
+\mbox{\Hypertarget{classmcl_______1_1_estimation_agent_a8dd5e60023b2ecf3a47d1b5d14b55458}\label{classmcl_______1_1_estimation_agent_a8dd5e60023b2ecf3a47d1b5d14b55458}} 
+\index{mcl\_\_\_.EstimationAgent@{mcl\_\_\_.EstimationAgent}!prev\_nu@{prev\_nu}}
+\index{prev\_nu@{prev\_nu}!mcl\_\_\_.EstimationAgent@{mcl\_\_\_.EstimationAgent}}
+\doxysubsubsection{\texorpdfstring{prev\_nu}{prev\_nu}}
+{\footnotesize\ttfamily mcl\+\_\+\+\_\+\+\_\+.\+Estimation\+Agent.\+prev\+\_\+nu}
+
+
+
+Definition at line 140 of file mcl\+\_\+\+\_\+\+\_\+.\+py.
+
+\mbox{\Hypertarget{classmcl_______1_1_estimation_agent_a4ba785e0ea17532593d2bc2fae13feb6}\label{classmcl_______1_1_estimation_agent_a4ba785e0ea17532593d2bc2fae13feb6}} 
+\index{mcl\_\_\_.EstimationAgent@{mcl\_\_\_.EstimationAgent}!prev\_omega@{prev\_omega}}
+\index{prev\_omega@{prev\_omega}!mcl\_\_\_.EstimationAgent@{mcl\_\_\_.EstimationAgent}}
+\doxysubsubsection{\texorpdfstring{prev\_omega}{prev\_omega}}
+{\footnotesize\ttfamily mcl\+\_\+\+\_\+\+\_\+.\+Estimation\+Agent.\+prev\+\_\+omega}
+
+
+
+Definition at line 141 of file mcl\+\_\+\+\_\+\+\_\+.\+py.
+
+\mbox{\Hypertarget{classmcl_______1_1_estimation_agent_a085cfd1d64a0ab5017a92e132253ed40}\label{classmcl_______1_1_estimation_agent_a085cfd1d64a0ab5017a92e132253ed40}} 
+\index{mcl\_\_\_.EstimationAgent@{mcl\_\_\_.EstimationAgent}!time\_interval@{time\_interval}}
+\index{time\_interval@{time\_interval}!mcl\_\_\_.EstimationAgent@{mcl\_\_\_.EstimationAgent}}
+\doxysubsubsection{\texorpdfstring{time\_interval}{time\_interval}}
+{\footnotesize\ttfamily mcl\+\_\+\+\_\+\+\_\+.\+Estimation\+Agent.\+time\+\_\+interval}
+
+
+
+Definition at line 138 of file mcl\+\_\+\+\_\+\+\_\+.\+py.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mcl_______8py}{mcl\+\_\+\+\_\+\+\_\+.\+py}}\end{DoxyCompactItemize}

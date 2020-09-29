@@ -9,7 +9,9 @@
 \begin{DoxyCompactItemize}
 \item 
 def \mbox{\hyperlink{classmcl_1_1_particle_ac889b242c479c0573327c836a229c213}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, init\+\_\+pose)
-\end{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classmcl_1_1_particle_a3cef0a1140bc1fd39f91927c9464b590}{motion\+\_\+update}} (self, nu, omega, time, noise\+\_\+rate\+\_\+pdf)
+\begin{DoxyCompactList}\small\item\em パーティクルの位置の更新 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -21,6 +23,10 @@ def \mbox{\hyperlink{classmcl_1_1_particle_ac889b242c479c0573327c836a229c213}{\+
 パーティクル 
 
 パーティクル１つ１つを作成 
+
+Definition at line 48 of file mcl.\+py.
+
+
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classmcl_1_1_particle_ac889b242c479c0573327c836a229c213}\label{classmcl_1_1_particle_ac889b242c479c0573327c836a229c213}} 
@@ -36,12 +42,42 @@ def \mbox{\hyperlink{classmcl_1_1_particle_ac889b242c479c0573327c836a229c213}{\+
 \end{DoxyParams}
 
 
+Definition at line 53 of file mcl.\+py.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmcl_1_1_particle_a3cef0a1140bc1fd39f91927c9464b590}\label{classmcl_1_1_particle_a3cef0a1140bc1fd39f91927c9464b590}} 
+\index{mcl.Particle@{mcl.Particle}!motion\_update@{motion\_update}}
+\index{motion\_update@{motion\_update}!mcl.Particle@{mcl.Particle}}
+\doxysubsubsection{\texorpdfstring{motion\_update()}{motion\_update()}}
+{\footnotesize\ttfamily def mcl.\+Particle.\+motion\+\_\+update (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{nu,  }\item[{}]{omega,  }\item[{}]{time,  }\item[{}]{noise\+\_\+rate\+\_\+pdf }\end{DoxyParamCaption})}
+
+
+
+パーティクルの位置の更新 
+
+
+\begin{DoxyParams}{Parameters}
+{\em noise\+\_\+rate\+\_\+pdf} & nu,omegaに加えるノイズの確率密度関数 \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 60 of file mcl.\+py.
+
+
+
 \doxysubsection{Member Data Documentation}
 \mbox{\Hypertarget{classmcl_1_1_particle_aab0f8742f6262d79dc99facde55379aa}\label{classmcl_1_1_particle_aab0f8742f6262d79dc99facde55379aa}} 
 \index{mcl.Particle@{mcl.Particle}!pose@{pose}}
 \index{pose@{pose}!mcl.Particle@{mcl.Particle}}
 \doxysubsubsection{\texorpdfstring{pose}{pose}}
 {\footnotesize\ttfamily mcl.\+Particle.\+pose}
+
+
+
+Definition at line 54 of file mcl.\+py.
 
 
 

@@ -69,11 +69,13 @@ $(function() {
 <div class="title">mcl.py File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><a href="mcl_8py_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmcl_1_1_estimation_agent.html">mcl.EstimationAgent</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">%%  <a href="classmcl_1_1_estimation_agent.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mclクラスの推定器,位置を推定して、描画画面に追加する  <a href="classmcl_1_1_estimation_agent.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmcl_1_1_particle.html">mcl.Particle</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">パーティクル  <a href="classmcl_1_1_particle.html#details">More...</a><br /></td></tr>
@@ -88,20 +90,24 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a19706f2777f9c9381e21cde5b5dbf0c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemcl.html#a19706f2777f9c9381e21cde5b5dbf0c9">mcl.world</a> = World(30,0.1)</td></tr>
+<tr class="memitem:ae60da0ab338b0429b95fdff2b2c8168a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemcl.html#ae60da0ab338b0429b95fdff2b2c8168a">mcl.time_interval</a> = 0.1</td></tr>
+<tr class="separator:ae60da0ab338b0429b95fdff2b2c8168a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19706f2777f9c9381e21cde5b5dbf0c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemcl.html#a19706f2777f9c9381e21cde5b5dbf0c9">mcl.world</a> = World(30, time_interval, debug=False)</td></tr>
 <tr class="separator:a19706f2777f9c9381e21cde5b5dbf0c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f60e1dce8f3ce05d1d43acf686dbea7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemcl.html#a2f60e1dce8f3ce05d1d43acf686dbea7">mcl.m</a> = Map()</td></tr>
+<tr class="memdesc:a2f60e1dce8f3ce05d1d43acf686dbea7"><td class="mdescLeft">&#160;</td><td class="mdescRight">地図を生成して3つランドマークを追加 ###  <a href="namespacemcl.html#a2f60e1dce8f3ce05d1d43acf686dbea7">More...</a><br /></td></tr>
 <tr class="separator:a2f60e1dce8f3ce05d1d43acf686dbea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fa56ef59dbd07afa749d4507878ee13"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemcl.html#a1fa56ef59dbd07afa749d4507878ee13">mcl.initial_pose</a> = np.array([0,0,0]).T</td></tr>
+<tr class="memitem:a1fa56ef59dbd07afa749d4507878ee13"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemcl.html#a1fa56ef59dbd07afa749d4507878ee13">mcl.initial_pose</a> = np.array([0, 0, 0]).T</td></tr>
+<tr class="memdesc:a1fa56ef59dbd07afa749d4507878ee13"><td class="mdescLeft">&#160;</td><td class="mdescRight">ロボットを作る ###  <a href="namespacemcl.html#a1fa56ef59dbd07afa749d4507878ee13">More...</a><br /></td></tr>
 <tr class="separator:a1fa56ef59dbd07afa749d4507878ee13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7bba3778e57ccb8db6142b75aec63e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemcl.html#ad7bba3778e57ccb8db6142b75aec63e6">mcl.estimator</a> = Mcl(initial_pose,100,motion_noise_stds={&quot;nn&quot;:0.01,&quot;no&quot;:0.02,&quot;on&quot;:0.03,&quot;oo&quot;:0.04})</td></tr>
+<tr class="memitem:ad7bba3778e57ccb8db6142b75aec63e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemcl.html#ad7bba3778e57ccb8db6142b75aec63e6">mcl.estimator</a> = Mcl(initial_pose, 100)</td></tr>
 <tr class="separator:ad7bba3778e57ccb8db6142b75aec63e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51fb69dae701d0362348374b28d48245"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemcl.html#a51fb69dae701d0362348374b28d48245">mcl.a</a> = EstimationAgent(0.1,0.2,10.0/180*math.pi,estimator)</td></tr>
+<tr class="memitem:a51fb69dae701d0362348374b28d48245"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemcl.html#a51fb69dae701d0362348374b28d48245">mcl.a</a> = EstimationAgent(time_interval, 0.2, 10.0/180*math.pi, estimator)</td></tr>
 <tr class="separator:a51fb69dae701d0362348374b28d48245"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c20f82b09a2d146fcc1eed124a89d8c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemcl.html#a0c20f82b09a2d146fcc1eed124a89d8c">mcl.circling</a> = EstimationAgent(0.1,0.2,10.0/180*math.pi,estimator)</td></tr>
-<tr class="separator:a0c20f82b09a2d146fcc1eed124a89d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9b359b480fa8859213b3ac635de7fd6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemcl.html#ab9b359b480fa8859213b3ac635de7fd6">mcl.r</a> = Robot(initial_pose,sensor=Camera(m),agent=circling)</td></tr>
+<tr class="memitem:ab9b359b480fa8859213b3ac635de7fd6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemcl.html#ab9b359b480fa8859213b3ac635de7fd6">mcl.r</a> = Robot(initial_pose, sensor=Camera(m), agent=a, color=&quot;red&quot;)</td></tr>
 <tr class="separator:ab9b359b480fa8859213b3ac635de7fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c20f82b09a2d146fcc1eed124a89d8c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemcl.html#a0c20f82b09a2d146fcc1eed124a89d8c">mcl.circling</a> = EstimationAgent(time_interval,0.2,10.0/180*math.pi,estimator)</td></tr>
+<tr class="separator:a0c20f82b09a2d146fcc1eed124a89d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -15,6 +15,11 @@ import copy
 # %%
 
 # %%
+##
+#@class Robot
+#@param self.noise_pdf
+#@param self.distance_until_noise
+##
 class Robot(IdealRobot):
     def __init__(self, pose, agent=None, sensor=None, color="black", \
         noise_per_meter=5, noise_std=math.pi/60,\

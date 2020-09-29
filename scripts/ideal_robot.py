@@ -108,7 +108,7 @@ class IdealRobot:
     ##
     #@brief 状態変化
     #@details 速度、角速度、時間、現在姿勢を入力し、変化後の姿勢を返す
-    #@returns 変化後の姿勢(x,y,θ)
+    #@return 変化後の姿勢(x,y,θ)
 
     ##
     @classmethod

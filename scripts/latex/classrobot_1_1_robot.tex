@@ -54,12 +54,30 @@ def \mbox{\hyperlink{classrobot_1_1_robot_a91942853e714b1812fa4278b380ee261}{one
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+
+\begin{DoxyParams}{Parameters}
+{\em self.\+noise\+\_\+pdf} & \\
+\hline
+{\em self.\+distance\+\_\+until\+\_\+noise} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 23 of file robot.\+py.
+
+
+
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classrobot_1_1_robot_a2bf0dd2cecb96d71171c80c31cad3d0c}\label{classrobot_1_1_robot_a2bf0dd2cecb96d71171c80c31cad3d0c}} 
 \index{robot.Robot@{robot.Robot}!\_\_init\_\_@{\_\_init\_\_}}
 \index{\_\_init\_\_@{\_\_init\_\_}!robot.Robot@{robot.Robot}}
 \doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
 {\footnotesize\ttfamily def robot.\+Robot.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{pose,  }\item[{}]{agent = {\ttfamily None},  }\item[{}]{sensor = {\ttfamily None},  }\item[{}]{color = {\ttfamily \char`\"{}black\char`\"{}},  }\item[{}]{noise\+\_\+per\+\_\+meter = {\ttfamily 5},  }\item[{}]{noise\+\_\+std = {\ttfamily math.pi/60},  }\item[{}]{bias\+\_\+rate\+\_\+stds = {\ttfamily (0.1,0.1)},  }\item[{}]{expected\+\_\+stuck\+\_\+time = {\ttfamily 1e100},  }\item[{}]{expected\+\_\+escape\+\_\+time = {\ttfamily 1e-\/100},  }\item[{}]{expected\+\_\+kidnap\+\_\+time = {\ttfamily 1e100},  }\item[{}]{kidnap\+\_\+range\+\_\+x = {\ttfamily (-\/5.0,5.0)},  }\item[{}]{kidnap\+\_\+range\+\_\+y = {\ttfamily (-\/5.0,5.0)} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 24 of file robot.\+py.
 
 
 
@@ -70,17 +88,29 @@ def \mbox{\hyperlink{classrobot_1_1_robot_a91942853e714b1812fa4278b380ee261}{one
 \doxysubsubsection{\texorpdfstring{bias()}{bias()}}
 {\footnotesize\ttfamily def robot.\+Robot.\+bias (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{nu,  }\item[{}]{omega }\end{DoxyParamCaption})}
 
+
+
+Definition at line 60 of file robot.\+py.
+
 \mbox{\Hypertarget{classrobot_1_1_robot_ab3c761635d5dc3d5c802f5d5ec2619ea}\label{classrobot_1_1_robot_ab3c761635d5dc3d5c802f5d5ec2619ea}} 
 \index{robot.Robot@{robot.Robot}!kidnap@{kidnap}}
 \index{kidnap@{kidnap}!robot.Robot@{robot.Robot}}
 \doxysubsubsection{\texorpdfstring{kidnap()}{kidnap()}}
 {\footnotesize\ttfamily def robot.\+Robot.\+kidnap (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{pose,  }\item[{}]{time\+\_\+interval }\end{DoxyParamCaption})}
 
+
+
+Definition at line 78 of file robot.\+py.
+
 \mbox{\Hypertarget{classrobot_1_1_robot_a2478fed58b27b2640e26f74944ec7121}\label{classrobot_1_1_robot_a2478fed58b27b2640e26f74944ec7121}} 
 \index{robot.Robot@{robot.Robot}!noise@{noise}}
 \index{noise@{noise}!robot.Robot@{robot.Robot}}
 \doxysubsubsection{\texorpdfstring{noise()}{noise()}}
 {\footnotesize\ttfamily def robot.\+Robot.\+noise (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{pose,  }\item[{}]{nu,  }\item[{}]{omega,  }\item[{}]{time\+\_\+interval }\end{DoxyParamCaption})}
+
+
+
+Definition at line 49 of file robot.\+py.
 
 \mbox{\Hypertarget{classrobot_1_1_robot_a91942853e714b1812fa4278b380ee261}\label{classrobot_1_1_robot_a91942853e714b1812fa4278b380ee261}} 
 \index{robot.Robot@{robot.Robot}!one\_step@{one\_step}}
@@ -92,11 +122,19 @@ def \mbox{\hyperlink{classrobot_1_1_robot_a91942853e714b1812fa4278b380ee261}{one
 
 Reimplemented from \mbox{\hyperlink{classideal__robot_1_1_ideal_robot_ad997ed0777ca894f97e4801d34fe5d73}{ideal\+\_\+robot.\+Ideal\+Robot}}.
 
+
+
+Definition at line 89 of file robot.\+py.
+
 \mbox{\Hypertarget{classrobot_1_1_robot_a07cc10238a0801b06205746a0afef718}\label{classrobot_1_1_robot_a07cc10238a0801b06205746a0afef718}} 
 \index{robot.Robot@{robot.Robot}!stuck@{stuck}}
 \index{stuck@{stuck}!robot.Robot@{robot.Robot}}
 \doxysubsubsection{\texorpdfstring{stuck()}{stuck()}}
 {\footnotesize\ttfamily def robot.\+Robot.\+stuck (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{nu,  }\item[{}]{omega,  }\item[{}]{time\+\_\+interval }\end{DoxyParamCaption})}
+
+
+
+Definition at line 63 of file robot.\+py.
 
 
 
@@ -107,11 +145,19 @@ Reimplemented from \mbox{\hyperlink{classideal__robot_1_1_ideal_robot_ad997ed077
 \doxysubsubsection{\texorpdfstring{bias\_rate\_nu}{bias\_rate\_nu}}
 {\footnotesize\ttfamily robot.\+Robot.\+bias\+\_\+rate\+\_\+nu}
 
+
+
+Definition at line 30 of file robot.\+py.
+
 \mbox{\Hypertarget{classrobot_1_1_robot_ac8c489f59336f670348457b8d5937586}\label{classrobot_1_1_robot_ac8c489f59336f670348457b8d5937586}} 
 \index{robot.Robot@{robot.Robot}!bias\_rate\_omega@{bias\_rate\_omega}}
 \index{bias\_rate\_omega@{bias\_rate\_omega}!robot.Robot@{robot.Robot}}
 \doxysubsubsection{\texorpdfstring{bias\_rate\_omega}{bias\_rate\_omega}}
 {\footnotesize\ttfamily robot.\+Robot.\+bias\+\_\+rate\+\_\+omega}
+
+
+
+Definition at line 31 of file robot.\+py.
 
 \mbox{\Hypertarget{classrobot_1_1_robot_a733a5b4e4229f3a54617cb7a20b71df1}\label{classrobot_1_1_robot_a733a5b4e4229f3a54617cb7a20b71df1}} 
 \index{robot.Robot@{robot.Robot}!distance\_until\_noise@{distance\_until\_noise}}
@@ -119,11 +165,19 @@ Reimplemented from \mbox{\hyperlink{classideal__robot_1_1_ideal_robot_ad997ed077
 \doxysubsubsection{\texorpdfstring{distance\_until\_noise}{distance\_until\_noise}}
 {\footnotesize\ttfamily robot.\+Robot.\+distance\+\_\+until\+\_\+noise}
 
+
+
+Definition at line 28 of file robot.\+py.
+
 \mbox{\Hypertarget{classrobot_1_1_robot_af6f9ae5c6f41a70a1b20ad5cf79cfe93}\label{classrobot_1_1_robot_af6f9ae5c6f41a70a1b20ad5cf79cfe93}} 
 \index{robot.Robot@{robot.Robot}!escape\_pdf@{escape\_pdf}}
 \index{escape\_pdf@{escape\_pdf}!robot.Robot@{robot.Robot}}
 \doxysubsubsection{\texorpdfstring{escape\_pdf}{escape\_pdf}}
 {\footnotesize\ttfamily robot.\+Robot.\+escape\+\_\+pdf}
+
+
+
+Definition at line 34 of file robot.\+py.
 
 \mbox{\Hypertarget{classrobot_1_1_robot_a4c7f5bdbe797a421ba51eb0dc63ad456}\label{classrobot_1_1_robot_a4c7f5bdbe797a421ba51eb0dc63ad456}} 
 \index{robot.Robot@{robot.Robot}!is\_stuck@{is\_stuck}}
@@ -131,11 +185,19 @@ Reimplemented from \mbox{\hyperlink{classideal__robot_1_1_ideal_robot_ad997ed077
 \doxysubsubsection{\texorpdfstring{is\_stuck}{is\_stuck}}
 {\footnotesize\ttfamily robot.\+Robot.\+is\+\_\+stuck}
 
+
+
+Definition at line 37 of file robot.\+py.
+
 \mbox{\Hypertarget{classrobot_1_1_robot_a785232c9eb561f9ed0f48a2f3c02bc89}\label{classrobot_1_1_robot_a785232c9eb561f9ed0f48a2f3c02bc89}} 
 \index{robot.Robot@{robot.Robot}!kidnap\_dist@{kidnap\_dist}}
 \index{kidnap\_dist@{kidnap\_dist}!robot.Robot@{robot.Robot}}
 \doxysubsubsection{\texorpdfstring{kidnap\_dist}{kidnap\_dist}}
 {\footnotesize\ttfamily robot.\+Robot.\+kidnap\+\_\+dist}
+
+
+
+Definition at line 42 of file robot.\+py.
 
 \mbox{\Hypertarget{classrobot_1_1_robot_abf167b6d227bac8386ff7b24e12d98f8}\label{classrobot_1_1_robot_abf167b6d227bac8386ff7b24e12d98f8}} 
 \index{robot.Robot@{robot.Robot}!kidnap\_pdf@{kidnap\_pdf}}
@@ -143,11 +205,19 @@ Reimplemented from \mbox{\hyperlink{classideal__robot_1_1_ideal_robot_ad997ed077
 \doxysubsubsection{\texorpdfstring{kidnap\_pdf}{kidnap\_pdf}}
 {\footnotesize\ttfamily robot.\+Robot.\+kidnap\+\_\+pdf}
 
+
+
+Definition at line 39 of file robot.\+py.
+
 \mbox{\Hypertarget{classrobot_1_1_robot_aea1dfea625e2d33b03e7f6fc7d73c3c4}\label{classrobot_1_1_robot_aea1dfea625e2d33b03e7f6fc7d73c3c4}} 
 \index{robot.Robot@{robot.Robot}!noise\_pdf@{noise\_pdf}}
 \index{noise\_pdf@{noise\_pdf}!robot.Robot@{robot.Robot}}
 \doxysubsubsection{\texorpdfstring{noise\_pdf}{noise\_pdf}}
 {\footnotesize\ttfamily robot.\+Robot.\+noise\+\_\+pdf}
+
+
+
+Definition at line 27 of file robot.\+py.
 
 \mbox{\Hypertarget{classrobot_1_1_robot_a6574eb8b0b7be4a8123288dec077fe33}\label{classrobot_1_1_robot_a6574eb8b0b7be4a8123288dec077fe33}} 
 \index{robot.Robot@{robot.Robot}!pose@{pose}}
@@ -155,11 +225,19 @@ Reimplemented from \mbox{\hyperlink{classideal__robot_1_1_ideal_robot_ad997ed077
 \doxysubsubsection{\texorpdfstring{pose}{pose}}
 {\footnotesize\ttfamily robot.\+Robot.\+pose}
 
+
+
+Definition at line 95 of file robot.\+py.
+
 \mbox{\Hypertarget{classrobot_1_1_robot_ae7ee9d549624d759b3654dc16dd185ff}\label{classrobot_1_1_robot_ae7ee9d549624d759b3654dc16dd185ff}} 
 \index{robot.Robot@{robot.Robot}!stuck\_pdf@{stuck\_pdf}}
 \index{stuck\_pdf@{stuck\_pdf}!robot.Robot@{robot.Robot}}
 \doxysubsubsection{\texorpdfstring{stuck\_pdf}{stuck\_pdf}}
 {\footnotesize\ttfamily robot.\+Robot.\+stuck\+\_\+pdf}
+
+
+
+Definition at line 33 of file robot.\+py.
 
 \mbox{\Hypertarget{classrobot_1_1_robot_a918391119a8e2342ebd81acbd85f7e70}\label{classrobot_1_1_robot_a918391119a8e2342ebd81acbd85f7e70}} 
 \index{robot.Robot@{robot.Robot}!theta\_noise@{theta\_noise}}
@@ -167,11 +245,19 @@ Reimplemented from \mbox{\hyperlink{classideal__robot_1_1_ideal_robot_ad997ed077
 \doxysubsubsection{\texorpdfstring{theta\_noise}{theta\_noise}}
 {\footnotesize\ttfamily robot.\+Robot.\+theta\+\_\+noise}
 
+
+
+Definition at line 29 of file robot.\+py.
+
 \mbox{\Hypertarget{classrobot_1_1_robot_acf037478fe1ee4140e5b6fa7c2ccc9dc}\label{classrobot_1_1_robot_acf037478fe1ee4140e5b6fa7c2ccc9dc}} 
 \index{robot.Robot@{robot.Robot}!time\_until\_escape@{time\_until\_escape}}
 \index{time\_until\_escape@{time\_until\_escape}!robot.Robot@{robot.Robot}}
 \doxysubsubsection{\texorpdfstring{time\_until\_escape}{time\_until\_escape}}
 {\footnotesize\ttfamily robot.\+Robot.\+time\+\_\+until\+\_\+escape}
+
+
+
+Definition at line 36 of file robot.\+py.
 
 \mbox{\Hypertarget{classrobot_1_1_robot_a8bfdc9f72b4b0e2418d5f19f35a3c968}\label{classrobot_1_1_robot_a8bfdc9f72b4b0e2418d5f19f35a3c968}} 
 \index{robot.Robot@{robot.Robot}!time\_until\_kidnap@{time\_until\_kidnap}}
@@ -179,11 +265,19 @@ Reimplemented from \mbox{\hyperlink{classideal__robot_1_1_ideal_robot_ad997ed077
 \doxysubsubsection{\texorpdfstring{time\_until\_kidnap}{time\_until\_kidnap}}
 {\footnotesize\ttfamily robot.\+Robot.\+time\+\_\+until\+\_\+kidnap}
 
+
+
+Definition at line 40 of file robot.\+py.
+
 \mbox{\Hypertarget{classrobot_1_1_robot_acd554f99eae90c9aa3afec4f399e8c14}\label{classrobot_1_1_robot_acd554f99eae90c9aa3afec4f399e8c14}} 
 \index{robot.Robot@{robot.Robot}!time\_until\_stuck@{time\_until\_stuck}}
 \index{time\_until\_stuck@{time\_until\_stuck}!robot.Robot@{robot.Robot}}
 \doxysubsubsection{\texorpdfstring{time\_until\_stuck}{time\_until\_stuck}}
 {\footnotesize\ttfamily robot.\+Robot.\+time\+\_\+until\+\_\+stuck}
+
+
+
+Definition at line 35 of file robot.\+py.
 
 
 

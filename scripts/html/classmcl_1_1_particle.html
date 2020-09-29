@@ -81,6 +81,9 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac889b242c479c0573327c836a229c213"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmcl_1_1_particle.html#ac889b242c479c0573327c836a229c213">__init__</a> (self, init_pose)</td></tr>
 <tr class="separator:ac889b242c479c0573327c836a229c213"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cef0a1140bc1fd39f91927c9464b590"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmcl_1_1_particle.html#a3cef0a1140bc1fd39f91927c9464b590">motion_update</a> (self, nu, omega, time, noise_rate_pdf)</td></tr>
+<tr class="memdesc:a3cef0a1140bc1fd39f91927c9464b590"><td class="mdescLeft">&#160;</td><td class="mdescRight">パーティクルの位置の更新  <a href="classmcl_1_1_particle.html#a3cef0a1140bc1fd39f91927c9464b590">More...</a><br /></td></tr>
+<tr class="separator:a3cef0a1140bc1fd39f91927c9464b590"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -90,6 +93,8 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>パーティクル </p>
 <p>パーティクル１つ１つを作成 </p>
+
+<p class="definition">Definition at line <a class="el" href="mcl_8py_source.html#l00048">48</a> of file <a class="el" href="mcl_8py_source.html">mcl.py</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac889b242c479c0573327c836a229c213"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac889b242c479c0573327c836a229c213">&#9670;&nbsp;</a></span>__init__()</h2>
@@ -123,6 +128,65 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="mcl_8py_source.html#l00053">53</a> of file <a class="el" href="mcl_8py_source.html">mcl.py</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3cef0a1140bc1fd39f91927c9464b590"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cef0a1140bc1fd39f91927c9464b590">&#9670;&nbsp;</a></span>motion_update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def mcl.Particle.motion_update </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>nu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>omega</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>noise_rate_pdf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>パーティクルの位置の更新 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">noise_rate_pdf</td><td>nu,omegaに加えるノイズの確率密度関数 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="mcl_8py_source.html#l00060">60</a> of file <a class="el" href="mcl_8py_source.html">mcl.py</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -138,10 +202,12 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="mcl_8py_source.html#l00054">54</a> of file <a class="el" href="mcl_8py_source.html">mcl.py</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="mcl_8py.html">mcl.py</a></li>
+<li><a class="el" href="mcl_8py_source.html">mcl.py</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -1,2 +1,89 @@
 \hypertarget{namespacemcl______}{}\doxysection{mcl\+\_\+\+\_\+\+\_\+ Namespace Reference}
 \label{namespacemcl______}\index{mcl\_\_\_@{mcl\_\_\_}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classmcl_______1_1_estimation_agent}{Estimation\+Agent}}
+\item 
+class \mbox{\hyperlink{classmcl_______1_1_mcl}{Mcl}}
+\item 
+class \mbox{\hyperlink{classmcl_______1_1_particle}{Particle}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{namespacemcl_______a09f94130ab8802affe48202f5fff2efb}{time\+\_\+interval}} = 0.\+1
+\item 
+\mbox{\hyperlink{namespacemcl_______ad1d2dabef0af12aaf7e8b0f53d8842f9}{world}} = \mbox{\hyperlink{classideal__robot_1_1_world}{World}}(40, \mbox{\hyperlink{namespacemcl_______a09f94130ab8802affe48202f5fff2efb}{time\+\_\+interval}})
+\item 
+\mbox{\hyperlink{namespacemcl_______ac4a3b0ba257ffb10fd5963fb3f121e73}{initial\+\_\+pose}} = np.\+array(\mbox{[}0, 0, 0\mbox{]}).T
+\item 
+\mbox{\hyperlink{namespacemcl_______a0e27256fffc851e986b399611ab0a02f}{estimator}} = \mbox{\hyperlink{classmcl_______1_1_mcl}{Mcl}}(\mbox{\hyperlink{namespacemcl_______ac4a3b0ba257ffb10fd5963fb3f121e73}{initial\+\_\+pose}}, 100, motion\+\_\+noise\+\_\+stds=\{\char`\"{}nn\char`\"{}\+:0.\+001, \char`\"{}no\char`\"{}\+:0.\+001, \char`\"{}on\char`\"{}\+:0.\+13, \char`\"{}oo\char`\"{}\+:0.\+001\})
+\item 
+\mbox{\hyperlink{namespacemcl_______a56c908249c1fa249c31b599ae15f8430}{a}} = \mbox{\hyperlink{classmcl_______1_1_estimation_agent}{Estimation\+Agent}}(\mbox{\hyperlink{namespacemcl_______a09f94130ab8802affe48202f5fff2efb}{time\+\_\+interval}}, 0.\+1, 10/180$\ast$math.\+pi, \mbox{\hyperlink{namespacemcl_______a0e27256fffc851e986b399611ab0a02f}{estimator}})
+\item 
+\mbox{\hyperlink{namespacemcl_______a5c726414aec42714705bb2ed050195e9}{r}} = \mbox{\hyperlink{classrobot_1_1_robot}{Robot}}(\mbox{\hyperlink{namespacemcl_______ac4a3b0ba257ffb10fd5963fb3f121e73}{initial\+\_\+pose}}, sensor=None, agent=\mbox{\hyperlink{namespacemcl_______a56c908249c1fa249c31b599ae15f8430}{a}}, color=\char`\"{}red\char`\"{} )
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacemcl_______a56c908249c1fa249c31b599ae15f8430}\label{namespacemcl_______a56c908249c1fa249c31b599ae15f8430}} 
+\index{mcl\_\_\_@{mcl\_\_\_}!a@{a}}
+\index{a@{a}!mcl\_\_\_@{mcl\_\_\_}}
+\doxysubsubsection{\texorpdfstring{a}{a}}
+{\footnotesize\ttfamily mcl\+\_\+\+\_\+\+\_\+.\+a = \mbox{\hyperlink{classmcl_______1_1_estimation_agent}{Estimation\+Agent}}(\mbox{\hyperlink{namespacemcl_______a09f94130ab8802affe48202f5fff2efb}{time\+\_\+interval}}, 0.\+1, 10/180$\ast$math.\+pi, \mbox{\hyperlink{namespacemcl_______a0e27256fffc851e986b399611ab0a02f}{estimator}})}
+
+
+
+Definition at line 157 of file mcl\+\_\+\+\_\+\+\_\+.\+py.
+
+\mbox{\Hypertarget{namespacemcl_______a0e27256fffc851e986b399611ab0a02f}\label{namespacemcl_______a0e27256fffc851e986b399611ab0a02f}} 
+\index{mcl\_\_\_@{mcl\_\_\_}!estimator@{estimator}}
+\index{estimator@{estimator}!mcl\_\_\_@{mcl\_\_\_}}
+\doxysubsubsection{\texorpdfstring{estimator}{estimator}}
+{\footnotesize\ttfamily mcl\+\_\+\+\_\+\+\_\+.\+estimator = \mbox{\hyperlink{classmcl_______1_1_mcl}{Mcl}}(\mbox{\hyperlink{namespacemcl_______ac4a3b0ba257ffb10fd5963fb3f121e73}{initial\+\_\+pose}}, 100, motion\+\_\+noise\+\_\+stds=\{\char`\"{}nn\char`\"{}\+:0.\+001, \char`\"{}no\char`\"{}\+:0.\+001, \char`\"{}on\char`\"{}\+:0.\+13, \char`\"{}oo\char`\"{}\+:0.\+001\})}
+
+
+
+Definition at line 156 of file mcl\+\_\+\+\_\+\+\_\+.\+py.
+
+\mbox{\Hypertarget{namespacemcl_______ac4a3b0ba257ffb10fd5963fb3f121e73}\label{namespacemcl_______ac4a3b0ba257ffb10fd5963fb3f121e73}} 
+\index{mcl\_\_\_@{mcl\_\_\_}!initial\_pose@{initial\_pose}}
+\index{initial\_pose@{initial\_pose}!mcl\_\_\_@{mcl\_\_\_}}
+\doxysubsubsection{\texorpdfstring{initial\_pose}{initial\_pose}}
+{\footnotesize\ttfamily mcl\+\_\+\+\_\+\+\_\+.\+initial\+\_\+pose = np.\+array(\mbox{[}0, 0, 0\mbox{]}).T}
+
+
+
+Definition at line 155 of file mcl\+\_\+\+\_\+\+\_\+.\+py.
+
+\mbox{\Hypertarget{namespacemcl_______a5c726414aec42714705bb2ed050195e9}\label{namespacemcl_______a5c726414aec42714705bb2ed050195e9}} 
+\index{mcl\_\_\_@{mcl\_\_\_}!r@{r}}
+\index{r@{r}!mcl\_\_\_@{mcl\_\_\_}}
+\doxysubsubsection{\texorpdfstring{r}{r}}
+{\footnotesize\ttfamily mcl\+\_\+\+\_\+\+\_\+.\+r = \mbox{\hyperlink{classrobot_1_1_robot}{Robot}}(\mbox{\hyperlink{namespacemcl_______ac4a3b0ba257ffb10fd5963fb3f121e73}{initial\+\_\+pose}}, sensor=None, agent=\mbox{\hyperlink{namespacemcl_______a56c908249c1fa249c31b599ae15f8430}{a}}, color=\char`\"{}red\char`\"{} )}
+
+
+
+Definition at line 158 of file mcl\+\_\+\+\_\+\+\_\+.\+py.
+
+\mbox{\Hypertarget{namespacemcl_______a09f94130ab8802affe48202f5fff2efb}\label{namespacemcl_______a09f94130ab8802affe48202f5fff2efb}} 
+\index{mcl\_\_\_@{mcl\_\_\_}!time\_interval@{time\_interval}}
+\index{time\_interval@{time\_interval}!mcl\_\_\_@{mcl\_\_\_}}
+\doxysubsubsection{\texorpdfstring{time\_interval}{time\_interval}}
+{\footnotesize\ttfamily float mcl\+\_\+\+\_\+\+\_\+.\+time\+\_\+interval = 0.\+1}
+
+
+
+Definition at line 152 of file mcl\+\_\+\+\_\+\+\_\+.\+py.
+
+\mbox{\Hypertarget{namespacemcl_______ad1d2dabef0af12aaf7e8b0f53d8842f9}\label{namespacemcl_______ad1d2dabef0af12aaf7e8b0f53d8842f9}} 
+\index{mcl\_\_\_@{mcl\_\_\_}!world@{world}}
+\index{world@{world}!mcl\_\_\_@{mcl\_\_\_}}
+\doxysubsubsection{\texorpdfstring{world}{world}}
+{\footnotesize\ttfamily mcl\+\_\+\+\_\+\+\_\+.\+world = \mbox{\hyperlink{classideal__robot_1_1_world}{World}}(40, \mbox{\hyperlink{namespacemcl_______a09f94130ab8802affe48202f5fff2efb}{time\+\_\+interval}})}
+
+
+
+Definition at line 153 of file mcl\+\_\+\+\_\+\+\_\+.\+py.
+

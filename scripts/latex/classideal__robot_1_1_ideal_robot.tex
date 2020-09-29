@@ -14,7 +14,7 @@ def \mbox{\hyperlink{classideal__robot_1_1_ideal_robot_a3818789588a0fbf71021cbd5
 def \mbox{\hyperlink{classideal__robot_1_1_ideal_robot_af0783dfb0a48caf4cbca2eed8465f88b}{draw}} (self, ax, elems)
 \item 
 def \mbox{\hyperlink{classideal__robot_1_1_ideal_robot_affe3944e3cdcca041588e893ec8958ef}{state\+\_\+transition}} (cls, nu, omega, time, \mbox{\hyperlink{classideal__robot_1_1_ideal_robot_a8ad9ba042d053f645384fc7d1df96e1e}{pose}})
-\item 
+\begin{DoxyCompactList}\small\item\em 状態変化 \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classideal__robot_1_1_ideal_robot_ad997ed0777ca894f97e4801d34fe5d73}{one\+\_\+step}} (self, time\+\_\+interval)
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
@@ -34,6 +34,13 @@ def \mbox{\hyperlink{classideal__robot_1_1_ideal_robot_ad997ed0777ca894f97e4801d
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+
+
+Definition at line 74 of file ideal\+\_\+robot.\+py.
+
+
+
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classideal__robot_1_1_ideal_robot_a3818789588a0fbf71021cbd5bdf68e0a}\label{classideal__robot_1_1_ideal_robot_a3818789588a0fbf71021cbd5bdf68e0a}} 
 \index{ideal\_robot.IdealRobot@{ideal\_robot.IdealRobot}!\_\_init\_\_@{\_\_init\_\_}}
@@ -50,12 +57,20 @@ def \mbox{\hyperlink{classideal__robot_1_1_ideal_robot_ad997ed0777ca894f97e4801d
 \end{DoxyParams}
 
 
+Definition at line 80 of file ideal\+\_\+robot.\+py.
+
+
+
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classideal__robot_1_1_ideal_robot_af0783dfb0a48caf4cbca2eed8465f88b}\label{classideal__robot_1_1_ideal_robot_af0783dfb0a48caf4cbca2eed8465f88b}} 
 \index{ideal\_robot.IdealRobot@{ideal\_robot.IdealRobot}!draw@{draw}}
 \index{draw@{draw}!ideal\_robot.IdealRobot@{ideal\_robot.IdealRobot}}
 \doxysubsubsection{\texorpdfstring{draw()}{draw()}}
 {\footnotesize\ttfamily def ideal\+\_\+robot.\+Ideal\+Robot.\+draw (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{ax,  }\item[{}]{elems }\end{DoxyParamCaption})}
+
+
+
+Definition at line 90 of file ideal\+\_\+robot.\+py.
 
 \mbox{\Hypertarget{classideal__robot_1_1_ideal_robot_ad997ed0777ca894f97e4801d34fe5d73}\label{classideal__robot_1_1_ideal_robot_ad997ed0777ca894f97e4801d34fe5d73}} 
 \index{ideal\_robot.IdealRobot@{ideal\_robot.IdealRobot}!one\_step@{one\_step}}
@@ -67,11 +82,26 @@ def \mbox{\hyperlink{classideal__robot_1_1_ideal_robot_ad997ed0777ca894f97e4801d
 
 Reimplemented in \mbox{\hyperlink{classrobot_1_1_robot_a91942853e714b1812fa4278b380ee261}{robot.\+Robot}}.
 
+
+
+Definition at line 126 of file ideal\+\_\+robot.\+py.
+
 \mbox{\Hypertarget{classideal__robot_1_1_ideal_robot_affe3944e3cdcca041588e893ec8958ef}\label{classideal__robot_1_1_ideal_robot_affe3944e3cdcca041588e893ec8958ef}} 
 \index{ideal\_robot.IdealRobot@{ideal\_robot.IdealRobot}!state\_transition@{state\_transition}}
 \index{state\_transition@{state\_transition}!ideal\_robot.IdealRobot@{ideal\_robot.IdealRobot}}
 \doxysubsubsection{\texorpdfstring{state\_transition()}{state\_transition()}}
 {\footnotesize\ttfamily def ideal\+\_\+robot.\+Ideal\+Robot.\+state\+\_\+transition (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{}]{nu,  }\item[{}]{omega,  }\item[{}]{time,  }\item[{}]{pose }\end{DoxyParamCaption})}
+
+
+
+状態変化 
+
+速度、角速度、時間、現在姿勢を入力し、変化後の姿勢を返す \begin{DoxyReturn}{Returns}
+変化後の姿勢(x,y,θ) 
+\end{DoxyReturn}
+
+
+Definition at line 115 of file ideal\+\_\+robot.\+py.
 
 
 
@@ -82,11 +112,19 @@ Reimplemented in \mbox{\hyperlink{classrobot_1_1_robot_a91942853e714b1812fa4278b
 \doxysubsubsection{\texorpdfstring{agent}{agent}}
 {\footnotesize\ttfamily ideal\+\_\+robot.\+Ideal\+Robot.\+agent}
 
+
+
+Definition at line 85 of file ideal\+\_\+robot.\+py.
+
 \mbox{\Hypertarget{classideal__robot_1_1_ideal_robot_a2fb67a0e8767cdb8eed11fa3cbe71022}\label{classideal__robot_1_1_ideal_robot_a2fb67a0e8767cdb8eed11fa3cbe71022}} 
 \index{ideal\_robot.IdealRobot@{ideal\_robot.IdealRobot}!color@{color}}
 \index{color@{color}!ideal\_robot.IdealRobot@{ideal\_robot.IdealRobot}}
 \doxysubsubsection{\texorpdfstring{color}{color}}
 {\footnotesize\ttfamily ideal\+\_\+robot.\+Ideal\+Robot.\+color}
+
+
+
+Definition at line 84 of file ideal\+\_\+robot.\+py.
 
 \mbox{\Hypertarget{classideal__robot_1_1_ideal_robot_a8ad9ba042d053f645384fc7d1df96e1e}\label{classideal__robot_1_1_ideal_robot_a8ad9ba042d053f645384fc7d1df96e1e}} 
 \index{ideal\_robot.IdealRobot@{ideal\_robot.IdealRobot}!pose@{pose}}
@@ -94,11 +132,19 @@ Reimplemented in \mbox{\hyperlink{classrobot_1_1_robot_a91942853e714b1812fa4278b
 \doxysubsubsection{\texorpdfstring{pose}{pose}}
 {\footnotesize\ttfamily ideal\+\_\+robot.\+Ideal\+Robot.\+pose}
 
+
+
+Definition at line 81 of file ideal\+\_\+robot.\+py.
+
 \mbox{\Hypertarget{classideal__robot_1_1_ideal_robot_afc890ffa8c95a3cb402f473801cfbf03}\label{classideal__robot_1_1_ideal_robot_afc890ffa8c95a3cb402f473801cfbf03}} 
 \index{ideal\_robot.IdealRobot@{ideal\_robot.IdealRobot}!poses@{poses}}
 \index{poses@{poses}!ideal\_robot.IdealRobot@{ideal\_robot.IdealRobot}}
 \doxysubsubsection{\texorpdfstring{poses}{poses}}
 {\footnotesize\ttfamily ideal\+\_\+robot.\+Ideal\+Robot.\+poses}
+
+
+
+Definition at line 87 of file ideal\+\_\+robot.\+py.
 
 \mbox{\Hypertarget{classideal__robot_1_1_ideal_robot_a51165a467e8e2b3ae9fe7b99daa82215}\label{classideal__robot_1_1_ideal_robot_a51165a467e8e2b3ae9fe7b99daa82215}} 
 \index{ideal\_robot.IdealRobot@{ideal\_robot.IdealRobot}!r@{r}}
@@ -106,11 +152,19 @@ Reimplemented in \mbox{\hyperlink{classrobot_1_1_robot_a91942853e714b1812fa4278b
 \doxysubsubsection{\texorpdfstring{r}{r}}
 {\footnotesize\ttfamily ideal\+\_\+robot.\+Ideal\+Robot.\+r}
 
+
+
+Definition at line 83 of file ideal\+\_\+robot.\+py.
+
 \mbox{\Hypertarget{classideal__robot_1_1_ideal_robot_aa4a923c0ec519b3655b08e86c38502f2}\label{classideal__robot_1_1_ideal_robot_aa4a923c0ec519b3655b08e86c38502f2}} 
 \index{ideal\_robot.IdealRobot@{ideal\_robot.IdealRobot}!sensor@{sensor}}
 \index{sensor@{sensor}!ideal\_robot.IdealRobot@{ideal\_robot.IdealRobot}}
 \doxysubsubsection{\texorpdfstring{sensor}{sensor}}
 {\footnotesize\ttfamily ideal\+\_\+robot.\+Ideal\+Robot.\+sensor}
+
+
+
+Definition at line 88 of file ideal\+\_\+robot.\+py.
 
 
 

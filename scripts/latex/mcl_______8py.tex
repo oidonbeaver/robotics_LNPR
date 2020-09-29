@@ -1,7 +1,31 @@
 \hypertarget{mcl_______8py}{}\doxysection{mcl\+\_\+\+\_\+\+\_\+.\+py File Reference}
 \label{mcl_______8py}\index{mcl\_\_\_.py@{mcl\_\_\_.py}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classmcl_______1_1_particle}{mcl\+\_\+\+\_\+\+\_\+.\+Particle}}
+\item 
+class \mbox{\hyperlink{classmcl_______1_1_mcl}{mcl\+\_\+\+\_\+\+\_\+.\+Mcl}}
+\item 
+class \mbox{\hyperlink{classmcl_______1_1_estimation_agent}{mcl\+\_\+\+\_\+\+\_\+.\+Estimation\+Agent}}
+\end{DoxyCompactItemize}
 \doxysubsection*{Namespaces}
 \begin{DoxyCompactItemize}
 \item 
  \mbox{\hyperlink{namespacemcl______}{mcl\+\_\+\+\_\+\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{namespacemcl_______a09f94130ab8802affe48202f5fff2efb}{mcl\+\_\+\+\_\+\+\_\+.\+time\+\_\+interval}} = 0.\+1
+\item 
+\mbox{\hyperlink{namespacemcl_______ad1d2dabef0af12aaf7e8b0f53d8842f9}{mcl\+\_\+\+\_\+\+\_\+.\+world}} = World(40, time\+\_\+interval)
+\item 
+\mbox{\hyperlink{namespacemcl_______ac4a3b0ba257ffb10fd5963fb3f121e73}{mcl\+\_\+\+\_\+\+\_\+.\+initial\+\_\+pose}} = np.\+array(\mbox{[}0, 0, 0\mbox{]}).T
+\item 
+\mbox{\hyperlink{namespacemcl_______a0e27256fffc851e986b399611ab0a02f}{mcl\+\_\+\+\_\+\+\_\+.\+estimator}} = Mcl(initial\+\_\+pose, 100, motion\+\_\+noise\+\_\+stds=\{\char`\"{}nn\char`\"{}\+:0.\+001, \char`\"{}no\char`\"{}\+:0.\+001, \char`\"{}on\char`\"{}\+:0.\+13, \char`\"{}oo\char`\"{}\+:0.\+001\})
+\item 
+\mbox{\hyperlink{namespacemcl_______a56c908249c1fa249c31b599ae15f8430}{mcl\+\_\+\+\_\+\+\_\+.\+a}} = Estimation\+Agent(time\+\_\+interval, 0.\+1, 10/180$\ast$math.\+pi, estimator)
+\item 
+\mbox{\hyperlink{namespacemcl_______a5c726414aec42714705bb2ed050195e9}{mcl\+\_\+\+\_\+\+\_\+.\+r}} = Robot(initial\+\_\+pose, sensor=None, agent=a, color=\char`\"{}red\char`\"{} )
 \end{DoxyCompactItemize}

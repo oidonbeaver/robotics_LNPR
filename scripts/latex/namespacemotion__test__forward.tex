@@ -1,0 +1,92 @@
+\hypertarget{namespacemotion__test__forward}{}\doxysection{motion\+\_\+test\+\_\+forward Namespace Reference}
+\label{namespacemotion__test__forward}\index{motion\_test\_forward@{motion\_test\_forward}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacemotion__test__forward_a0ed2b98f748230d6f191e23a588b8014}{world}} = \mbox{\hyperlink{classideal__robot_1_1_world}{World}}(40.\+0,1,debug=False)
+\item 
+\mbox{\hyperlink{namespacemotion__test__forward_a196c3d521f4495e8a52186f6dbaf0923}{initial\+\_\+pose}} = np.\+array(\mbox{[}0,0,0\mbox{]}).T
+\item 
+list \mbox{\hyperlink{namespacemotion__test__forward_adf8eae8d1abec84024551f3fe2a9ccb2}{robots}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{namespacemotion__test__forward_a927b8216567a11f53905b4aaa74fa387}{r}} = \mbox{\hyperlink{classrobot_1_1_robot}{Robot}}(\mbox{\hyperlink{namespacemotion__test__forward_a196c3d521f4495e8a52186f6dbaf0923}{initial\+\_\+pose}},sensor=None,agent=\mbox{\hyperlink{classideal__robot_1_1_agent}{Agent}}(0.\+1,0.\+0))
+\item 
+\mbox{\hyperlink{namespacemotion__test__forward_a0da5a563041ac66cd1dd01084523f660}{copy\+\_\+r}} = copy.\+copy(\mbox{\hyperlink{namespacemotion__test__forward_a927b8216567a11f53905b4aaa74fa387}{r}})
+\item 
+\mbox{\hyperlink{namespacemotion__test__forward_a8a87ff624dcc6fd6315876c961ca5fec}{distance\+\_\+until\+\_\+noise}}
+\item 
+\mbox{\hyperlink{namespacemotion__test__forward_ae8fcb239a53621b1f27bfe693bcde3d9}{poses}} = pd.\+Data\+Frame(\mbox{[}\mbox{[}math.\+sqrt(r.\+pose\mbox{[}0\mbox{]}$\ast$$\ast$2+r.\+pose\mbox{[}1\mbox{]}$\ast$$\ast$2),r.\+pose\mbox{[}2\mbox{]}\mbox{]} for \mbox{\hyperlink{namespacemotion__test__forward_a927b8216567a11f53905b4aaa74fa387}{r}} in \mbox{\hyperlink{namespacemotion__test__forward_adf8eae8d1abec84024551f3fe2a9ccb2}{robots}}\mbox{]},columns=\mbox{[}\char`\"{}r\char`\"{},\char`\"{}theta\char`\"{}\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacemotion__test__forward_a0da5a563041ac66cd1dd01084523f660}\label{namespacemotion__test__forward_a0da5a563041ac66cd1dd01084523f660}} 
+\index{motion\_test\_forward@{motion\_test\_forward}!copy\_r@{copy\_r}}
+\index{copy\_r@{copy\_r}!motion\_test\_forward@{motion\_test\_forward}}
+\doxysubsubsection{\texorpdfstring{copy\_r}{copy\_r}}
+{\footnotesize\ttfamily motion\+\_\+test\+\_\+forward.\+copy\+\_\+r = copy.\+copy(\mbox{\hyperlink{namespacemotion__test__forward_a927b8216567a11f53905b4aaa74fa387}{r}})}
+
+
+
+Definition at line 18 of file motion\+\_\+test\+\_\+forward.\+py.
+
+\mbox{\Hypertarget{namespacemotion__test__forward_a8a87ff624dcc6fd6315876c961ca5fec}\label{namespacemotion__test__forward_a8a87ff624dcc6fd6315876c961ca5fec}} 
+\index{motion\_test\_forward@{motion\_test\_forward}!distance\_until\_noise@{distance\_until\_noise}}
+\index{distance\_until\_noise@{distance\_until\_noise}!motion\_test\_forward@{motion\_test\_forward}}
+\doxysubsubsection{\texorpdfstring{distance\_until\_noise}{distance\_until\_noise}}
+{\footnotesize\ttfamily motion\+\_\+test\+\_\+forward.\+distance\+\_\+until\+\_\+noise}
+
+
+
+Definition at line 19 of file motion\+\_\+test\+\_\+forward.\+py.
+
+\mbox{\Hypertarget{namespacemotion__test__forward_a196c3d521f4495e8a52186f6dbaf0923}\label{namespacemotion__test__forward_a196c3d521f4495e8a52186f6dbaf0923}} 
+\index{motion\_test\_forward@{motion\_test\_forward}!initial\_pose@{initial\_pose}}
+\index{initial\_pose@{initial\_pose}!motion\_test\_forward@{motion\_test\_forward}}
+\doxysubsubsection{\texorpdfstring{initial\_pose}{initial\_pose}}
+{\footnotesize\ttfamily motion\+\_\+test\+\_\+forward.\+initial\+\_\+pose = np.\+array(\mbox{[}0,0,0\mbox{]}).T}
+
+
+
+Definition at line 11 of file motion\+\_\+test\+\_\+forward.\+py.
+
+\mbox{\Hypertarget{namespacemotion__test__forward_ae8fcb239a53621b1f27bfe693bcde3d9}\label{namespacemotion__test__forward_ae8fcb239a53621b1f27bfe693bcde3d9}} 
+\index{motion\_test\_forward@{motion\_test\_forward}!poses@{poses}}
+\index{poses@{poses}!motion\_test\_forward@{motion\_test\_forward}}
+\doxysubsubsection{\texorpdfstring{poses}{poses}}
+{\footnotesize\ttfamily motion\+\_\+test\+\_\+forward.\+poses = pd.\+Data\+Frame(\mbox{[}\mbox{[}math.\+sqrt(r.\+pose\mbox{[}0\mbox{]}$\ast$$\ast$2+r.\+pose\mbox{[}1\mbox{]}$\ast$$\ast$2),r.\+pose\mbox{[}2\mbox{]}\mbox{]} for \mbox{\hyperlink{namespacemotion__test__forward_a927b8216567a11f53905b4aaa74fa387}{r}} in \mbox{\hyperlink{namespacemotion__test__forward_adf8eae8d1abec84024551f3fe2a9ccb2}{robots}}\mbox{]},columns=\mbox{[}\char`\"{}r\char`\"{},\char`\"{}theta\char`\"{}\mbox{]})}
+
+
+
+Definition at line 28 of file motion\+\_\+test\+\_\+forward.\+py.
+
+\mbox{\Hypertarget{namespacemotion__test__forward_a927b8216567a11f53905b4aaa74fa387}\label{namespacemotion__test__forward_a927b8216567a11f53905b4aaa74fa387}} 
+\index{motion\_test\_forward@{motion\_test\_forward}!r@{r}}
+\index{r@{r}!motion\_test\_forward@{motion\_test\_forward}}
+\doxysubsubsection{\texorpdfstring{r}{r}}
+{\footnotesize\ttfamily motion\+\_\+test\+\_\+forward.\+r = \mbox{\hyperlink{classrobot_1_1_robot}{Robot}}(\mbox{\hyperlink{namespacemotion__test__forward_a196c3d521f4495e8a52186f6dbaf0923}{initial\+\_\+pose}},sensor=None,agent=\mbox{\hyperlink{classideal__robot_1_1_agent}{Agent}}(0.\+1,0.\+0))}
+
+
+
+Definition at line 13 of file motion\+\_\+test\+\_\+forward.\+py.
+
+\mbox{\Hypertarget{namespacemotion__test__forward_adf8eae8d1abec84024551f3fe2a9ccb2}\label{namespacemotion__test__forward_adf8eae8d1abec84024551f3fe2a9ccb2}} 
+\index{motion\_test\_forward@{motion\_test\_forward}!robots@{robots}}
+\index{robots@{robots}!motion\_test\_forward@{motion\_test\_forward}}
+\doxysubsubsection{\texorpdfstring{robots}{robots}}
+{\footnotesize\ttfamily list motion\+\_\+test\+\_\+forward.\+robots = \mbox{[}$\,$\mbox{]}}
+
+
+
+Definition at line 12 of file motion\+\_\+test\+\_\+forward.\+py.
+
+\mbox{\Hypertarget{namespacemotion__test__forward_a0ed2b98f748230d6f191e23a588b8014}\label{namespacemotion__test__forward_a0ed2b98f748230d6f191e23a588b8014}} 
+\index{motion\_test\_forward@{motion\_test\_forward}!world@{world}}
+\index{world@{world}!motion\_test\_forward@{motion\_test\_forward}}
+\doxysubsubsection{\texorpdfstring{world}{world}}
+{\footnotesize\ttfamily motion\+\_\+test\+\_\+forward.\+world = \mbox{\hyperlink{classideal__robot_1_1_world}{World}}(40.\+0,1,debug=False)}
+
+
+
+Definition at line 10 of file motion\+\_\+test\+\_\+forward.\+py.
+

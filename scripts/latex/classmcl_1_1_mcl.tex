@@ -3,7 +3,7 @@
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-def \mbox{\hyperlink{classmcl_1_1_mcl_a60bb12b7fb3329a1d3b56cca0e4ae879}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, init\+\_\+pose, num, motion\+\_\+noise\+\_\+stds)
+def \mbox{\hyperlink{classmcl_1_1_mcl_a12145e0d80cc3139a04090241c7a587b}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, init\+\_\+pose, num, motion\+\_\+noise\+\_\+stds=\{\char`\"{}nn\char`\"{}\+:0.\+19,\char`\"{}no\char`\"{}\+:0.\+001,\char`\"{}on\char`\"{}\+:0.\+13,\char`\"{}oo\char`\"{}\+:0.\+2 \})
 \begin{DoxyCompactList}\small\item\em num個のパーティクルをinit\+\_\+poseの位置で初期化 \end{DoxyCompactList}\item 
 def \mbox{\hyperlink{classmcl_1_1_mcl_a31f9c867397406d57e8b2fc50463c983}{motion\+\_\+update}} (self, nu, omega, time)
 \begin{DoxyCompactList}\small\item\em Mclの速度、回転速度にノイズを足して次の時刻の\+Mclの位置を作成 \end{DoxyCompactList}\item 
@@ -28,12 +28,17 @@ def \mbox{\hyperlink{classmcl_1_1_mcl_af863a8d7091e6ef18fb45dd6a79d5c7e}{draw}} 
 \end{DoxyParams}
 
 
+Definition at line 74 of file mcl.\+py.
+
+
+
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classmcl_1_1_mcl_a60bb12b7fb3329a1d3b56cca0e4ae879}\label{classmcl_1_1_mcl_a60bb12b7fb3329a1d3b56cca0e4ae879}} 
+\mbox{\Hypertarget{classmcl_1_1_mcl_a12145e0d80cc3139a04090241c7a587b}\label{classmcl_1_1_mcl_a12145e0d80cc3139a04090241c7a587b}} 
 \index{mcl.Mcl@{mcl.Mcl}!\_\_init\_\_@{\_\_init\_\_}}
 \index{\_\_init\_\_@{\_\_init\_\_}!mcl.Mcl@{mcl.Mcl}}
 \doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
-{\footnotesize\ttfamily def mcl.\+Mcl.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{init\+\_\+pose,  }\item[{}]{num,  }\item[{}]{motion\+\_\+noise\+\_\+stds }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily def mcl.\+Mcl.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{init\+\_\+pose,  }\item[{}]{num,  }\item[{}]{motion\+\_\+noise\+\_\+stds = {\ttfamily \{\char`\"{}nn\char`\"{}\+:0.19,\char`\"{}no\char`\"{}\+:0.001,\char`\"{}on\char`\"{}\+:0.13,\char`\"{}oo\char`\"{}\+:0.2
+~~~~\}} }\end{DoxyParamCaption})}
 
 
 
@@ -41,11 +46,15 @@ num個のパーティクルをinit\+\_\+poseの位置で初期化
 
 
 \begin{DoxyParams}{Parameters}
-{\em motion\+\_\+noise\+\_\+sts} & 辞書型でnn,no,on,ooのばらつき(標準偏差)を入れる \\
-\hline
 {\em init\+\_\+pose} & np.\+array(\mbox{[}x,y,θ\mbox{]}).T \\
 \hline
+{\em motion\+\_\+noise\+\_\+sts} & 辞書型でnn,no,on,ooのばらつき(標準偏差)を入れる \\
+\hline
 \end{DoxyParams}
+
+
+Definition at line 80 of file mcl.\+py.
+
 
 
 \doxysubsection{Member Function Documentation}
@@ -70,6 +79,10 @@ num個のパーティクルをinit\+\_\+poseの位置で初期化
 {\em vys} & particlesの向き(ベクトル)y方向のリスト \\
 \hline
 \end{DoxyParams}
+
+
+Definition at line 104 of file mcl.\+py.
+
 \mbox{\Hypertarget{classmcl_1_1_mcl_a31f9c867397406d57e8b2fc50463c983}\label{classmcl_1_1_mcl_a31f9c867397406d57e8b2fc50463c983}} 
 \index{mcl.Mcl@{mcl.Mcl}!motion\_update@{motion\_update}}
 \index{motion\_update@{motion\_update}!mcl.Mcl@{mcl.Mcl}}
@@ -80,7 +93,11 @@ num個のパーティクルをinit\+\_\+poseの位置で初期化
 
 Mclの速度、回転速度にノイズを足して次の時刻の\+Mclの位置を作成 
 
-particle1つ１つに対して 
+particle 1つ１つに対して行う 
+
+Definition at line 92 of file mcl.\+py.
+
+
 
 \doxysubsection{Member Data Documentation}
 \mbox{\Hypertarget{classmcl_1_1_mcl_afb1d16e2eaaa9ad6cfaa195375e09bd2}\label{classmcl_1_1_mcl_afb1d16e2eaaa9ad6cfaa195375e09bd2}} 
@@ -89,11 +106,19 @@ particle1つ１つに対して
 \doxysubsubsection{\texorpdfstring{motion\_noise\_rate\_pdf}{motion\_noise\_rate\_pdf}}
 {\footnotesize\ttfamily mcl.\+Mcl.\+motion\+\_\+noise\+\_\+rate\+\_\+pdf}
 
+
+
+Definition at line 85 of file mcl.\+py.
+
 \mbox{\Hypertarget{classmcl_1_1_mcl_a2656816eff7d523ef7177b6a5307d517}\label{classmcl_1_1_mcl_a2656816eff7d523ef7177b6a5307d517}} 
 \index{mcl.Mcl@{mcl.Mcl}!particles@{particles}}
 \index{particles@{particles}!mcl.Mcl@{mcl.Mcl}}
 \doxysubsubsection{\texorpdfstring{particles}{particles}}
 {\footnotesize\ttfamily mcl.\+Mcl.\+particles}
+
+
+
+Definition at line 82 of file mcl.\+py.
 
 
 

@@ -4,7 +4,7 @@
 \begin{DoxyCompactItemize}
 \item 
 class \mbox{\hyperlink{classmcl_1_1_estimation_agent}{mcl.\+Estimation\+Agent}}
-\begin{DoxyCompactList}\small\item\em \%\% \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Mclクラスの推定器,位置を推定して、描画画面に追加する \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classmcl_1_1_particle}{mcl.\+Particle}}
 \begin{DoxyCompactList}\small\item\em パーティクル \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classmcl_1_1_mcl}{mcl.\+Mcl}}
@@ -17,17 +17,19 @@ class \mbox{\hyperlink{classmcl_1_1_mcl}{mcl.\+Mcl}}
 \doxysubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{namespacemcl_a19706f2777f9c9381e21cde5b5dbf0c9}{mcl.\+world}} = World(30,0.\+1)
+float \mbox{\hyperlink{namespacemcl_ae60da0ab338b0429b95fdff2b2c8168a}{mcl.\+time\+\_\+interval}} = 0.\+1
+\item 
+\mbox{\hyperlink{namespacemcl_a19706f2777f9c9381e21cde5b5dbf0c9}{mcl.\+world}} = World(30, time\+\_\+interval, debug=False)
 \item 
 \mbox{\hyperlink{namespacemcl_a2f60e1dce8f3ce05d1d43acf686dbea7}{mcl.\+m}} = Map()
+\begin{DoxyCompactList}\small\item\em 地図を生成して3つランドマークを追加 \#\#\# \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacemcl_a1fa56ef59dbd07afa749d4507878ee13}{mcl.\+initial\+\_\+pose}} = np.\+array(\mbox{[}0, 0, 0\mbox{]}).T
+\begin{DoxyCompactList}\small\item\em ロボットを作る \#\#\# \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacemcl_ad7bba3778e57ccb8db6142b75aec63e6}{mcl.\+estimator}} = Mcl(initial\+\_\+pose, 100)
 \item 
-\mbox{\hyperlink{namespacemcl_a1fa56ef59dbd07afa749d4507878ee13}{mcl.\+initial\+\_\+pose}} = np.\+array(\mbox{[}0,0,0\mbox{]}).T
+\mbox{\hyperlink{namespacemcl_a51fb69dae701d0362348374b28d48245}{mcl.\+a}} = Estimation\+Agent(time\+\_\+interval, 0.\+2, 10.\+0/180$\ast$math.\+pi, estimator)
 \item 
-\mbox{\hyperlink{namespacemcl_ad7bba3778e57ccb8db6142b75aec63e6}{mcl.\+estimator}} = Mcl(initial\+\_\+pose,100,motion\+\_\+noise\+\_\+stds=\{\char`\"{}nn\char`\"{}\+:0.\+01,\char`\"{}no\char`\"{}\+:0.\+02,\char`\"{}on\char`\"{}\+:0.\+03,\char`\"{}oo\char`\"{}\+:0.\+04\})
+\mbox{\hyperlink{namespacemcl_ab9b359b480fa8859213b3ac635de7fd6}{mcl.\+r}} = Robot(initial\+\_\+pose, sensor=Camera(m), agent=a, color=\char`\"{}red\char`\"{})
 \item 
-\mbox{\hyperlink{namespacemcl_a51fb69dae701d0362348374b28d48245}{mcl.\+a}} = Estimation\+Agent(0.\+1,0.\+2,10.\+0/180$\ast$math.\+pi,estimator)
-\item 
-\mbox{\hyperlink{namespacemcl_a0c20f82b09a2d146fcc1eed124a89d8c}{mcl.\+circling}} = Estimation\+Agent(0.\+1,0.\+2,10.\+0/180$\ast$math.\+pi,estimator)
-\item 
-\mbox{\hyperlink{namespacemcl_ab9b359b480fa8859213b3ac635de7fd6}{mcl.\+r}} = Robot(initial\+\_\+pose,sensor=Camera(m),agent=circling)
+\mbox{\hyperlink{namespacemcl_a0c20f82b09a2d146fcc1eed124a89d8c}{mcl.\+circling}} = Estimation\+Agent(time\+\_\+interval,0.\+2,10.\+0/180$\ast$math.\+pi,estimator)
 \end{DoxyCompactItemize}
