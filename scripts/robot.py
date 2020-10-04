@@ -160,12 +160,12 @@ class Camera(IdealCamera):
         observed=[]
         for lm in self.map.landmarks:
             z = self.observation_function(cam_pose, lm.pos)
-            # z = self.phantom(cam_pose,z)#全く存在しないランドマークが現れるのではなく、実在するランドマークが全然違うところに現れる
-            # z = self.occlusion(z)
-            # z = self.oversight(z)#見えなくなる z==Noneになる
+            z = self.phantom(cam_pose,z)#全く存在しないランドマークが現れるのではなく、実在するランドマークが全然違うところに現れる
+            z = self.occlusion(z)
+            z = self.oversight(z)#見えなくなる z==Noneになる
             if self.visible(z):
-                # z=self.bias(z)
-                # z = self.noise(z)
+                z=self.bias(z)
+                z = self.noise(z)
                 
                 observed.append((z,lm.id))
         self.lastdata = observed
